@@ -65,12 +65,14 @@
 @mazette-purple-09: #FFE3FC;
 @mazette-purple-10: #FFF1FE;
 
+
 /* UI variables */
-@bg-website-color:          #F3F1EE;
+@bg-website-color:          @mazette-black-01;
 @background-color:          @mazette-black-01;
 @background-fade-color:     fade(@mazette-black-01, 25%);
 @background-dropdown-color: @mazette-black-01;
 @text-main-color:           @mazette-black-08;
+@text-color:                @mazette-black-08;
 @text-light-color:          @mazette-black-10;
 @text-dark-color:           @mazette-black-03;
 @layer1-color:              @mazette-black-02;
@@ -106,20 +108,20 @@ a:active {
     	
     	a {
     		.ico > i.icon {
-	    		color: darken(@border-color, 16%) !important;
+	    		color: lighten(@border-color, 16%) !important;
     		}
     	}
     }
     
     li.active > a {
-		border-left: solid 0.25rem @mazette-red-03;
+		border-left: solid 0.25rem @mazette-red-05;
     }
     li.active > ul.sub-menu > li.active > a {
-    	border-left: solid 0.25rem @mazette-red-04;
+    	border-left: solid 0.25rem @mazette-red-06;
     }
 }
 ul.sub-menu a.menu-sel::before {
-	background: @mazette-red-05 !important;
+	background: @mazette-red-07 !important;
 }
 
 .header {
@@ -397,7 +399,7 @@ form {
                 .form-control {
                 	border: solid 0.0125rem @border-color;
                     background-color: @mazette-black-02;
-                    color: @mazette-black-08;
+                    color: @mazette-black-02;
                 }
             }
             
@@ -429,9 +431,9 @@ form {
         }
         &:hover {
         	td {
-        		color: @mazette-yellow-09 !important;
+        		color: @mazette-yellow-08 !important; // 09
         		background-color: @layer1-color !important;
-        		border-right: solid 0.065rem @background-color !important;
+        		border-right: solid 0.065rem @border-color !important;
         	}
         }
         &.selected {
@@ -440,7 +442,7 @@ form {
                 border-right: solid 0.065rem @background-color !important;
             }
             td.col-action {
-            	border-left: solid 0.25rem @mazette-yellow-04;
+            	border-left: solid 0.25rem @mazette-yellow-05;
             }
         }
     }
@@ -481,17 +483,17 @@ form {
         	// custom colors for the circle-bars
         	.circular-progress-bar[data-level="T"] {
         		.rotate, .right {
-        			background-color: @mazette-blue-04;
+        			background-color: @mazette-blue-06;
         		}
         	}
         	.circular-progress-bar[data-level="W"] {
         		.rotate, .right {
-        			background-color: @mazette-yellow-04;
+        			background-color: @mazette-yellow-06;
         		}
         	}
         	.circular-progress-bar[data-level="E"] {
         		.rotate, .right {
-        			background-color: @mazette-red-04;
+        			background-color: @mazette-red-06;
         		}
         	}
         	.circular-progress-bar[data-level="C"] {
@@ -515,27 +517,27 @@ div.social.audit {
 	.post.info {
 		border-left: solid 0.25rem @mazette-blue-06 !important;
 		border-radius: 0rem !important;
-		color: @mazette-black-09 !important;
-		background: @mazette-blue-03 !important;
+		color: @mazette-black-03 !important;
+		background: @mazette-blue-09 !important;
 	    
 	    .desc {
             .head {
             	border-radius: 0rem !important;
-                color: @mazette-blue-03 !important;
+                color: @mazette-blue-09 !important;
                 .level {
                 	border-radius: 0rem !important;
-                	color: @mazette-black-08 !important;
+                	color: @mazette-black-03 !important;
                 }
             }
             .msg {
-                background-color: @mazette-blue-02 !important;
+                background-color: @mazette-blue-10 !important;
             }
         }
 		.action {
 			.btn-icon {
 				background-color: transparent !important;
 				border-radius: 0rem !important;
-				color: @mazette-black-09 !important;
+				color: @mazette-black-03 !important;
 				
 				&:hover:not(.disabled):not([disabled]) {
 					background-color: rgba(0,0,0, 0.08) !important;
@@ -547,27 +549,27 @@ div.social.audit {
 	.post.warning {
 		border-radius: 0rem !important;
 		border-left: solid 0.25rem @mazette-yellow-06 !important;
-		color: @mazette-black-09 !important;
-		background: @mazette-yellow-03 !important;
+		color: @mazette-black-03 !important;
+		background: @mazette-yellow-09 !important; // 03
 	    
 	    .desc {
             .head {
             	border-radius: 0rem !important;
-                color: @mazette-yellow-03 !important;
+                color: @mazette-yellow-09 !important; // 03
                 .level {
                 	border-radius: 0rem !important;
-                	color: @mazette-black-09 !important;
+                	color: @mazette-black-03 !important;
                 }
             }
             .msg {
-                background-color: @mazette-yellow-02 !important;
+                background-color: @mazette-yellow-10 !important; // 02
             }
         }
         .action {
 			.btn-icon {
 				background-color: transparent !important;
 				border-radius: 0rem !important;
-				color: @mazette-black-09 !important;
+				color: @mazette-black-03 !important;
 				
 				&:hover:not(.disabled):not([disabled]) {
 					background-color: rgba(0,0,0, 0.08) !important;
@@ -579,28 +581,28 @@ div.social.audit {
 	.post.error {
 		border-radius: 0rem !important;
 		border-left: solid 0.25rem @mazette-red-06 !important;
-		color: @mazette-black-09 !important;
-		background: @mazette-red-03 !important;
+		color: @mazette-black-03 !important;
+		background: @mazette-red-09 !important;
 	    
 	    .desc {
 	    	margin-bottom: 0.5rem !important;
             .head {
             	border-radius: 0rem !important;
-                color: @mazette-red-03 !important;
+                color: @mazette-red-09 !important;
                 .level {
                 	border-radius: 0rem !important;
-                	color: @mazette-black-08 !important;
+                	color: @mazette-black-03 !important;
                 }
             }
             .msg {
-                background-color: @mazette-red-02 !important;
+                background-color: @mazette-red-10 !important;
             }
         }
         .action {
 			.btn-icon {
 				background-color: transparent !important;
 				border-radius: 0rem !important;
-				color: @mazette-black-09 !important;
+				color: @mazette-black-03 !important;
 				
 				&:hover:not(.disabled):not([disabled]) {
 					background-color: rgba(0,0,0, 0.08) !important;
@@ -842,10 +844,8 @@ div.field-container > input.form-control {
 }
 
 .tab-pane.active, .nav-tabs .nav-link.active {
-	background: #F9F8F7 !important;
+	background: #232323 !important;
 }
-
-
 /*
 	LEFT-BORDERS FOR IDENTITY !
 */
@@ -872,13 +872,17 @@ div.field-container > input.form-control {
 .tabs-top {
 	.nav-link {
 		border-bottom: solid 0.065rem @border-color !important;
+		background: #232323 !important;
 		&:not(.active) {
-			background: darken(@bg-website-color, 4%) !important;
+			background: @mazette-black-01 !important;
 		}
 		
 		&:hover {
-			background: @bg-website-color !important;
+			background: #232323 !important;
 		}
+	}
+	.tab-content {
+		background: #232323 !important; // ...
 	}
 }
 .tabs-left {
@@ -887,13 +891,18 @@ div.field-container > input.form-control {
 		border-right: none !important;
 	}
 	.nav-link {
+		background: #232323 !important;
 		&:not(.active) {
-			background: darken(@bg-website-color, 4%) !important;
+			background: @mazette-black-01 !important;
 		}
 		
 		&:hover {
-			background: @bg-website-color !important;
+			background: #232323 !important;
 		}
+	}
+	.tab-content {
+		border-left: transparent !important;
+		background: #232323 !important; // ...
 	}
 }
 .nav-tabs .nav-link.active {
@@ -906,7 +915,7 @@ div.obj-summary {
 	background: transparent !important;
 	border-radius: 0px !important;
 	border: solid 0.065rem @border-color;
-	color: @text-color !important;
+	color: @mazette-black-07 !important; //@text-color
 	
 	.obj-body {
 		.title {
@@ -995,9 +1004,9 @@ div.code-editor {
 			
 			ul.explorer {
 				li.module {
-					// COLOR (text)
-					color: @text-color !important; //? !important
-					
+					a {
+						color: @text-color !important;
+					}
 					a.toggle {
 						// BG + HOVER
 						background: @background-color !important;
@@ -1009,7 +1018,8 @@ div.code-editor {
 					ul > li.object {
 						a.toggle {
 							// COLOR (redish) + HOVER (bg)
-							color: @mazette-red-08 !important;
+							color: @mazette-red-05 !important;
+							opacity: 0.9;
 							background: none; //? transparent
 						}
 						ul > li.file {
@@ -1020,7 +1030,8 @@ div.code-editor {
 							}
 							ul > li.resource > a {
 								// COLOR (blue) + HOVER (bg)
-								color: @mazette-blue-08 !important;
+								color: @mazette-blue-06 !important;
+								opacity: 0.9;
 								background: none; //? transparent
 							}
 						}
@@ -1041,7 +1052,7 @@ div.code-editor {
 // TREEVIEW QUICK FIXES
 ul.root-ul {
 	button.btn-default {
-		color: @text-color !important;
+		color: cyan !important; //@text-color
 		&:hover {
 			background: @layer1-color !important;
 		}
@@ -1063,4 +1074,14 @@ ul.root-ul {
 	.card-header {
 		background: @bg-website-color !important;
 	}
+}
+
+// DARK THEMES SPECIFICITIES
+.form-control:focus {
+	background-color: darken(@border-color, 8%);
+}
+
+// OTHERS ...
+.objlinks .tab-content .card-body {
+	background: #232323 !important;
 }

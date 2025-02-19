@@ -7,7 +7,7 @@
   "mdl_version": "0.1",
   "mdl_type": "S",
   "mdl_icon": null,
-  "mdl_url": "{\n\t\"type\": \"git\",\n\t\"origin\": {\n\t\t\"uri\": \"https://github.com/simplicitesoftware/module-theming\",\n\t}\n}",
+  "mdl_url": "{\n    \"origin\": {\"uri\": \"https://github.com/simplicitesoftware/module-theming\"},\n    \"type\": \"git\"\n}",
   "mdl_comment": "### Purpose\nThis module shall contain a bunch of themes created by Abel.\n\n### Content\n*Mazette-Themes*\n- Theme-Mazette-Light-v1\n\t- light-based theme using the graphic charts provided by Mazette for the website's re-design.\n\t- !! Still in development !!\n- Theme-Mazette-Dark-v1\n\t- dark-based theme using the graphic charts provided by Mazette for the website's re-design.\n\t- !! Still in development !!"
  },
  "links": [{
