@@ -399,7 +399,7 @@ form {
                 .form-control {
                 	border: solid 0.0125rem @border-color;
                     background-color: @mazette-black-02;
-                    color: @mazette-black-02;
+                    color: @text-color;
                 }
             }
             
@@ -409,42 +409,47 @@ form {
         }
         
     }
-    tbody tr {
-        border-top: @background-color !important;
-        border-bottom: @background-color !important;
-        border-left: solid 0.065rem @border-color;
-        
-        td {
-            border-right: solid 0.065rem lighten(@border-color, 8%) !important;
-            padding-left: 0.5rem !important;
-            border-bottom: solid 0.065rem darken(@border-color, 12%) !important;
-        }
-
-        .btn {
-        	background-color: transparent !important;
-            margin-top: 8px !important;
-            margin-bottom: 8px !important;
-            
-            &:hover {
-            	background-color: darken(@mazette-black-03, 8%) !important;
-            }
-        }
-        &:hover {
-        	td {
-        		color: @mazette-yellow-08 !important; // 09
-        		background-color: @layer1-color !important;
-        		border-right: solid 0.065rem @border-color !important;
-        	}
-        }
-        &.selected {
-            td {
-                background-color: @layer1-color !important;
-                border-right: solid 0.065rem @background-color !important;
-            }
-            td.col-action {
-            	border-left: solid 0.25rem @mazette-yellow-05;
-            }
-        }
+    tbody {
+	    tr {
+	        border-top: @background-color !important;
+	        border-bottom: @background-color !important;
+	        border-left: solid 0.065rem @border-color;
+	        
+	        td {
+	            border-right: solid 0.065rem lighten(@border-color, 8%) !important;
+	            padding-left: 0.5rem !important;
+	            border-bottom: solid 0.065rem darken(@border-color, 12%) !important;
+	        }
+	
+	        .btn {
+	        	background-color: transparent !important;
+	            margin-top: 8px !important;
+	            margin-bottom: 8px !important;
+	            
+	            &:hover {
+	            	background-color: darken(@mazette-black-03, 8%) !important;
+	            }
+	        }
+	        &:hover {
+	        	td {
+	        		color: @text-color !important; // yellow wasn't nice
+	        		background-color: @layer1-color !important;
+	        		border-right: solid 0.065rem @border-color !important;
+	        	}
+	        }
+	        &.selected {
+	            td {
+	                background-color: @layer1-color !important;
+	            }
+	            td.col-action {
+	            	border-left: solid 0.25rem @mazette-yellow-05;
+	            }
+	        }
+	    }
+	    
+	    tr.group-by-title > td {
+	    	background: @layer1-color !important;
+	    }
     }
 }
 
@@ -705,6 +710,9 @@ div.social.audit {
 		}
 	}
 }
+.activity .act-row > .act-road > li:not(:last-child) {
+    border-left: dashed .1rem rgba(255, 255, 255, 0.3) !important;
+}
 
 .widget-cards .card {
 	box-shadow: none !important;
@@ -729,29 +737,42 @@ div.social.audit {
 .store-container {
 	background-color: @background-color !important;
 	
-	.storegrid > .storegrid__item > .storecard {
-		border: solid 0.125rem @border-color;
-		border-radius: 0rem !important;
-		transition: all 0.33s ease;
+	.storegrid > .storegrid__item {
+		border-radius: 0px !important;
 		
-		&:hover {
-			border: solid 0.125rem rgba(255,255,255, 0.16) !important;
-			box-shadow: none !important;
-			transform: none !important;
+		.storecard {
+			border: solid 0.125rem @border-color;
+			border-radius: 0rem !important;
+			transition: all 0.33s ease;
+			
+			&:hover {
+				border: solid 0.125rem rgba(255,255,255, 0.16) !important;
+				box-shadow: none !important;
+				transform: none !important;
+				
+				.storecard__content {
+					background-color: lighten(@background-color, 12%) !important;
+				}
+				.storecard__img {
+					border-bottom-color: rgba(255,255,255, 0.16) !important;
+				}
+			}
+			
+			.storecard__img {
+				padding: 0.5rem 0rem;
+				background-color: #3E3E3E !important; // specific ...
+				border-bottom: solid 0.125rem @border-color;
+			}
 			
 			.storecard__content {
-				background-color: lighten(@background-color, 12%) !important;
-			}
-		}
-		
-		.storecard__content {
-			background-color: lighten(@background-color, 8%) !important;
-			.storecard__header {
-				color: @mazette-blue-09 !important;
-				font-weight: bold;
-			}
-			.storecard__text {
-				color: @text-main-color !important;
+				background-color: lighten(@background-color, 8%) !important;
+				.storecard__header {
+					color: @mazette-black-05 !important;
+					font-weight: bold;
+				}
+				.storecard__text {
+					color: @text-main-color !important;
+				}
 			}
 		}
 	}
@@ -782,6 +803,11 @@ td.workkey {
 	.card-header {
 		padding: 0.5rem 1rem !important;
 		border: solid 0.065rem @border-color !important;
+		
+		.head > .list-filters > div.filter {
+			background: @layer1-color;
+			color: @text-color;
+		}
 	}
 	
 	.card-body {
@@ -789,6 +815,12 @@ td.workkey {
 			border-color: transparent !important;
 			border-bottom-color: @border-color !important;
 		}
+	}
+}
+
+.card.panel-list .card-footer {
+	.list-footer .list-rows select.form-control {
+		color: @text-color !important;
 	}
 }
 
@@ -801,9 +833,6 @@ td.workkey {
 		&:hover {
 			background-color: darken(@background-color, 4%) !important;
 		}
-	}
-	.form-control.search-control {
-		background: #F9F8F7 !important;
 	}
 }
 
@@ -826,9 +855,23 @@ td.workkey {
 .modal-content .modal-body .search .search-form div.nav {
 	background: @background-color !important;
 }
+.modal-body {
+	h3 {
+		background: @background-color !important;
+	}
+}
 
 .search .index-search {
-	background: @background-color !important;
+	background: @layer1-color;
+	border-radius: 0px !important;
+	border: solid 0.065rem @border-color;
+	
+	div > input.form-control {
+		color: @text-dark-color;
+	}
+}
+.search .nav {
+	background: @background-color;
 }
 
 .form-group.field-search {
@@ -898,6 +941,9 @@ div.field-container > input.form-control {
 		
 		&:hover {
 			background: #232323 !important;
+			border-color: @border-color !important;
+			border-bottom-color: transparent !important;
+			border-left-color: lighten(@border-color, 16%) !important;
 		}
 	}
 	.tab-content {
@@ -912,7 +958,7 @@ div.field-container > input.form-control {
 
 // MASONRY "CARDS"
 div.obj-summary {
-	background: transparent !important;
+	background: @background-color !important;
 	border-radius: 0px !important;
 	border: solid 0.065rem @border-color;
 	color: @mazette-black-07 !important; //@text-color
@@ -934,14 +980,14 @@ div.obj-summary {
 	}
 	
 	&:hover {
-		background: darken(@background-fade-color, 10%) !important;
-		border-color: darken(@border-color, 25%) !important;
+		background: @layer1-color !important;
+		border-color: lighten(@border-color, 25%) !important;
 		box-shadow: none !important;
 		.obj-body {
 			.title {
 				background: darken(@background-fade-color, 25%) !important;
 				border-radius: 0px !important;
-				border-bottom-color: darken(@border-color, 25%) !important;
+				border-bottom-color: lighten(@border-color, 25%) !important;
 			}
 			.infos {
 				.obj-addons {
@@ -1052,7 +1098,7 @@ div.code-editor {
 // TREEVIEW QUICK FIXES
 ul.root-ul {
 	button.btn-default {
-		color: cyan !important; //@text-color
+		color: @text-color !important;
 		&:hover {
 			background: @layer1-color !important;
 		}
@@ -1077,11 +1123,177 @@ ul.root-ul {
 }
 
 // DARK THEMES SPECIFICITIES
-.form-control:focus {
-	background-color: darken(@border-color, 8%);
+.form-control {
+	color: @text-dark-color;
+	
+	&:focus {
+		background-color: darken(@border-color, 8%);
+		color: @text-color;
+	}
 }
 
-// OTHERS ...
+// OTHERS + Latest fix
 .objlinks .tab-content .card-body {
 	background: #232323 !important;
+}
+.search-form {
+	form {
+		background: @background-color;
+		border-radius: 0 !important;
+	}
+	i.icon-close {
+		background: transparent !important;
+	}
+}
+.form-check {
+	color: @text-color;
+}
+.docked {
+	.actions {
+		button.btn {
+			color: @text-dark-color !important;
+			
+			&:hover {
+				color: lighten(@text-dark-color, 32%) !important;
+			}
+		}
+	}
+}
+.popover.show {
+	background: @background-color !important;
+	border-color: @border-color !important;
+	.popover-arrow {
+		// Shall find the element structure ...
+		* {
+			color: red;
+		}
+	}
+	.popover-header {
+		background-color: lighten(@background-color, 8%) !important;
+	}
+	.popover-body {
+		color: @text-dark-color !important;
+	}
+}
+
+.flow-xml > .table > tbody > tr > td {
+	background: darken(@layer1-color, 8%) !important;
+}
+
+.objform .field > .field-html .field-container {
+	background: @mazette-black-02 !important;
+}
+
+// imported widgets & tools with extern styles ...
+.calendar {
+	background: @mazette-black-02 !important;
+	
+	.fc-header-toolbar > .fc-toolbar-chunk > .fc-button-group .fc-button-active {
+		background: @mazette-black-03 !important;
+	}
+}
+
+.datetimepicker table {
+	border: none !important;
+	color: @text-dark-color !important;
+	span:hover {
+		background: @mazette-black-02 !important;
+	}
+	
+	thead {
+		border-color: transparent !important;
+		border-bottom-color: transparent !important;
+		border-bottom-width: 0px !important;
+		
+		color: @text-dark-color !important;
+		
+		tr {
+			th, td {
+				border: none !important;
+			}
+		}
+	}
+	
+	tbody > tr {
+		border: none !important;
+		color: @text-color !important;
+		
+		&:hover {
+			td {
+				// here
+				&:not(.new) {
+					color: @text-light-color !important; // not changing
+				}
+	        	background-color: transparent !important;
+	        	border-right: none !important;
+			}
+		}
+		
+		td {
+			border: none !important;
+			
+			&:hover {
+				background: @layer1-color !important;
+			}
+			
+			&:is(.active) {
+				background: @mazette-blue-06 !important;
+			}
+			&:is(.today) {
+				background: @mazette-yellow-06 !important;
+			}
+		}
+	}
+	
+	tfoot > tr > th {
+		color: @text-dark-color !important;
+		border: none !important;
+	}
+}
+
+.modal-dialog > .modal-content {
+	.modal-header > div > .follow {
+		background: @mazette-black-02;
+		
+		div.item {
+			&:hover {
+				border-radius: 0 !important;
+				background: darken(@mazette-black-02, 4%);
+			}
+			
+			.follow-title {
+				color: @mazette-black-07;
+				font-size: 0.75rem;
+				font-weight: bold;
+			}
+		}
+	}
+	
+	.modal-body > .social {
+		.post:hover {
+			box-shadow: none !important;
+			border-color: lighten(@border-color, 16%;) !important;
+			background: lighten(@background-color, 16%) !important;
+		}
+		
+		.post .btn-like {
+			margin-top: 0 !important;
+			margin-bottom: 0.25rem !important;
+		}
+	}
+}
+
+.content > .metrics {
+	form.form-inline {
+		background: @layer1-color;
+		
+		.row .form-group > .control-group > label {
+			color: @text-color;
+		}
+	}
+	
+	.charts > .chart-item > .chart {
+		background: @layer1-color;
+		// from here only html canvas are used ...
+	}
 }
