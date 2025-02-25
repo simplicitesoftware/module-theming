@@ -728,29 +728,39 @@ div.social.audit {
 .store-container {
 	background-color: @background-color !important;
 	
-	.storegrid > .storegrid__item > .storecard {
-		border: solid 0.125rem @border-color;
-		border-radius: 0rem !important;
-		transition: all 0.33s ease;
+	.storegrid > .storegrid__item {
+		border-radius: 0px !important;
 		
-		&:hover {
-			border: solid 0.125rem rgba(255,255,255, 0.16) !important;
-			box-shadow: none !important;
-			transform: none !important;
+		.storecard {
+			border: solid 0.125rem @border-color;
+			border-radius: 0rem !important;
+			transition: all 0.33s ease;
+			
+			&:hover {
+				border: solid 0.125rem rgba(255,255,255, 0.16) !important;
+				box-shadow: none !important;
+				transform: none !important;
+				
+				.storecard__content {
+					background-color: lighten(@background-color, 12%) !important;
+				}
+			}
+			
+			.storecard__img {
+				padding: 0.5rem 0rem;
+				background-color: @bg-website-color !important; // specific ...
+				border-bottom: solid 0.125rem @border-color;
+			}
 			
 			.storecard__content {
-				background-color: lighten(@background-color, 12%) !important;
-			}
-		}
-		
-		.storecard__content {
-			background-color: lighten(@background-color, 8%) !important;
-			.storecard__header {
-				color: @mazette-blue-09 !important;
-				font-weight: bold;
-			}
-			.storecard__text {
-				color: @text-main-color !important;
+				background-color: lighten(@background-color, 8%) !important;
+				.storecard__header {
+					color: @mazette-blue-09 !important;
+					font-weight: bold;
+				}
+				.storecard__text {
+					color: @text-main-color !important;
+				}
 			}
 		}
 	}
@@ -789,6 +799,10 @@ td.workkey {
 			border-bottom-color: @border-color !important;
 		}
 	}
+	
+	.card-footer > .search-footer > .nav {
+		background: @background-color;
+	}
 }
 
 .input-group {
@@ -824,6 +838,11 @@ td.workkey {
 
 .modal-content .modal-body .search .search-form div.nav {
 	background: @background-color !important;
+}
+.modal-body {
+	h3 {
+		background: @background-color !important;
+	}
 }
 
 .search .index-search {
@@ -1063,5 +1082,123 @@ ul.root-ul {
 #view_Home {
 	.card-header {
 		background: @bg-website-color !important;
+	}
+}
+
+// Latest fixes
+.search-form {
+	form {
+		background: @background-color;
+		border-radius: 0 !important;
+	}
+	i.icon-close {
+		background: transparent !important;
+	}
+}
+
+.docked {
+	.actions {
+		button.btn:not(.btn-primary):not(.btn-secondary) {
+			color: @text-color !important;
+			
+			&:hover {
+				color: lighten(@text-color, 16%) !important;
+			}
+		}
+	}
+}
+
+.datetimepicker table {
+	border: none !important;
+	color: @text-color !important;
+	span:hover {
+		background: @mazette-black-02 !important;
+	}
+	
+	thead {
+		border-color: transparent !important;
+		border-bottom-color: transparent !important;
+		border-bottom-width: 0px !important;
+		
+		color: @text-color !important;
+		
+		tr {
+			th, td {
+				border: none !important;
+			}
+		}
+	}
+	
+	tbody > tr {
+		border: none !important;
+		color: @text-color !important;
+		
+		&:hover {
+			td {
+				// here
+				&:not(.new) {
+					color: @text-color !important; // not changing
+				}
+	        	background-color: transparent !important;
+	        	border-right: none !important;
+			}
+		}
+		
+		td {
+			border: none !important;
+			
+			&:hover {
+				background: @bg-website-color !important;
+			}
+			
+			&:is(.active) {
+				background: @mazette-blue-06 !important;
+			}
+			&:is(.today) {
+				color: @text-color !important;
+				background: @mazette-yellow-06 !important;
+			}
+		}
+	}
+	
+	tfoot > tr > th {
+		color: @text-color !important;
+		border: none !important;
+	}
+}
+
+.modal-dialog {
+	.modal-content {
+		.modal-header > div > .follow {
+			div.item {
+				&:hover {
+					border-radius: 0 !important;
+					background: darken(@background-color, 4%);
+				}
+				
+				.follow-title {
+					color: darken(@text-dark-color, 16%) !important;
+					font-size: 0.75rem;
+					font-weight: bold;
+				}
+			}
+		}
+		
+		.modal-body > .social {
+			.post:hover {
+				box-shadow: none !important;
+				border-color: lighten(@border-color, 16%;) !important;
+				background: darken(@background-color, 4%) !important;
+			}
+			
+			.post .btn-like {
+				margin-top: 0 !important;
+				margin-bottom: 0.25rem !important;
+			}
+		}
+		
+		.modal-footer > .nav {
+			background: @bg-website-color !important;
+		}
 	}
 }

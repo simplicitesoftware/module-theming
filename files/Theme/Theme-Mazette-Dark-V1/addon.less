@@ -1150,7 +1150,7 @@ ul.root-ul {
 }
 .docked {
 	.actions {
-		button.btn {
+		button.btn:not(.btn-primary):not(.btn-secondary) {
 			color: @text-dark-color !important;
 			
 			&:hover {
@@ -1164,9 +1164,6 @@ ul.root-ul {
 	border-color: @border-color !important;
 	.popover-arrow {
 		// Shall find the element structure ...
-		* {
-			color: red;
-		}
 	}
 	.popover-header {
 		background-color: lighten(@background-color, 8%) !important;
@@ -1295,5 +1292,18 @@ ul.root-ul {
 	.charts > .chart-item > .chart {
 		background: @layer1-color;
 		// from here only html canvas are used ...
+	}
+}
+
+.predef-search {
+	background: @background-color !important;
+	
+	.toggle-title {
+		background: @background-color;
+	}
+	
+	.item {
+		background: @layer1-color;
+		border-radius: 0 !important;
 	}
 }
