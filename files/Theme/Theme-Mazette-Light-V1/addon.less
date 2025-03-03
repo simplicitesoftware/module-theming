@@ -124,8 +124,13 @@ ul.sub-menu a.menu-sel::before {
 }
 
 .header {
-    .btn-header, .btn-shortcut, .btn-group { /* Scope User, embedded shortcuts, shortcuts dropdown */
+    .btn-shortcut { /* embedded shortcuts, shortcuts dropdown */
         &:hover {
+            color: darken(@layer1-color, 32%);
+        }
+    }
+    .btn-group {
+    	&:hover {
             background: @layer1-color;
         }
     }
@@ -1199,6 +1204,74 @@ ul.root-ul {
 		
 		.modal-footer > .nav {
 			background: @bg-website-color !important;
+		}
+	}
+}
+
+/* TEMPLATE EDITOR QUICK REWORK */
+.tmpl-edit {
+	.dock-zone {
+		margin-top: 0.625rem;
+		height: 1rem !important;
+		border: none !important;
+		border-radius: 5px;
+	}
+	div > .dock-zone.on { // increase specificity to override ...
+		border-color: transparent !important;
+		background-color: @mazette-yellow-04 !important;
+	}
+	
+	.row {
+		.tmpl-bar {
+			border-radius: 0 !important;
+			background-color: @mazette-green-07 !important;
+		}
+		
+		.area {
+			.tmpl-bar {
+				border-radius: 0 !important;
+				background-color: @mazette-blue-07 !important;
+			}
+			
+			.field {
+				.tmpl-bar {
+					border-radius: 0 !important;
+					background-color: @mazette-black-07 !important;
+				}
+			}
+		}
+	}
+}
+
+.tmpl-desk.on {
+	.row {
+		padding: 4px !important;
+		border-color: @mazette-green-04 !important;
+		
+		&:hover {
+			border-color: @mazette-green-07 !important;
+			box-shadow: none !important;
+		}
+	}
+	
+	.area {
+		padding: 4px !important;
+		border-color: @mazette-blue-04 !important;
+		
+		&:hover {
+			border-color: @mazette-blue-07 !important;
+			box-shadow: none !important;
+		}
+	}
+	
+	.field {
+		padding: 8px !important;
+		border-color: @mazette-black-04 !important;
+		
+		&:hover {
+			border-color: @mazette-black-07 !important;
+			box-shadow: none !important;
+			background-color: @mazette-black-01 !important;
 		}
 	}
 }
