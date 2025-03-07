@@ -844,6 +844,11 @@ td.workkey {
 .modal-content .modal-body .search .search-form div.nav {
 	background: @background-color !important;
 }
+
+.modal-dialog > .modal-content > .modal-footer > .search-footer > .nav {
+	background: @background-color !important;
+}
+
 .modal-body {
 	h3 {
 		background: @background-color !important;
@@ -1199,6 +1204,19 @@ ul.root-ul {
 			.post .btn-like {
 				margin-top: 0 !important;
 				margin-bottom: 0.25rem !important;
+			}
+		}
+		
+		.modal-body {
+			.mono {
+				padding: 4px;
+				background: @layer1-color !important;
+				color: @text-color !important;
+			}
+			
+			.mono.error {
+				background: @mazette-red-03 !important;
+				color: @mazette-red-07 !important;
 			}
 		}
 		

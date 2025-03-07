@@ -59,7 +59,7 @@
       "thm_font": null,
       "thm_font_mono": null,
       "thm_iconset": null,
-      "thm_code_editor_theme": "monokai-dark",
+      "thm_code_editor_theme": null,
       "thm_html_editor_theme": "DARK",
       "thm_menu_dom_c": "#171717",
       "thm_menu_dom_t": "#F1F1F1",
@@ -167,9 +167,9 @@
      "res_cached": false,
      "res_file": null,
      "res_image": {
-      "path": "resources/Disposition/default/logo_simplicite_dark.png",
-      "mime": "image/png",
-      "name": "logo_simplicite.png"
+      "path": "resources/Disposition/default/logo_simplicite_dark.svg",
+      "mime": "image/svg+xml",
+      "name": "logo-simplicite-bw.svg"
      },
      "row_module_id__mdl_name": "ThemingAbel"
     }

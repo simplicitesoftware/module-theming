@@ -360,6 +360,16 @@ form {
 		padding-bottom: 0rem !important;
 	}
 }
+
+.pillbox-completion > ul > li {
+	background: @layer1-color !important;
+	color: @text-color !important;
+	
+	&:hover {
+		background: lighten(@layer1-color, 8%) !important;
+	}
+}
+
 .container-table table {
     box-shadow: none;
     border: solid 0.065rem @border-color;
@@ -1278,6 +1288,18 @@ ul.root-ul {
 			margin-bottom: 0.25rem !important;
 		}
 	}
+	
+	.modal-body {
+		.mono {
+			padding: 4px !important;
+			background: @layer1-color !important;
+			color: @text-color !important;
+		}
+		.mono.error {
+			background: @mazette-red-08 !important;
+			color: @mazette-red-03 !important;
+		}
+	} 
 }
 
 .content > .metrics {
