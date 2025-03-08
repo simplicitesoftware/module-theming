@@ -1,9 +1,9 @@
 {
-    "date": "2025-03-07 15:11:03",
+    "date": "2025-03-08 08:45:38",
     "name": "ThemingAbel",
     "format": "json",
     "files": ["ThemingAbel.json"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-theming"}},
     "version": "0.1",
-    "platform": "6.2.2"
+    "platform": "6.2.3"
 }
