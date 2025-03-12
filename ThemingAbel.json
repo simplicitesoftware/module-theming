@@ -19,22 +19,22 @@
    "list": [
     {
      "object": "Theme",
-     "userkey": "Theme-Mazette-Dark-V1",
+     "userkey": "ThemeMondrian-Dark",
      "item": {
-      "thm_name": "Theme-Mazette-Dark-V1",
+      "thm_name": "ThemeMondrian-Dark",
       "thm_logo_id": {
-       "path": "files/Theme/Theme-Mazette-Dark-V1/logo.png",
+       "path": "files/Theme/ThemeMondrian-Dark/logo.png",
        "mime": "image/png",
        "name": "Simplicite-Logo-Dark.png"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
-       "path": "files/Theme/Theme-Mazette-Dark-V1/logo2.png",
+       "path": "files/Theme/ThemeMondrian-Dark/logo2.png",
        "mime": "image/png",
        "name": "Simplicie-Logo.png"
       },
       "thm_favicon_id": {
-       "path": "files/Theme/Theme-Mazette-Dark-V1/favicon.png",
+       "path": "files/Theme/ThemeMondrian-Dark/favicon.png",
        "mime": "image/png",
        "name": "Simplicie-Logo.png"
       },
@@ -45,12 +45,12 @@
       "thm_text3": "#F1F1F1",
       "thm_base": "dark",
       "thm_css_doc": {
-       "path": "files/Theme/Theme-Mazette-Dark-V1/Theme-Mazette-Dark-V1_gen.css",
+       "path": "files/Theme/ThemeMondrian-Dark/ThemeMondrian-Dark_gen.css",
        "mime": "text/css",
-       "name": "Theme-Mazette-Dark-V1_gen.css"
+       "name": "ThemeMondrian-Dark_gen.css"
       },
       "thm_addon": {
-       "path": "files/Theme/Theme-Mazette-Dark-V1/addon.less",
+       "path": "files/Theme/ThemeMondrian-Dark/addon.less",
        "mime": "text/x-less",
        "name": "addon.less"
       },
@@ -74,7 +74,7 @@
       "thm_compact": false,
       "row_module_id__mdl_name": "ThemingAbel",
       "thm_const": {
-       "path": "files/Theme/Theme-Mazette-Dark-V1/const.less",
+       "path": "files/Theme/ThemeMondrian-Dark/const.less",
        "mime": "text/x-less",
        "name": "constants.less"
       }
@@ -82,22 +82,22 @@
     },
     {
      "object": "Theme",
-     "userkey": "Theme-Mazette-Light-V1",
+     "userkey": "ThemeMondrian-Light",
      "item": {
-      "thm_name": "Theme-Mazette-Light-V1",
+      "thm_name": "ThemeMondrian-Light",
       "thm_logo_id": {
-       "path": "files/Theme/Theme-Mazette-Light-V1/logo.png",
+       "path": "files/Theme/ThemeMondrian-Light/logo.png",
        "mime": "image/png",
        "name": "Simplicite-Logo.png"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
-       "path": "files/Theme/Theme-Mazette-Light-V1/logo2.png",
+       "path": "files/Theme/ThemeMondrian-Light/logo2.png",
        "mime": "image/png",
        "name": "Logo-Simplicite.png"
       },
       "thm_favicon_id": {
-       "path": "files/Theme/Theme-Mazette-Light-V1/favicon.png",
+       "path": "files/Theme/ThemeMondrian-Light/favicon.png",
        "mime": "image/png",
        "name": "Logo-Simplicite.png"
       },
@@ -108,12 +108,12 @@
       "thm_text3": "#474747",
       "thm_base": "light",
       "thm_css_doc": {
-       "path": "files/Theme/Theme-Mazette-Light-V1/Theme-Mazette-Light-V1_gen.css",
+       "path": "files/Theme/ThemeMondrian-Light/ThemeMondrian-Light_gen.css",
        "mime": "text/css",
-       "name": "Theme-Mazette-Light-V1_gen.css"
+       "name": "ThemeMondrian-Light_gen.css"
       },
       "thm_addon": {
-       "path": "files/Theme/Theme-Mazette-Light-V1/addon.less",
+       "path": "files/Theme/ThemeMondrian-Light/addon.less",
        "mime": "text/x-less",
        "name": "addon.less"
       },
@@ -137,7 +137,7 @@
       "thm_compact": true,
       "row_module_id__mdl_name": "ThemingAbel",
       "thm_const": {
-       "path": "files/Theme/Theme-Mazette-Light-V1/const.less",
+       "path": "files/Theme/ThemeMondrian-Light/const.less",
        "mime": "text/x-less",
        "name": "constants.less"
       }
