@@ -71,7 +71,7 @@
 @background-fade-color:     fade(@mazette-black-01, 25%);
 @background-dropdown-color: @mazette-black-01;
 @text-main-color:           @mazette-black-08;
-@text-color:           @mazette-black-08;
+@text-color:        		@mazette-black-08;
 @text-light-color:          @mazette-black-10;
 @text-dark-color:           @mazette-black-03;
 @layer1-color:              @mazette-black-02;
@@ -1239,25 +1239,17 @@ ul.root-ul {
 		background-color: @mazette-yellow-04 !important;
 	}
 	
-	.row {
-		.tmpl-bar {
-			border-radius: 0 !important;
-			background-color: @mazette-green-07 !important;
-		}
-		
-		.area {
-			.tmpl-bar {
-				border-radius: 0 !important;
-				background-color: @mazette-blue-07 !important;
-			}
-			
-			.field {
-				.tmpl-bar {
-					border-radius: 0 !important;
-					background-color: @mazette-black-07 !important;
-				}
-			}
-		}
+	.row > .tmpl-bar {
+		border-radius: 0 !important;
+		background-color: @mazette-green-07 !important;
+	}
+	.area > .tmpl-bar {
+		border-radius: 0 !important;
+		background-color: @mazette-blue-07 !important;
+	}	
+	.field > .tmpl-bar {
+		border-radius: 0 !important;
+		background-color: @mazette-black-07 !important;
 	}
 }
 
@@ -1294,8 +1286,30 @@ ul.root-ul {
 	}
 }
 
+// Template editor works
+.tmpl-new > .new-menu.on {
+	background: @background-color !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	border: solid 0.065rem @border-color !important;
+	
+	div:hover {
+		background: @layer1-color !important;
+	}
+}
+
+.tmpl-selector > ul > li {
+	background: @background-color !important;
+	border-bottom-color: @border-color !important;
+	&:hover {
+		background: @layer1-color !important;
+	}
+}
+
 .ace_tooltip {
 	background: @layer1-color !important;
+	max-width: 600px !important;
+	max-height: 450px !important;
 	
 	* {
 		color: @text-color !important;

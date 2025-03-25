@@ -1332,6 +1332,8 @@ ul.root-ul {
 
 .ace_tooltip {
 	background: @layer1-color !important;
+	max-width: 600px !important;
+	max-height: 450px !important;
 	
 	* {
 		color: @text-color !important;
@@ -1343,5 +1345,92 @@ ul.root-ul {
 	background: #232323 !important;
 	& > .card-footer {
 		background: #232323 !important;
+	}
+}
+
+/* TEMPLATE EDITOR QUICK REWORK */
+.tmpl-edit {
+	.dock-zone {
+		margin-top: 0.625rem;
+		height: 1rem !important;
+		border: none !important;
+		border-radius: 5px;
+	}
+	div > .dock-zone.on { // increase specificity to override ...
+		border-color: transparent !important;
+		background-color: @mazette-yellow-06 !important;
+	}
+	
+	.row {
+		.tmpl-bar {
+			border-radius: 0 !important;
+			background-color: @mazette-green-06 !important;
+		}
+		
+		.area {
+			.tmpl-bar {
+				border-radius: 0 !important;
+				background-color: @mazette-blue-06 !important;
+			}
+			
+			.field {
+				.tmpl-bar {
+					border-radius: 0 !important;
+					background-color: @mazette-black-06 !important;
+				}
+			}
+		}
+	}
+}
+
+.tmpl-desk.on {
+	.row {
+		padding: 4px !important;
+		border-color: @mazette-green-04 !important;
+		
+		&:hover {
+			border-color: @mazette-green-07 !important;
+			box-shadow: none !important;
+		}
+	}
+	
+	.area {
+		padding: 4px !important;
+		border-color: @mazette-blue-04 !important;
+		
+		&:hover {
+			border-color: @mazette-blue-07 !important;
+			box-shadow: none !important;
+		}
+	}
+	
+	.field {
+		padding: 8px !important;
+		border-color: @mazette-black-04 !important;
+		
+		&:hover {
+			border-color: @mazette-black-07 !important;
+			box-shadow: none !important;
+			background-color: @mazette-black-01 !important;
+		}
+	}
+}
+// Template editor works
+.tmpl-new > .new-menu.on {
+	background: @background-color !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	border: solid 0.065rem @border-color !important;
+	
+	div:hover {
+		background: @layer1-color !important;
+	}
+}
+
+.tmpl-selector > ul > li {
+	background: @background-color !important;
+	border-bottom-color: @border-color !important;
+	&:hover {
+		background: @layer1-color !important;
 	}
 }
