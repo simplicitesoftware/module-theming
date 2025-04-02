@@ -40,7 +40,11 @@
       "thm_color3": null,
       "thm_text3": null,
       "thm_base": "dark",
-      "thm_css_doc": null,
+      "thm_css_doc": {
+       "path": "files/Theme/ThemeAccessibility-Dark/ThemeAccessibility-Dark_gen.css",
+       "mime": "text/css",
+       "name": "ThemeAccessibility-Dark_gen.css"
+      },
       "thm_addon": null,
       "thm_searchbox": null,
       "thm_active": null,

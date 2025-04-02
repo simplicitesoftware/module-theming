@@ -1068,6 +1068,10 @@ div.code-editor {
 	}
 }
 
+.filter {
+	padding: 0px !important;
+}
+
 // TREEVIEW QUICK FIXES
 ul.root-ul {
 	button.btn-default {
@@ -1229,10 +1233,12 @@ ul.root-ul {
 /* TEMPLATE EDITOR QUICK REWORK */
 .tmpl-edit {
 	.dock-zone {
+		position: relative; // oof
 		margin-top: 0.625rem;
 		height: 1rem !important;
 		border: none !important;
 		border-radius: 5px;
+		z-index: 11;
 	}
 	div > .dock-zone.on { // increase specificity to override ...
 		border-color: transparent !important;
@@ -1256,21 +1262,53 @@ ul.root-ul {
 .tmpl-desk.on {
 	.row {
 		padding: 4px !important;
-		border-color: @mazette-green-04 !important;
+		border-color: @mazette-green-03 !important;
+		
+		& > [class*="col-"]:not(:last-child) {
+			border-right-color: @mazette-green-03 !important;
+		}
 		
 		&:hover {
-			border-color: @mazette-green-07 !important;
+			border-color: @mazette-green-06 !important;
 			box-shadow: none !important;
+			
+			& > [class*="col-"]:not(:last-child) {
+				border-right-color: @mazette-green-06 !important;
+			}
+			
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: fade(@mazette-green-06, 3.33%);
+				z-index: 10;
+				pointer-events: none;
+			}
 		}
 	}
 	
 	.area {
 		padding: 4px !important;
-		border-color: @mazette-blue-04 !important;
+		border-color: @mazette-blue-03 !important;
 		
 		&:hover {
-			border-color: @mazette-blue-07 !important;
+			border-color: @mazette-blue-06 !important;
 			box-shadow: none !important;
+			
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: fade(@mazette-blue-06, 3.33%);
+				z-index: 10;
+				pointer-events: none;
+			}
 		}
 	}
 	
@@ -1282,6 +1320,8 @@ ul.root-ul {
 			border-color: @mazette-black-07 !important;
 			box-shadow: none !important;
 			background-color: @mazette-black-01 !important;
+			position: relative;
+			z-index: 11;
 		}
 	}
 }
