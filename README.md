@@ -8,18 +8,21 @@
 ![](https://platform.simplicite.io/logos/standard/logo250.png)
 * * *
 
-`ThemingAbel` module definition
-===============================
+`SimThemes` module definition
+=============================
 
-### Purpose
-This module shall contain a bunch of themes created by Abel.
+# Introduction
 
-### Content
-*Mazette-Themes*
-- Theme-Mazette-Light-v1
-	- light-based theme using the graphic charts provided by Mazette for the website's re-design.
-	- !! Still in development !!
-- Theme-Mazette-Dark-v1
-	- dark-based theme using the graphic charts provided by Mazette for the website's re-design.
-	- !! Still in development !!
+This module contains additional themes that can be used for any Simplicité's instance.
+
+## Purpose
+
+The goal of such themes is either to give a more personal aspect to Simplicité's interfaces (matching a specific style or color palette) or to enhance some aspects of it to tailor the interfaces to any user.
+Such themes can also serve more advanced requirements like web-accessibility (as much as possible), or graphic identities, thus ensuring consistency among all instances and external personal solutions.
+
+## Details
+- __ThemeMondrian :__ Based on Simplicité's new graphic chart from the rebranding and website rework.
+	- 2 themes are available, Light & Dark, both have the same accent colors and keep similar color hierarchies in order to easily go from one to another if wanted.
+	- Those themes are inspired by the strong technologic aspect of 80/90's with an emphasize on code-editor colors for accents. With inspirations from Mondrian's work for the structuration, using colored lines to emphasize on specific elements, bringing a touch of "simplicité".
+- __ThemeAccessibility:__ Working on it...
 

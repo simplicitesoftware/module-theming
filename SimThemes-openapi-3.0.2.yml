@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: ThemingAbel 0.1
+#             |_| Module: SimThemes 0.2
 components:
   schemas:
     Error404:
@@ -218,6 +218,6 @@ info:
     name: Simplicite Software
     url: http://www.simplicitesoftware.com
     email: contact@simplicitesoftware.com
-  description: API for module ThemingAbel
-  title: ThemingAbel
-  version: '0.1'
+  description: API for module SimThemes
+  title: SimThemes
+  version: '0.2'
