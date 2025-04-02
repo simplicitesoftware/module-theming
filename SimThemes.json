@@ -25,18 +25,18 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Dark/logo.png",
        "mime": "image/png",
-       "name": "Simplicite-Logo-Dark.png"
+       "name": "logo.png"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Dark/logo2.png",
        "mime": "image/png",
-       "name": "Simplicie-Logo.png"
+       "name": "logo2.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Dark/favicon.png",
        "mime": "image/png",
-       "name": "Simplicie-Logo.png"
+       "name": "favicon.png"
       },
       "thm_color1": "#171717",
       "thm_color2": "#171717",
@@ -76,7 +76,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Dark/const.less",
        "mime": "text/x-less",
-       "name": "constants.less"
+       "name": "const.less"
       }
      }
     },
@@ -88,18 +88,18 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo.png",
        "mime": "image/png",
-       "name": "Simplicite-Logo.png"
+       "name": "logo.png"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo2.png",
        "mime": "image/png",
-       "name": "Logo-Simplicite.png"
+       "name": "logo2.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Light/favicon.png",
        "mime": "image/png",
-       "name": "Logo-Simplicite.png"
+       "name": "favicon.png"
       },
       "thm_color1": "#F3F1EE",
       "thm_color2": "#F3F1EE",
@@ -139,7 +139,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Light/const.less",
        "mime": "text/x-less",
-       "name": "constants.less"
+       "name": "const.less"
       }
      }
     }
@@ -169,7 +169,7 @@
      "res_image": {
       "path": "resources/Disposition/default/logo_simplicite_dark.svg",
       "mime": "image/svg+xml",
-      "name": "logo-simplicite-bw.svg"
+      "name": "logo_simplicite_dark.svg"
      },
      "row_module_id__mdl_name": "SimThemes"
     }
@@ -190,7 +190,7 @@
       "dt_file": {
        "path": "data/update-demo-admin-home-to-mondrian-dark.xml",
        "mime": "text/xml",
-       "name": "DemoAdminHome.xml"
+       "name": "update-demo-admin-home-to-mondrian-dark.xml"
       },
       "dt_desc": "Updates the <b>Demo-Admin<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Dark<\/b>."
      }
@@ -204,7 +204,7 @@
       "dt_file": {
        "path": "data/update-demo-admin-home-to-mondrian-light.xml",
        "mime": "text/xml",
-       "name": "DemoAdminHome.xml"
+       "name": "update-demo-admin-home-to-mondrian-light.xml"
       },
       "dt_desc": "Updates the <b>Demo-Admin<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Light<\/b>."
      }
@@ -218,7 +218,7 @@
       "dt_file": {
        "path": "data/update-demo-user-home-to-mondrian-dark.xml",
        "mime": "text/xml",
-       "name": "DemoUserHome.xml"
+       "name": "update-demo-user-home-to-mondrian-dark.xml"
       },
       "dt_desc": "Updates the <b>Demo-User<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Dark<\/b>."
      }
@@ -232,7 +232,7 @@
       "dt_file": {
        "path": "data/update-demo-user-home-to-mondrian-light.xml",
        "mime": "text/xml",
-       "name": "DemoUserHome.xml"
+       "name": "update-demo-user-home-to-mondrian-light.xml"
       },
       "dt_desc": "Updates the <b>Demo-User<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Light<\/b>."
      }
@@ -246,7 +246,7 @@
       "dt_file": {
        "path": "data/update-designer-home-to-mondrian-dark.xml",
        "mime": "text/xml",
-       "name": "Home.xml"
+       "name": "update-designer-home-to-mondrian-dark.xml"
       },
       "dt_desc": "Updates the <b>Designer<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Dark<\/b>."
      }
@@ -260,7 +260,7 @@
       "dt_file": {
        "path": "data/update-designer-home-to-mondrian-light.xml",
        "mime": "text/xml",
-       "name": "Home.xml"
+       "name": "update-designer-home-to-mondrian-light.xml"
       },
       "dt_desc": "Updates the <b>Designer<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Light<\/b>."
      }
