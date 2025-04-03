@@ -8,13 +8,13 @@
   "mdl_type": "S",
   "mdl_icon": null,
   "mdl_url": "{\n    \"origin\": {\"uri\": \"https://github.com/simplicitesoftware/module-theming\"},\n    \"type\": \"git\"\n}",
-  "mdl_comment": "# Introduction\n\nThis module contains additional themes that can be used for any Simplicité's instance.\n\n## Purpose\n\nThe goal of such themes is either to give a more personal aspect to Simplicité's interfaces (matching a specific style or color palette) or to enhance some aspects of it to tailor the interfaces to any user.\nSuch themes can also serve more advanced requirements like web-accessibility (as much as possible), or graphic identities, thus ensuring consistency among all instances and external personal solutions.\n\n## Details\n- __ThemeMondrian :__ Based on Simplicité's new graphic chart from the rebranding and website rework.\n\t- 2 themes are available, Light & Dark, both have the same accent colors and keep similar color hierarchies in order to easily go from one to another if wanted.\n\t- Those themes are inspired by the strong technologic aspect of 80/90's with an emphasize on code-editor colors for accents. With inspirations from Mondrian's work for the structuration, using colored lines to emphasize on specific elements, bringing a touch of \"simplicité\".\n- __ThemeAccessibility :__ Based on RG3A & WCAG norms for web-accessibility, this theme provides all the required contrasts & sizes.\n\t- 2 themes are available, Light & Dark, using same B&W colors (texts and backgrounds) and having similar bases for accent colors.\n\t- Both themes are also 'echoing' Simplicité's identity at least for the colors. Otherwise their primary focus is to be RGAA-friendly and passing web-accessibility norms."
+  "mdl_comment": "# Introduction\n\nThis module contains additional themes that can be used for any Simplicité's instance.\n\n## Purpose\n\nThe goal of such themes is either to give a more personal aspect to Simplicité's interfaces (matching a specific style or color palette) or to enhance some aspects of it to tailor the interfaces to any user.\nSuch themes can also serve more advanced requirements like web-accessibility (as much as possible), or graphic identities, thus ensuring consistency among all instances and external personal solutions.\n\n## Datasets\n\nUsing the datasets in this module you can quickly set the theme to few predefined Home views:\n1. Designer views, for all designers/makers using Simplicité, 2 datasets are available for Light/Dark.\n2. Demo views, each dataset setting Light/Dark to both the User & Admin Home views in the Demo Scope.\n\n## Details\n- __ThemeMondrian :__ Based on Simplicité's new graphic chart from the rebranding and website rework.\n\t- 2 themes are available, Light & Dark, both have the same accent colors and keep similar color hierarchies in order to easily go from one to another if wanted.\n\t- Those themes are inspired by the strong technologic aspect of 80/90's with an emphasize on code-editor colors for accents. With inspirations from Mondrian's work for the structuration, using colored lines to emphasize on specific elements, bringing a touch of \"simplicité\".\n- __ThemeAccessibility :__ Based on RG3A & WCAG norms for web-accessibility, this theme provides all the required contrasts & sizes.\n\t- 2 themes are available, Light & Dark, using same B&W colors (texts and backgrounds) and having similar bases for accent colors.\n\t- Both themes are also 'echoing' Simplicité's identity at least for the colors. Otherwise their primary focus is to be RGAA-friendly and passing web-accessibility norms."
  },
  "links": [
   {
    "object": "Theme",
    "label": "Themes",
-   "icon": "bi/palette-fill",
+   "icon": "img/system/theme",
    "field": "row_module_id",
    "list": [
     {
@@ -178,7 +178,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Dark/const.less",
        "mime": "text/x-less",
-       "name": "constants.less"
+       "name": "const.less"
       }
      }
     },
@@ -241,7 +241,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Light/const.less",
        "mime": "text/x-less",
-       "name": "constants.less"
+       "name": "const.less"
       }
      }
     }
@@ -250,18 +250,18 @@
   {
    "object": "Resource",
    "label": "Resources",
-   "icon": "fas/file-image",
+   "icon": "img/system/resource",
    "field": "row_module_id",
    "list": [{
     "object": "Resource",
     "userkey": "default * logo_simplicite_dark",
     "item": {
      "res_object": {
-      "item": {"dis_code": "default"},
-      "icon": "fas/window-restore",
+      "object": "Disposition",
       "label": "Disposition",
       "userkeylabel": "default",
-      "object": "Disposition"
+      "icon": "img/system/disposition",
+      "item": {"dis_code": "default"}
      },
      "res_type": "IMG",
      "res_lang": "ANY",
@@ -280,7 +280,7 @@
   {
    "object": "Dataset",
    "label": "Datasets",
-   "icon": "fas/database",
+   "icon": "img/color/file",
    "field": "row_module_id",
    "list": [
     {
@@ -292,7 +292,7 @@
       "dt_file": {
        "path": "data/update-demo-home-to-mondrian-dark.xml",
        "mime": "text/xml",
-       "name": "DemoHome (1).xml"
+       "name": "update-demo-home-to-mondrian-dark.xml"
       },
       "dt_desc": "Updates the <b>Demo<\/b>'s User & Admin <b>Home<\/b> views' theme to <b>ThemeMondrian-Dark<\/b>."
      }
@@ -306,7 +306,7 @@
       "dt_file": {
        "path": "data/update-demo-home-to-mondrian-light.xml",
        "mime": "text/xml",
-       "name": "DemoHome.xml"
+       "name": "update-demo-home-to-mondrian-light.xml"
       },
       "dt_desc": "Updates the <b>Demo<\/b>'s User & Admin <b>Home<\/b> views' theme to <b>ThemeMondrian-Light<\/b>."
      }
