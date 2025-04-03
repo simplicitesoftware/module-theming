@@ -262,6 +262,9 @@ ul.dropdown-menu.shortcuts {
 	}
 }
 
+.alert {
+	border-radius: 0px !important;
+}
 .alert-help {
     color: @mazette-purple-07 !important;
 	background: @mazette-purple-03 !important;
@@ -337,14 +340,15 @@ form {
 }
 
 .cache img {
-    border: solid 0.25rem transparent;
-	transition: border 0.25s ease, transform 0.25s ease !important;
-	border-radius: 0.75rem !important;
+    border: solid 0.065rem transparent;
+	transition: all 0.33s ease !important;
+	border-radius: 0px !important;
 	
     &:hover {
         box-shadow: none !important;
-        border: solid 0.25rem rgba(0,0,0, 0.08);
-        transform: scale(1.05);
+        border-color: rgba(0,0,0, 0.08);
+        transform: scale(1.025);
+        background-color: rgba(0,0,0, 0.08) !important;
     }
 }
 
@@ -791,6 +795,12 @@ td.workkey {
 	color: @mazette-blue-09 !important;
 }
 
+button > .badge {
+	top: -.75rem !important;
+	right: -.33rem !important;
+	z-index: 1;
+}
+
 .select2-results__option > .enum-item {
 	background: @background-color !important;
 	color: @text-main-color !important;
@@ -1072,8 +1082,15 @@ div.code-editor {
 	}
 }
 
-.filter {
-	padding: 0px !important;
+// Filter specificities
+.badge.count.filter {
+	padding: .25rem .5rem !important;
+	margin-top: .25rem;
+}
+
+.list-filters .filter {
+	padding: .5rem .75rem !important;
+	margin-top: .25rem;
 }
 
 // TREEVIEW QUICK FIXES
