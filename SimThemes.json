@@ -285,58 +285,30 @@
    "list": [
     {
      "object": "Dataset",
-     "userkey": "SimThemes update-demo-admin-home-to-mondrian-dark",
+     "userkey": "SimThemes update-demo-home-to-mondrian-dark",
      "item": {
       "row_module_id__mdl_name": "SimThemes",
-      "dt_name": "update-demo-admin-home-to-mondrian-dark",
+      "dt_name": "update-demo-home-to-mondrian-dark",
       "dt_file": {
-       "path": "data/update-demo-admin-home-to-mondrian-dark.xml",
+       "path": "data/update-demo-home-to-mondrian-dark.xml",
        "mime": "text/xml",
-       "name": "update-demo-admin-home-to-mondrian-dark.xml"
+       "name": "DemoHome (1).xml"
       },
-      "dt_desc": "Updates the <b>Demo-Admin<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Dark<\/b>."
+      "dt_desc": "Updates the <b>Demo<\/b>'s User & Admin <b>Home<\/b> views' theme to <b>ThemeMondrian-Dark<\/b>."
      }
     },
     {
      "object": "Dataset",
-     "userkey": "SimThemes update-demo-admin-home-to-mondrian-light",
+     "userkey": "SimThemes update-demo-home-to-mondrian-light",
      "item": {
       "row_module_id__mdl_name": "SimThemes",
-      "dt_name": "update-demo-admin-home-to-mondrian-light",
+      "dt_name": "update-demo-home-to-mondrian-light",
       "dt_file": {
-       "path": "data/update-demo-admin-home-to-mondrian-light.xml",
+       "path": "data/update-demo-home-to-mondrian-light.xml",
        "mime": "text/xml",
-       "name": "update-demo-admin-home-to-mondrian-light.xml"
+       "name": "DemoHome.xml"
       },
-      "dt_desc": "Updates the <b>Demo-Admin<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Light<\/b>."
-     }
-    },
-    {
-     "object": "Dataset",
-     "userkey": "SimThemes update-demo-user-home-to-mondrian-dark",
-     "item": {
-      "row_module_id__mdl_name": "SimThemes",
-      "dt_name": "update-demo-user-home-to-mondrian-dark",
-      "dt_file": {
-       "path": "data/update-demo-user-home-to-mondrian-dark.xml",
-       "mime": "text/xml",
-       "name": "update-demo-user-home-to-mondrian-dark.xml"
-      },
-      "dt_desc": "Updates the <b>Demo-User<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Dark<\/b>."
-     }
-    },
-    {
-     "object": "Dataset",
-     "userkey": "SimThemes update-demo-user-home-to-mondrian-light",
-     "item": {
-      "row_module_id__mdl_name": "SimThemes",
-      "dt_name": "update-demo-user-home-to-mondrian-light",
-      "dt_file": {
-       "path": "data/update-demo-user-home-to-mondrian-light.xml",
-       "mime": "text/xml",
-       "name": "update-demo-user-home-to-mondrian-light.xml"
-      },
-      "dt_desc": "Updates the <b>Demo-User<\/b>'s <b>Home<\/b> view's theme to <b>ThemeMondrian-Light<\/b>."
+      "dt_desc": "Updates the <b>Demo<\/b>'s User & Admin <b>Home<\/b> views' theme to <b>ThemeMondrian-Light<\/b>."
      }
     },
     {
