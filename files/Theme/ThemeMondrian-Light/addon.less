@@ -456,6 +456,10 @@ form {
     background-color: @background-color !important;
 }
 
+.objlinks .tab-content {
+	padding: 1.5rem !important;
+}
+
 .module-sys .module, 
 .module-app .module {
 	background-color: darken(@background-color, 8%) !important;
@@ -795,7 +799,7 @@ td.workkey {
 .card {
 	.card-header {
 		padding: 0.5rem 1rem !important;
-		border: solid 0.065rem @border-color !important;
+		// border: solid 0.065rem @border-color !important;
 	}
 	
 	.card-body {
@@ -1100,6 +1104,18 @@ ul.root-ul {
 }
 
 // Latest fixes
+.objform > .card > .card-body {
+	padding: 1.5rem !important;
+}
+
+.card {
+	margin-bottom: 1.5rem !important;
+}
+
+.objlinks .tab-content .card { // fix...
+	border: solid 0.065rem @border-color !important; 
+}
+
 .search-form {
 	form {
 		background: @background-color;

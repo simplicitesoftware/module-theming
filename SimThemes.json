@@ -27,12 +27,12 @@
       "thm_logo2_id": {
        "path": "files/Theme/ThemeAccessibility-Dark/logo2.svg",
        "mime": "image/svg+xml",
-       "name": "simplicite-logo-white.svg"
+       "name": "logo2.svg"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeAccessibility-Dark/favicon.svg",
        "mime": "image/svg+xml",
-       "name": "simplicite-logo-white.svg"
+       "name": "favicon.svg"
       },
       "thm_color1": null,
       "thm_color2": null,
@@ -78,12 +78,12 @@
       "thm_logo2_id": {
        "path": "files/Theme/ThemeAccessibility-Light/logo2.svg",
        "mime": "image/svg+xml",
-       "name": "simplicite-logo-black.svg"
+       "name": "logo2.svg"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeAccessibility-Light/favicon.svg",
        "mime": "image/svg+xml",
-       "name": "simplicite-logo-black.svg"
+       "name": "favicon.svg"
       },
       "thm_color1": null,
       "thm_color2": null,
@@ -241,7 +241,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Light/const.less",
        "mime": "text/x-less",
-       "name": "const.less"
+       "name": "constants.less"
       }
      }
     }
