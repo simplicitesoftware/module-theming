@@ -483,6 +483,10 @@ form {
 	}
 }
 
+.module-delete {
+	background: @layer1-color !important;
+}
+
 #panel_Home_3 {
 	.view-item, .item-extern {
 		
@@ -525,6 +529,10 @@ form {
 }
 
 .monitor.docked {
+	.btn.active {
+		background-color: @mazette-blue-06 !important;
+	}
+	
 	.tabs.tabs-underline {
 		ul.nav.nav-tabs {
 			padding: 8px 4px !important;
@@ -545,6 +553,10 @@ form {
 		.tab-content .tab-pane.active {
 			background: @background-color;
 		}
+	}
+	
+	.table > tbody > tr.selected > td, .table > tbody > tr.selected:nth-of-type(odd) > td, .table > tbody > tr.active:nth-of-type(odd) > td, .table > tbody > tr.active > td {
+		background-color: @mazette-yellow-04 !important;
 	}
 	
 	* {
