@@ -1154,11 +1154,26 @@ ul.root-ul {
 
 // OPERATION TOOL FIXES
 .backend-monitor {
-	.head > .views > .tab.active {
-		background: @mazette-black-05 !important;
+	background: transparent;
+	.head {
+		background: @layer1-color !important;
+		color: @text-color !important;
+		.views {
+			.tab {
+				background: lighten(@layer1-color, 3.33%) !important;
+				color: @text-color !important;
+			}
+			.tab.active {
+				background: lighten(@layer1-color, 7.5%) !important;
+			}
+		}
 	}
 	.tabs > .tab {
-		background: @mazette-black-05 !important;
+		background: lighten(@layer1-color, 7.5%) !important;
+	}
+	
+	.chart.jqplot-target {
+		color: @text-color !important;
 	}
 }
 
@@ -1522,5 +1537,58 @@ ul.root-ul {
 	border-bottom-color: @border-color !important;
 	&:hover {
 		background: @layer1-color !important;
+	}
+}
+
+// Modeler quick fixes
+.docked-model {
+	color: @text-dark-color !important;
+	.palette .icon:hover {
+		color: @mazette-black-05 !important;
+	}
+}
+
+// Demo Crosstab raw fixing
+.crosstab {
+	table.table {
+		box-shadow: none !important;
+		tbody > tr {
+			th, td.ctcell {
+				color: @text-dark-color !important;
+			}
+		}
+	}
+	.table-caption .caption {
+		background: @layer1-color !important;
+	}
+	.charts > .active {
+		background: @mazette-yellow-06 !important;
+	}
+	
+	.tabs-underline {
+		ul.nav-tabs > li.nav-item > a {
+			background: @layer1-color !important;
+			color: @text-dark-color !important;
+			
+			&.active {
+				color: @text-color !important;
+			}
+			
+			&:hover {
+				background: darken(@layer1-color, 5%) !important;
+			}
+		}
+	}
+	
+	.axis {
+		.ctdock {
+			background: transparent !important;
+			border: none !important;
+		}
+		.ctaxis {
+			background: @layer1-color !important;
+			border: solid 0.065rem @border-color !important;
+			border-radius: 0px !important;
+		}
 	}
 }
