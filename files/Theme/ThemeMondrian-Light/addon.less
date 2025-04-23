@@ -1425,3 +1425,48 @@ ul.root-ul {
 		background: #F8F7F6 !important;
 	}
 }
+
+// Demo Crosstab raw fixing
+.crosstab {
+	table.table {
+		box-shadow: none !important;
+		tbody > tr {
+			th, td.ctcell {
+				color: @text-color !important;
+			}
+		}
+	}
+	.table-caption .caption {
+		background: @background-color !important;
+	}
+	.charts > .active {
+		background: @mazette-yellow-06 !important;
+	}
+	
+	.tabs-underline {
+		ul.nav-tabs > li.nav-item > a {
+			background: @background-color !important;
+			color: @text-color !important;
+			
+			&.active {
+				color: @text-color !important;
+			}
+			
+			&:hover {
+				background: lighten(@background-color, 5%) !important;
+			}
+		}
+	}
+	
+	.axis {
+		.ctdock {
+			background: transparent !important;
+			border: none !important;
+		}
+		.ctaxis {
+			background: @background-color !important;
+			border: solid 0.065rem @border-color !important;
+			border-radius: 0px !important;
+		}
+	}
+}

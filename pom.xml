@@ -7,7 +7,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.simplicite.modules</groupId>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.3-SNAPSHOT</version>
   <artifactId>SimThemes</artifactId>
   <name>SimThemes</name>
   <description>Simplicite module: SimThemes</description>
@@ -19,7 +19,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
     <maven.compiler.target>17</maven.compiler.target>
     <sonar.projectKey>simplicite-modules-SimThemes</sonar.projectKey>
     <sonar.projectName>SimThemes</sonar.projectName>
-    <sonar.projectVersion>0.2</sonar.projectVersion>
+    <sonar.projectVersion>0.3</sonar.projectVersion>
     <sonar.sources>src,resources</sonar.sources>
     <sonar.exclusions>SimThemes.xml,SimThemes.json,SimThemes-*.yml,configuration/**,**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
