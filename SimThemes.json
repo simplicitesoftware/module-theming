@@ -133,12 +133,12 @@
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Dark/logo2.png",
        "mime": "image/png",
-       "name": "logo-white.png"
+       "name": "logo2.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Dark/favicon.png",
        "mime": "image/png",
-       "name": "logo-white.png"
+       "name": "favicon.png"
       },
       "thm_color1": "#2A2A2A",
       "thm_color2": "#2A2A2A",
@@ -178,7 +178,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Dark/const.less",
        "mime": "text/x-less",
-       "name": "constants.less"
+       "name": "const.less"
       }
      }
     },
@@ -190,18 +190,18 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Darker/logo.png",
        "mime": "image/png",
-       "name": "logo.png"
+       "name": "logo-dark-bg.png"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Darker/logo2.png",
        "mime": "image/png",
-       "name": "logo2.png"
+       "name": "logo-white.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Darker/favicon.png",
        "mime": "image/png",
-       "name": "favicon.png"
+       "name": "newlogo-svg.png"
       },
       "thm_color1": "#171717",
       "thm_color2": "#171717",
@@ -253,7 +253,7 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo.png",
        "mime": "image/png",
-       "name": "logo.png"
+       "name": "custom_logo.png"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
@@ -304,7 +304,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Light/const.less",
        "mime": "text/x-less",
-       "name": "const.less"
+       "name": "constants.less"
       }
      }
     }
@@ -315,30 +315,56 @@
    "label": "Resources",
    "icon": "fas/file-image",
    "field": "row_module_id",
-   "list": [{
-    "object": "Resource",
-    "userkey": "default * logo_simplicite_dark",
-    "item": {
-     "res_object": {
-      "item": {"dis_code": "default"},
-      "icon": "fas/window-restore",
-      "label": "Disposition",
-      "userkeylabel": "default",
-      "object": "Disposition"
-     },
-     "res_type": "IMG",
-     "res_lang": "ANY",
-     "res_code": "logo_simplicite_dark",
-     "res_cached": false,
-     "res_file": null,
-     "res_image": {
-      "path": "resources/Disposition/default/logo_simplicite_dark.svg",
-      "mime": "image/svg+xml",
-      "name": "logo_simplicite_dark.svg"
-     },
-     "row_module_id__mdl_name": "SimThemes"
+   "list": [
+    {
+     "object": "Resource",
+     "userkey": "default * CUSTOM_LOGO",
+     "item": {
+      "res_object": {
+       "item": {"dis_code": "default"},
+       "icon": "fas/window-restore",
+       "label": "Disposition",
+       "userkeylabel": "default",
+       "object": "Disposition"
+      },
+      "res_type": "IMG",
+      "res_lang": "ANY",
+      "res_code": "CUSTOM_LOGO",
+      "res_cached": false,
+      "res_file": null,
+      "res_image": {
+       "path": "resources/Disposition/default/CUSTOM_LOGO.png",
+       "mime": "image/png",
+       "name": "custom_logo.png"
+      },
+      "row_module_id__mdl_name": "SimThemes"
+     }
+    },
+    {
+     "object": "Resource",
+     "userkey": "default * logo_simplicite_dark",
+     "item": {
+      "res_object": {
+       "item": {"dis_code": "default"},
+       "icon": "fas/window-restore",
+       "label": "Disposition",
+       "userkeylabel": "default",
+       "object": "Disposition"
+      },
+      "res_type": "IMG",
+      "res_lang": "ANY",
+      "res_code": "logo_simplicite_dark",
+      "res_cached": false,
+      "res_file": null,
+      "res_image": {
+       "path": "resources/Disposition/default/logo_simplicite_dark.svg",
+       "mime": "image/svg+xml",
+       "name": "logo_simplicite_dark.svg"
+      },
+      "row_module_id__mdl_name": "SimThemes"
+     }
     }
-   }]
+   ]
   },
   {
    "object": "Dataset",
@@ -346,6 +372,20 @@
    "icon": "fas/database",
    "field": "row_module_id",
    "list": [
+    {
+     "object": "Dataset",
+     "userkey": "SimThemes custom-theme-with-icon",
+     "item": {
+      "row_module_id__mdl_name": "SimThemes",
+      "dt_name": "custom-theme-with-icon",
+      "dt_file": {
+       "path": "data/custom-theme-with-icon.xml",
+       "mime": "text/xml",
+       "name": "apply-to-custom-app.xml"
+      },
+      "dt_desc": null
+     }
+    },
     {
      "object": "Dataset",
      "userkey": "SimThemes update-demo-home-to-mondrian-dark",
