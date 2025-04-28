@@ -127,7 +127,7 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Dark/logo.png",
        "mime": "image/png",
-       "name": "logo-dark-bg.png"
+       "name": "logo.png"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
@@ -190,18 +190,18 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Darker/logo.png",
        "mime": "image/png",
-       "name": "logo-dark-bg.png"
+       "name": "logo.png"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Darker/logo2.png",
        "mime": "image/png",
-       "name": "logo-white.png"
+       "name": "logo2.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Darker/favicon.png",
        "mime": "image/png",
-       "name": "newlogo-svg.png"
+       "name": "favicon.png"
       },
       "thm_color1": "#171717",
       "thm_color2": "#171717",
@@ -253,9 +253,9 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo.png",
        "mime": "image/png",
-       "name": "custom_logo.png"
+       "name": "logo-dark-bg.png"
       },
-      "thm_logo_invert": false,
+      "thm_logo_invert": true,
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo2.png",
        "mime": "image/png",
@@ -304,7 +304,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Light/const.less",
        "mime": "text/x-less",
-       "name": "constants.less"
+       "name": "const.less"
       }
      }
     }
@@ -335,7 +335,7 @@
       "res_image": {
        "path": "resources/Disposition/default/CUSTOM_LOGO.png",
        "mime": "image/png",
-       "name": "custom_logo.png"
+       "name": "CUSTOM_LOGO.png"
       },
       "row_module_id__mdl_name": "SimThemes"
      }
@@ -381,7 +381,7 @@
       "dt_file": {
        "path": "data/custom-theme-with-icon.xml",
        "mime": "text/xml",
-       "name": "apply-to-custom-app.xml"
+       "name": "custom-theme-with-icon.xml"
       },
       "dt_desc": null
      }

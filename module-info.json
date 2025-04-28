@@ -1,9 +1,9 @@
 {
-    "date": "2025-04-24 10:34:54",
+    "date": "2025-04-28 09:24:50",
     "name": "SimThemes",
     "format": "json",
     "files": ["SimThemes.json"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-theming"}},
     "version": "0.3",
-    "platform": "6.2.7"
+    "platform": "6.2.8"
 }

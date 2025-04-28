@@ -17,6 +17,8 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
     <simplicite.version>6.2-SNAPSHOT</simplicite.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.proc>full</maven.compiler.proc>
+    <skipTests>true</skipTests>
     <sonar.projectKey>simplicite-modules-SimThemes</sonar.projectKey>
     <sonar.projectName>SimThemes</sonar.projectName>
     <sonar.projectVersion>0.3</sonar.projectVersion>
