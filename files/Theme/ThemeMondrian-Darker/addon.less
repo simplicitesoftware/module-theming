@@ -740,6 +740,10 @@ div.social.audit {
 	background-color: @mazette-black-02 !important;
 }
 
+.select2-dropdown {
+	background: @background-color;
+}
+
 .zoom-compact::before {
 	color: @text-main-color !important;
 }
@@ -1223,7 +1227,7 @@ ul.root-ul {
 
 // DARK THEMES SPECIFICITIES
 .form-control {
-	color: @text-dark-color;
+	color: @text-color;
 	
 	&:focus {
 		background-color: darken(@border-color, 8%);
@@ -1261,6 +1265,7 @@ ul.root-ul {
 .popover.show {
 	background: @background-color !important;
 	border-color: @border-color !important;
+	border-radius: 0px !important;
 	.popover-arrow {
 		// Shall find the element structure ...
 	}
@@ -1268,7 +1273,7 @@ ul.root-ul {
 		background-color: lighten(@background-color, 8%) !important;
 	}
 	.popover-body {
-		color: @text-dark-color !important;
+		color: darken(@text-color, 2.5%) !important;
 	}
 }
 
@@ -1451,12 +1456,10 @@ ul.root-ul {
 /* TEMPLATE EDITOR QUICK REWORK */
 .tmpl-edit {
 	.dock-zone {
-		position: relative; // oof
 		margin-top: 0.625rem;
 		height: 1rem !important;
 		border: none !important;
 		border-radius: 5px;
-		z-index: 11;
 	}
 	div > .dock-zone.on { // increase specificity to override ...
 		border-color: transparent !important;
@@ -1477,6 +1480,16 @@ ul.root-ul {
 		background-color: @mazette-black-07 !important;
 		* {
 			color: @mazette-black-01;
+		}
+	}
+	&.dragging {
+		.dock-zone {
+			background: transparent !important;
+		}
+		.field.draggable.hold {
+			background-color: @mazette-yellow-06 !important;
+			opacity: .5 !important;
+			box-shadow: none !important;
 		}
 	}
 }
@@ -1560,12 +1573,28 @@ ul.root-ul {
 	}
 }
 
-.tmpl-selector > ul > li {
-	background: @background-color !important;
-	border-bottom-color: @border-color !important;
-	&:hover {
+
+.tmpl-selector {
+	& > ul > li {
+		background: @background-color !important;
+		border-bottom-color: @border-color !important;
+		&:hover {
+			background: @layer1-color !important;
+		}
+	}
+	.tmpl-form {
+		background: none !important;
+	}
+	.newfield > div[data-field] {
 		background: @layer1-color !important;
 	}
+	.newfield > div:hover {
+		background: lighten(@layer1-color, 5%) !important;
+	}
+}
+
+.tmpl-form .colmodels > .row > div {
+	border-color: @border-color !important;
 }
 
 // Modeler quick fixes
@@ -1617,6 +1646,71 @@ ul.root-ul {
 			background: @layer1-color !important;
 			border: solid 0.065rem @border-color !important;
 			border-radius: 0px !important;
+		}
+	}
+}
+
+// More Overiding styles
+tr.highlight td {
+	background: @mazette-blue-04 !important;
+}
+
+.header .btn-shortcut.active, .header .btn-shortcut.active:focus {
+	background: @mazette-blue-06 !important;
+}
+
+.table {
+	box-shadow: none !important;
+}
+
+.worklist .select {
+	background: @layer1-color !important;
+	color: @text-color;
+}
+
+.icon-picker {
+	ul.nav.nav-tabs li.nav-item {
+		h3 {
+			background: none !important;
+			color: @text-color !important;
+		}
+		a {
+			background: @layer1-color!important;
+			border-bottom: none !important;
+			&:hover {
+				background: @layer2-color !important;
+			}
+		}
+	}
+}
+
+.tmpl-selector .newfield > div:hover {
+	background: @layer1-color !important;
+}
+
+.modeler_picker {
+	.items > .item > .mdl {
+		.title {
+			background: transparent !important;
+		}
+		.icons {
+			color: @text-color !important;
+			i:hover {
+				color: lighten(@text-color, 10%) !important;
+			}
+		}
+		img {
+			opacity: .8;
+		}
+		border-radius: 0px !important;
+		background: @layer1-color !important;
+		
+		&:hover {
+			background: lighten(@layer1-color, 5%) !important;
+			box-shadow: none !important;
+			img {
+				opacity: 1;
+			}
 		}
 	}
 }
