@@ -1086,7 +1086,7 @@ div.code-editor {
 					ul > li.object {
 						a.toggle {
 							// COLOR (redish) + HOVER (bg)
-							color: @mazette-red-08 !important;
+							color: @mazette-yellow-08 !important;
 							background: none; //? transparent
 						}
 						ul > li.file {
@@ -1402,12 +1402,27 @@ ul.root-ul {
 	}
 }
 
-.tmpl-selector > ul > li {
-	background: @background-color !important;
-	border-bottom-color: @border-color !important;
-	&:hover {
+.tmpl-selector {
+	& > ul > li {
+		background: @background-color !important;
+		border-bottom-color: @border-color !important;
+		&:hover {
+			background: @layer1-color !important;
+		}
+	}
+	.tmpl-form {
+		background: none !important;
+	}
+	.newfield > div[data-field] {
 		background: @layer1-color !important;
 	}
+	.newfield > div:hover {
+		background: darken(@layer1-color, 5%) !important;
+	}
+}
+
+.tmpl-form .colmodels > .row > div {
+	border-color: @border-color !important;
 }
 
 .ace_tooltip {
@@ -1468,6 +1483,34 @@ ul.root-ul {
 			background: @background-color !important;
 			border: solid 0.065rem @border-color !important;
 			border-radius: 0px !important;
+		}
+	}
+}
+
+
+.modeler_picker {
+	.items > .item > .mdl {
+		.title {
+			background: transparent !important;
+		}
+		.icons {
+			color: @text-color !important;
+			i:hover {
+				color: darken(@text-color, 10%) !important;
+			}
+		}
+		img {
+			opacity: .8;
+		}
+		border-radius: 0px !important;
+		background: @layer1-color !important;
+		
+		&:hover {
+			background: darken(@layer1-color, 5%) !important;
+			box-shadow: none !important;
+			img {
+				opacity: 1;
+			}
 		}
 	}
 }

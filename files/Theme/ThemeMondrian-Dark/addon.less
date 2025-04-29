@@ -1147,7 +1147,7 @@ div.code-editor {
 					ul > li.object {
 						a.toggle {
 							// COLOR (redish) + HOVER (bg)
-							color: @mazette-red-05 !important;
+							color: @mazette-yellow-05 !important;
 							opacity: 0.9;
 							background: none; //? transparent
 						}
@@ -1458,6 +1458,25 @@ ul.root-ul {
 	background: #232323 !important;
 	& > .card-footer {
 		background: #232323 !important;
+	}
+}
+
+.grid-edit {
+	* {
+		border-color: @border-color !important;
+	}
+	.grid-actions {
+		background: darken(@layer1-color, 10%) !important;
+		border: solid .065rem @border-color !important;
+		padding: .25rem;
+		.grid-new-widget {
+			background: @layer1-color !important;
+			color: @text-color !important;
+		}
+	}
+	.grid-area-bar {
+		background: lighten(@layer1-color, 5%) !important;
+		padding: .25rem !important;
 	}
 }
 

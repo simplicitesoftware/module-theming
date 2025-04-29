@@ -19,108 +19,6 @@
    "list": [
     {
      "object": "Theme",
-     "userkey": "ThemeAccessibility-Dark",
-     "item": {
-      "thm_name": "ThemeAccessibility-Dark",
-      "thm_logo_id": null,
-      "thm_logo_invert": null,
-      "thm_logo2_id": {
-       "path": "files/Theme/ThemeAccessibility-Dark/logo2.svg",
-       "mime": "image/svg+xml",
-       "name": "logo2.svg"
-      },
-      "thm_favicon_id": {
-       "path": "files/Theme/ThemeAccessibility-Dark/favicon.svg",
-       "mime": "image/svg+xml",
-       "name": "favicon.svg"
-      },
-      "thm_color1": null,
-      "thm_color2": null,
-      "thm_text2": null,
-      "thm_color3": null,
-      "thm_text3": null,
-      "thm_base": "dark",
-      "thm_css_doc": {
-       "path": "files/Theme/ThemeAccessibility-Dark/ThemeAccessibility-Dark_gen.css",
-       "mime": "text/css",
-       "name": "ThemeAccessibility-Dark_gen.css"
-      },
-      "thm_addon": null,
-      "thm_searchbox": null,
-      "thm_active": null,
-      "thm_font": null,
-      "thm_font_mono": null,
-      "thm_iconset": null,
-      "thm_code_editor_theme": null,
-      "thm_html_editor_theme": "LIGHT",
-      "thm_menu_dom_c": null,
-      "thm_menu_dom_t": null,
-      "thm_menu_dact_c": null,
-      "thm_menu_dact_t": null,
-      "thm_menu_sub_c": null,
-      "thm_menu_sub_t": null,
-      "thm_menu_sact_c": null,
-      "thm_menu_sact_t": null,
-      "thm_menu_sta_c": null,
-      "thm_menu_sta_t": null,
-      "thm_compact": false,
-      "row_module_id__mdl_name": "SimThemes",
-      "thm_const": null
-     }
-    },
-    {
-     "object": "Theme",
-     "userkey": "ThemeAccessibility-Light",
-     "item": {
-      "thm_name": "ThemeAccessibility-Light",
-      "thm_logo_id": null,
-      "thm_logo_invert": null,
-      "thm_logo2_id": {
-       "path": "files/Theme/ThemeAccessibility-Light/logo2.svg",
-       "mime": "image/svg+xml",
-       "name": "logo2.svg"
-      },
-      "thm_favicon_id": {
-       "path": "files/Theme/ThemeAccessibility-Light/favicon.svg",
-       "mime": "image/svg+xml",
-       "name": "favicon.svg"
-      },
-      "thm_color1": null,
-      "thm_color2": null,
-      "thm_text2": null,
-      "thm_color3": null,
-      "thm_text3": null,
-      "thm_base": "light",
-      "thm_css_doc": {
-       "path": "files/Theme/ThemeAccessibility-Light/ThemeAccessibility-Light_gen.css",
-       "mime": "text/css",
-       "name": "ThemeAccessibility-Light_gen.css"
-      },
-      "thm_addon": null,
-      "thm_searchbox": null,
-      "thm_active": null,
-      "thm_font": null,
-      "thm_font_mono": null,
-      "thm_iconset": null,
-      "thm_code_editor_theme": null,
-      "thm_html_editor_theme": "LIGHT",
-      "thm_menu_dom_c": null,
-      "thm_menu_dom_t": null,
-      "thm_menu_dact_c": null,
-      "thm_menu_dact_t": null,
-      "thm_menu_sub_c": null,
-      "thm_menu_sub_t": null,
-      "thm_menu_sact_c": null,
-      "thm_menu_sact_t": null,
-      "thm_menu_sta_c": null,
-      "thm_menu_sta_t": null,
-      "thm_compact": false,
-      "row_module_id__mdl_name": "SimThemes",
-      "thm_const": null
-     }
-    },
-    {
-     "object": "Theme",
      "userkey": "ThemeMondrian-Dark",
      "item": {
       "thm_name": "ThemeMondrian-Dark",
@@ -318,30 +216,6 @@
    "list": [
     {
      "object": "Resource",
-     "userkey": "default * CUSTOM_LOGO",
-     "item": {
-      "res_object": {
-       "item": {"dis_code": "default"},
-       "icon": "fas/window-restore",
-       "label": "Disposition",
-       "userkeylabel": "default",
-       "object": "Disposition"
-      },
-      "res_type": "IMG",
-      "res_lang": "ANY",
-      "res_code": "CUSTOM_LOGO",
-      "res_cached": false,
-      "res_file": null,
-      "res_image": {
-       "path": "resources/Disposition/default/CUSTOM_LOGO.png",
-       "mime": "image/png",
-       "name": "CUSTOM_LOGO.png"
-      },
-      "row_module_id__mdl_name": "SimThemes"
-     }
-    },
-    {
-     "object": "Resource",
      "userkey": "default * logo_simplicite_dark",
      "item": {
       "res_object": {
@@ -396,20 +270,6 @@
    "icon": "fas/database",
    "field": "row_module_id",
    "list": [
-    {
-     "object": "Dataset",
-     "userkey": "SimThemes custom-theme-with-icon",
-     "item": {
-      "row_module_id__mdl_name": "SimThemes",
-      "dt_name": "custom-theme-with-icon",
-      "dt_file": {
-       "path": "data/custom-theme-with-icon.xml",
-       "mime": "text/xml",
-       "name": "custom-theme-with-icon.xml"
-      },
-      "dt_desc": null
-     }
-    },
     {
      "object": "Dataset",
      "userkey": "SimThemes update-demo-home-to-mondrian-dark",
