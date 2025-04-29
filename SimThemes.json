@@ -257,7 +257,7 @@
       "res_image": {
        "path": "resources/Disposition/default/simplicite_logo.svg",
        "mime": "image/svg+xml",
-       "name": "newlogo.svg"
+       "name": "simplicite_logo.svg"
       },
       "row_module_id__mdl_name": "SimThemes"
      }

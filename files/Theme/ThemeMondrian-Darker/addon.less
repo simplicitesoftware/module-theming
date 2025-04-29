@@ -1235,6 +1235,24 @@ ul.root-ul {
 	}
 }
 
+.git-history {
+	td {
+		div {
+			background: @layer1-color !important;
+			&:not(.mono) {
+				color: @text-color !important;
+			}
+		}
+		a {
+			color: @mazette-blue-07 !important;
+			&:hover {
+				color: @mazette-blue-06 !important;
+				font-style: italic;
+			}
+		}
+	}
+}
+
 // OTHERS + Latest fix
 .objlinks .tab-content .card-body {
 	background: #232323 !important;
