@@ -253,7 +253,7 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo.png",
        "mime": "image/png",
-       "name": "logo-dark-bg.png"
+       "name": "logo.png"
       },
       "thm_logo_invert": true,
       "thm_logo2_id": {
@@ -360,6 +360,30 @@
        "path": "resources/Disposition/default/logo_simplicite_dark.svg",
        "mime": "image/svg+xml",
        "name": "logo_simplicite_dark.svg"
+      },
+      "row_module_id__mdl_name": "SimThemes"
+     }
+    },
+    {
+     "object": "Resource",
+     "userkey": "default * simplicite_logo",
+     "item": {
+      "res_object": {
+       "item": {"dis_code": "default"},
+       "icon": "fas/window-restore",
+       "label": "Disposition",
+       "userkeylabel": "default",
+       "object": "Disposition"
+      },
+      "res_type": "IMG",
+      "res_lang": "ANY",
+      "res_code": "simplicite_logo",
+      "res_cached": false,
+      "res_file": null,
+      "res_image": {
+       "path": "resources/Disposition/default/simplicite_logo.png",
+       "mime": "image/png",
+       "name": "simplicite_logo.png"
       },
       "row_module_id__mdl_name": "SimThemes"
      }
