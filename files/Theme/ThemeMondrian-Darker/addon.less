@@ -79,6 +79,15 @@
 @layer2-color:              @mazette-black-03;
 @border-color:              @mazette-black-03;
 
+/* Overriding native colors */
+@background-dark:  @background-color;
+@background-light: @layer1-color;
+@active-color:     @mazette-yellow-06;
+// @text-color:       @theme-white;
+// @shadow-color:     @theme-color1;
+// @border-color:     @theme-color5;
+// @border:           solid .0625rem @border-color;
+
 a {
     color: @mazette-blue-09;
 }
@@ -345,9 +354,13 @@ form {
     }
 }
 
-.sysinfos .alert-info {
-    background: @background-color !important;
-    border: none !important;
+.sysinfos .alert {
+	font-size: 1rem !important;
+	
+	&.alert-info {
+	    background: @background-color !important;
+	    border: none !important;
+	}
 }
 
 .container-table {
