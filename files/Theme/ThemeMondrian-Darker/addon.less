@@ -1335,9 +1335,14 @@ ul.root-ul {
 .calendar {
 	background: @mazette-black-02 !important;
 	
-	.fc-header-toolbar > .fc-toolbar-chunk > .fc-button-group .fc-button-active {
-		background: @mazette-black-03 !important;
-	}
+}
+
+.fc-button-group > button.fc-button-primary:not(:disabled).fc-button-active {
+	background-color: @layer2-color !important;
+}
+
+.fc-button-group > button.fc-button-primary:hover {
+	background-color: lighten(@layer2-color, 5%) !important;
 }
 
 .datetimepicker table {
