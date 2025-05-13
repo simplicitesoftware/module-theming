@@ -1671,10 +1671,21 @@ ul.root-ul {
 }
 
 // Modeler quick fixes
-.docked-model, .popup-model {
-	color: @text-dark-color !important;
-	.palette .icon:hover {
-		color: @mazette-black-05 !important;
+.model-desktop > .palette {
+	color: @mazette-black-01 !important;
+}
+
+.model-desktop > .palette.pal-add.pal-container input,
+.model-desktop > .palette.pal-add.pal-container select {
+	color: @mazette-black-01 !important;
+}
+
+.model-desktop > .palette.edit-note {
+	.btn-default, .btn-secondary {
+		color: @mazette-black-01 !important;
+		&:hover {
+			background: transparent;
+		}
 	}
 }
 
