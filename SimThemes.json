@@ -4,7 +4,7 @@
  "item": {
   "mdl_name": "SimThemes",
   "mdl_prefix": "sth",
-  "mdl_version": "0.3",
+  "mdl_version": "0.4",
   "mdl_type": "S",
   "mdl_icon": null,
   "mdl_url": "{\n    \"origin\": {\"uri\": \"https://github.com/simplicitesoftware/module-theming\"},\n    \"type\": \"git\"\n}",
@@ -216,7 +216,7 @@
    "list": [
     {
      "object": "Resource",
-     "userkey": "default * logo_simplicite_dark",
+     "userkey": "Disposition(default)~ANY~logo_simplicite_dark",
      "item": {
       "res_object": {
        "item": {"dis_code": "default"},
@@ -240,7 +240,7 @@
     },
     {
      "object": "Resource",
-     "userkey": "default * simplicite_logo",
+     "userkey": "Disposition(default)~ANY~simplicite_logo",
      "item": {
       "res_object": {
        "item": {"dis_code": "default"},
@@ -272,7 +272,7 @@
    "list": [
     {
      "object": "Dataset",
-     "userkey": "SimThemes update-demo-home-to-mondrian-dark",
+     "userkey": "SimThemes~update-demo-home-to-mondrian-dark",
      "item": {
       "row_module_id__mdl_name": "SimThemes",
       "dt_name": "update-demo-home-to-mondrian-dark",
@@ -286,7 +286,7 @@
     },
     {
      "object": "Dataset",
-     "userkey": "SimThemes update-demo-home-to-mondrian-light",
+     "userkey": "SimThemes~update-demo-home-to-mondrian-light",
      "item": {
       "row_module_id__mdl_name": "SimThemes",
       "dt_name": "update-demo-home-to-mondrian-light",
@@ -300,7 +300,7 @@
     },
     {
      "object": "Dataset",
-     "userkey": "SimThemes update-designer-home-to-mondrian-dark",
+     "userkey": "SimThemes~update-designer-home-to-mondrian-dark",
      "item": {
       "row_module_id__mdl_name": "SimThemes",
       "dt_name": "update-designer-home-to-mondrian-dark",
@@ -314,7 +314,7 @@
     },
     {
      "object": "Dataset",
-     "userkey": "SimThemes update-designer-home-to-mondrian-light",
+     "userkey": "SimThemes~update-designer-home-to-mondrian-light",
      "item": {
       "row_module_id__mdl_name": "SimThemes",
       "dt_name": "update-designer-home-to-mondrian-light",
