@@ -158,19 +158,35 @@ ul.sub-menu a.menu-sel::before {
 }
 
 .header .index { /* The one in the header only */
-    div.input-group.searchbox {
-        background-color: transparent !important;
+    // div.input-group.searchbox {
+    //     background-color: transparent !important;
 
-        input.form-control {
-            background-color: lighten(@background-color, 16%) !important;
-            color: @text-main-color !important;
-        }
-        button.btn {
-            background-color: lighten(@background-color, 32%) !important;
-            &:hover {
+    //     input.form-control {
+    //         background-color: lighten(@background-color, 16%) !important;
+    //         color: @text-main-color !important;
+    //     }
+    //     button.btn {
+    //         background-color: lighten(@background-color, 32%) !important;
+    //         &:hover {
+    //             color: @mazette-black-06 !important;
+    //         }
+    //     }
+    // }
+    border: solid 0.065rem @border-color;
+    
+    .searchbox {
+    	input {
+    		border: none !important;
+    		background-color: @mazette-black-02 !important;
+    	}
+    	
+    	button {
+    		background-color: @mazette-black-02 !important;
+    		border-left: solid 0.065rem @border-color;
+    		&:hover {
                 color: @mazette-black-06 !important;
             }
-        }
+    	}
     }
 }
 
@@ -768,6 +784,10 @@ div.social.audit {
 	background: @background-color;
 }
 
+.select2-selection__clear {
+	margin-left: .5rem;
+}
+
 .zoom-compact::before {
 	color: @text-main-color !important;
 }
@@ -935,6 +955,10 @@ button > .badge {
 			background-color: darken(@background-color, 4%) !important;
 		}
 	}
+	
+	.btn {
+		color: lighten(@border-color, 10%) !important;
+	}
 }
 
 .footer-bar > footer.footer > ul.list-inline > li.list-inline-item > a {
@@ -959,6 +983,16 @@ button > .badge {
 .modal-body {
 	h3 {
 		background: @background-color !important;
+	}
+}
+
+.modal-content > .modal-header > button.btn-close {
+	color: white !important;
+	background-color: @border-color !important;
+	padding: .33rem !important;
+	
+	&:hover {
+		background-color: darken(@border-color, 25%) !important;
 	}
 }
 
@@ -1263,9 +1297,13 @@ ul.root-ul {
 }
 
 .git-history {
+	tr {
+		border: solid 0.065rem @border-color;
+	}
 	td {
+		border: solid 0.065rem @border-color;
 		div {
-			background: @layer1-color !important;
+			background: @background-color !important;
 			&:not(.mono) {
 				color: @text-color !important;
 			}
@@ -1277,10 +1315,10 @@ ul.root-ul {
 				font-style: italic;
 			}
 		}
-		
 		&:hover {
+			background-color: @mazette-black-02 !important;
 			div {
-				background-color: lighten(@layer1-color, 5%) !important;
+				background-color: @mazette-black-02 !important;
 			}
 		}
 	}
@@ -1481,12 +1519,24 @@ ul.root-ul {
 
 .frame-wrapper {
 	box-shadow: none !important;
+	
+	iframe {
+		background-color: #f3f3f3 !important;
+	}
 }
 
 .ace_tooltip {
 	background: @bg-website-color !important;
 	max-height: 425px !important;
 	color: @text-color !important;
+}
+
+.ace_gutter-cell {
+	color: lightgray;
+}
+
+.ace_active-lin {
+	background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 // Filter specificities
@@ -1801,4 +1851,8 @@ tr.highlight td {
 
 .db-access {
 	background: transparent !important;
+}
+
+div.hljs {
+	background-color: white !important;
 }
