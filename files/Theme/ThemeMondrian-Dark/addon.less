@@ -326,7 +326,7 @@ form {
 	.panel-list {
 		form {
 			.alert {
-				margin-top: 1rem !important;
+				margin: .75rem .75rem !important;
 			}
 		}
 	}
@@ -462,13 +462,13 @@ tr {
     tbody {
 	    tr {
 	        border-top: @background-color !important;
-	        border-bottom: @background-color !important;
+	        border-bottom: @border-color !important; // @background-color
 	        border-left: solid 0.065rem @border-color;
 	        
 	        td {
 	            border-right: solid 0.065rem lighten(@border-color, 8%) !important;
 	            padding-left: 0.5rem !important;
-	            border-bottom: solid 0.065rem darken(@border-color, 12%) !important;
+	            border-bottom: solid 0.065rem @border-color !important;
 	        }
 	
 	        .btn {
@@ -754,7 +754,7 @@ div.social.audit {
 		color: @text-main-color !important;
 	}
 	span.select2 > span.selection > span > span > div.enum-item {
-		color: @text-main-color !important;
+		color: @text-main-color;
 	}
 }
 
@@ -992,7 +992,7 @@ button > .badge {
 	padding: .33rem !important;
 	
 	&:hover {
-		background-color: darken(@border-color, 25%) !important;
+		background-color: lighten(@border-color, 25%) !important;
 	}
 }
 
@@ -1529,6 +1529,10 @@ ul.root-ul {
 	background: @bg-website-color !important;
 	max-height: 425px !important;
 	color: @text-color !important;
+}
+
+.ace_layer.ace_print-margin-layer > .ace_print-margin {
+	visibility: hidden !important;
 }
 
 .ace_gutter-cell {
