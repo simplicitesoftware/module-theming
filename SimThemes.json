@@ -31,12 +31,12 @@
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Dark/logo2.png",
        "mime": "image/png",
-       "name": "logo2.png"
+       "name": "simplicite_logo_dark_squared_124.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Dark/favicon.png",
        "mime": "image/png",
-       "name": "favicon.png"
+       "name": "simplicite_logo_light_circled_75.png"
       },
       "thm_color1": "#2A2A2A",
       "thm_color2": "#2A2A2A",
@@ -94,12 +94,12 @@
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Darker/logo2.png",
        "mime": "image/png",
-       "name": "logo2.png"
+       "name": "simplicite_logo_dark_squared_124.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Darker/favicon.png",
        "mime": "image/png",
-       "name": "favicon.png"
+       "name": "simplicite_logo_light_circled_75.png"
       },
       "thm_color1": "#171717",
       "thm_color2": "#171717",
@@ -157,12 +157,12 @@
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo2.png",
        "mime": "image/png",
-       "name": "logo2.png"
+       "name": "simplicite_logo_light_squared_124.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Light/favicon.png",
        "mime": "image/png",
-       "name": "favicon.png"
+       "name": "simplicite_logo_light_circled_75-1.png"
       },
       "thm_color1": "#F3F1EE",
       "thm_color2": "#F3F1EE",
