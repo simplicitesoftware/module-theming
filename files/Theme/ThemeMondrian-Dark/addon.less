@@ -1486,6 +1486,10 @@ ul.root-ul {
 			background: @mazette-red-08 !important;
 			color: @mazette-red-03 !important;
 		}
+		
+		.lang-picker > div:hover {
+			background: @layer2-color;
+		}
 	} 
 }
 
@@ -1536,11 +1540,59 @@ ul.root-ul {
 }
 
 .ace_gutter-cell {
-	color: lightgray;
+	color: white !important;
 }
 
 .ace_active-lin {
 	background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+// Ace git diff whole UI
+.git-diff > .tree-diff {
+	background-color: @layer2-color;
+	
+	.diff-body {
+		.link .diff-upd > .item {
+			background-color: @mazette-black-05;
+			.data {
+				background: @mazette-yellow-05;
+			}
+		}
+	}
+	
+	.cell {
+		background-color: @mazette-black-03;
+		
+		button.btn {
+			&:not(.active) {
+				color: white !important;
+			}
+			border-color: white !important;
+		}
+	}
+	
+}
+.ace-tm {
+	background: @mazette-black-02;
+	color: @mazette-black-07;
+	.ace_gutter {
+		background: @mazette-black-03;
+	}
+	.ace_gutter-active-line {
+		background: @mazette-black-04;
+	}
+}
+.ace-diff__gutter, .ace-diff__gutter > svg {
+	background: @mazette-black-03;
+}
+.ace-diff__connecter {
+	fill: @mazette-blue-05;
+	stroke: @mazette-blue-09;
+}
+.ace-diff__diffLine {
+	background: @mazette-blue-05;
+	border-top-color: @mazette-blue-09;
+	border-bottom-color: @mazette-blue-09;
 }
 
 // Filter specificities
