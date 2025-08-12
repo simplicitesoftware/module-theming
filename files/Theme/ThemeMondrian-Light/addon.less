@@ -78,6 +78,12 @@
 @layer2-color:              @mazette-black-03;
 @border-color:              @mazette-black-03;
 
+/* Overriding native colors */
+@background-dark:  @background-color;
+@background-light: @layer1-color;
+@active-color:     @mazette-yellow-06;
+
+
 a {
     color: @mazette-blue-09;
 }
@@ -1003,7 +1009,7 @@ div.obj-summary {
 	
 	.obj-body {
 		.title {
-			background: @background-fade-color !important;
+			background: @background-fade-color;
 			border-radius: 0px !important;
 		}
 		.infos {
