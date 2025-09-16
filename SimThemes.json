@@ -25,7 +25,7 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Dark/logo.svg",
        "mime": "image/svg+xml",
-       "name": "simplicite_logo_dark.svg"
+       "name": "logo.svg"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
@@ -88,7 +88,7 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Darker/logo.svg",
        "mime": "image/svg+xml",
-       "name": "simplicite_logo_dark.svg"
+       "name": "logo.svg"
       },
       "thm_logo_invert": false,
       "thm_logo2_id": {
@@ -151,7 +151,7 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo.svg",
        "mime": "image/svg+xml",
-       "name": "simplicite_logo_light.svg"
+       "name": "logo.svg"
       },
       "thm_logo_invert": true,
       "thm_logo2_id": {
@@ -214,18 +214,18 @@
       "thm_logo_id": {
        "path": "files/Theme/ThemeMondrian-Template-Dark/logo.svg",
        "mime": "image/svg+xml",
-       "name": "simplicite_logo_dark.svg"
+       "name": "logo.svg"
       },
       "thm_logo_invert": null,
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Template-Dark/logo2.png",
        "mime": "image/png",
-       "name": "simplicite_scope_dark.png"
+       "name": "logo2.png"
       },
       "thm_favicon_id": {
        "path": "files/Theme/ThemeMondrian-Template-Dark/favicon.png",
        "mime": "image/png",
-       "name": "simplicite_favicon_dark.png"
+       "name": "favicon.png"
       },
       "thm_color1": "#2A2A2A",
       "thm_color2": "#2A2A2A",
@@ -265,7 +265,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Template-Dark/const.less",
        "mime": "text/x-less",
-       "name": "constants.less"
+       "name": "const.less"
       }
      }
     }
