@@ -225,16 +225,16 @@ body.compact {
     border-radius: 0px !important;
     
     li {
-        background: @background-color !important;
+        // background: @background-dropdown-color !important;
         padding: 0 .25rem;
     }
     li > a {
         color: @text-main-color;
         padding: 0.5rem !important;
         &:hover {
+        	// background: @layer1-color !important;
             color: @text-main-color !important;
-            background-color: @layer1-color !important;
-            border-radius: 0.25rem;
+            border-radius: 0px !important;
         }
     }
     
@@ -528,7 +528,16 @@ form {
 }
  
 .split-separator {
-	background: @layer1-color;
+	margin: 0 .5rem;
+	border: solid 1px @border-color;
+	border-radius: 0rem;
+	background-color: @layer1-color;
+	transition: background-color 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+	
+	&:hover {
+		background-color: @layer2-color;
+		border-radius: 1rem;
+	}
 }
 
 .monitor.docked {
@@ -1010,7 +1019,7 @@ div.obj-summary {
 	
 	.obj-body {
 		.title {
-			background: @background-fade-color;
+			background: #f9f8f7;
 			border-radius: 0px !important;
 		}
 		.infos {

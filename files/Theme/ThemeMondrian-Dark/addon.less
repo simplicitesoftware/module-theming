@@ -237,16 +237,20 @@ body.compact {
     border-radius: 0px !important;
     
     li {
-        background: @background-color !important;
+        // background: @background-dropdown-color !important;
         padding: 0 .25rem;
+        
+        &:hover {
+        	background-color: transparent !important;
+        }
     }
     li > a {
-        color: @text-main-color;
+        color: @text-main-color !important;
         padding: 0.5rem !important;
         &:hover {
+        	// background: @layer1-color !important;
             color: @text-main-color !important;
-            background-color: @layer1-color !important;
-            border-radius: 0.25rem;
+            border-radius: 0px !important;
         }
     }
     
@@ -562,7 +566,16 @@ tr {
 }
 
 .split-separator {
-	background: @layer1-color;
+	margin: 0 .5rem;
+	border: solid 1px @border-color;
+	border-radius: 0rem;
+	background-color: @layer1-color;
+	transition: background-color 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+	
+	&:hover {
+		background-color: @layer2-color;
+		border-radius: 1rem;
+	}
 }
 
 .monitor.docked {
@@ -1053,7 +1066,7 @@ div.field-container > input.form-control {
 		}
 		
 		&:hover {
-			background: #232323 !important;
+			background: #layer2-color !important;
 		}
 	}
 	.tab-content {
@@ -1072,7 +1085,7 @@ div.field-container > input.form-control {
 		}
 		
 		&:hover {
-			background: #232323 !important;
+			background: #layer2-color !important;
 			border-color: @border-color !important;
 			border-bottom-color: transparent !important;
 			border-left-color: lighten(@border-color, 16%) !important;

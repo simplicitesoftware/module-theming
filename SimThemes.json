@@ -153,7 +153,7 @@
        "mime": "image/svg+xml",
        "name": "logo.svg"
       },
-      "thm_logo_invert": true,
+      "thm_logo_invert": false,
       "thm_logo2_id": {
        "path": "files/Theme/ThemeMondrian-Light/logo2.png",
        "mime": "image/png",
