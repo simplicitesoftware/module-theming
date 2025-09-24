@@ -76,7 +76,7 @@
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Dark/const.less",
        "mime": "text/x-less",
-       "name": "const.less"
+       "name": "constants.less"
       }
      }
     },

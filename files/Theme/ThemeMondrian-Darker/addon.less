@@ -391,12 +391,6 @@ tr {
 	background: @background-color;
 }
 
-.table > thead > tr.head {
-	td, th {
-		padding-bottom: 0rem !important;
-	}
-}
-
 .pillbox-completion > ul > li {
 	background: @layer1-color !important;
 	color: @text-color !important;
@@ -412,6 +406,9 @@ tr {
     
     thead {
     	border-left: solid 0.25rem @mondrian-darker-yellow-06;
+    	* {
+    		color: @mondrian-dark-yellow-10 !important;
+    	}
     	
         tr.search {
         	th.col-action {
@@ -1927,3 +1924,23 @@ th.ctcol {
 div.hljs {
 	background-color: white !important;
 }
+
+// TINY MCE OVERRIDE
+.tox-tinymce {
+	border: 1px solid @border-color !important;
+	border-radius: 0px !important;
+	
+	.tox-editor-container .tox-editor-header {
+		background: @layer1-color !important;
+		border-bottom: 1px solid @border-color !important;
+		
+		.tox-menubar, .tox-toolbar-overlord, .tox-toolbar__primary {
+			background-color: @layer1-color !important;
+			background: none !important;
+		}
+	}
+}
+
+
+
+
