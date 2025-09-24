@@ -1759,6 +1759,14 @@ ul.root-ul {
 	}
 }
 
+.btn-secondary.btn-treeview {
+	background: transparent !important;
+	
+	&:hover:not(.disabled):not([disabled]) {
+		background: #171717 !important;
+	}
+}
+
 // Template editor works
 .tmpl-new > .new-menu.on {
 	background: @background-color !important;
@@ -1950,5 +1958,15 @@ div.hljs {
 			background-color: @layer1-color !important;
 			background: none !important;
 		}
+	}
+}
+
+// NOTEPAD SHIT
+.notepad {
+	background: transparent !important;
+	border: none !important;
+	
+	textarea {
+		background: @layer1-color;
 	}
 }
