@@ -137,6 +137,8 @@ ul.sub-menu a.menu-sel::before {
 
 .header {
     .btn-header, .btn-shortcut, .btn-group { /* Scope User, embedded shortcuts, shortcuts dropdown */
+    	border-radius: 0px;
+    	
         &:hover {
             background: @layer1-color;
         }
@@ -421,8 +423,13 @@ tr {
     
     thead {
     	border-left: solid 0.25rem @mondrian-dark-yellow-06;
-    	* {
+    	
+    	th, span {
     		color: @mondrian-dark-yellow-10 !important;
+    	}
+    	
+    	button span {
+    		color: @text-main-color;
     	}
     	
         tr.search {
