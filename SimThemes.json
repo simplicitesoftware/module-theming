@@ -14,7 +14,7 @@
   {
    "object": "Theme",
    "label": "Themes",
-   "icon": "bi/palette-fill",
+   "icon": "img/system/theme",
    "field": "row_module_id",
    "list": [
     {
@@ -274,7 +274,7 @@
   {
    "object": "Resource",
    "label": "Resources",
-   "icon": "fas/file-image",
+   "icon": "img/system/resource",
    "field": "row_module_id",
    "list": [
     {
@@ -282,11 +282,11 @@
      "userkey": "Disposition(default)~ANY~logo_simplicite_dark",
      "item": {
       "res_object": {
-       "item": {"dis_code": "default"},
-       "icon": "fas/window-restore",
+       "object": "Disposition",
        "label": "Disposition",
        "userkeylabel": "default",
-       "object": "Disposition"
+       "icon": "img/system/disposition",
+       "item": {"dis_code": "default"}
       },
       "res_type": "IMG",
       "res_lang": "ANY",
@@ -306,11 +306,11 @@
      "userkey": "Disposition(default)~ANY~simplicite_logo",
      "item": {
       "res_object": {
-       "item": {"dis_code": "default"},
-       "icon": "fas/window-restore",
+       "object": "Disposition",
        "label": "Disposition",
        "userkeylabel": "default",
-       "object": "Disposition"
+       "icon": "img/system/disposition",
+       "item": {"dis_code": "default"}
       },
       "res_type": "IMG",
       "res_lang": "ANY",
@@ -330,7 +330,7 @@
   {
    "object": "Dataset",
    "label": "Datasets",
-   "icon": "fas/database",
+   "icon": "img/color/file",
    "field": "row_module_id",
    "list": [
     {

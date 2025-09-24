@@ -226,14 +226,24 @@ body.compact {
     border-radius: 0px !important;
     
     li {
-        // background: @background-dropdown-color !important;
         padding: 0 .25rem;
+        
+        &:hover {
+        	background-color: @layer1-color;
+        }
     }
+    
     li > a {
+    	background-color: transparent;
         color: @text-main-color !important;
         padding: 0.5rem !important;
+        
         &:hover {
-        	// background: @layer1-color !important;
+        	
+        	&.nav-link {
+        		background-color: transparent !important;
+        	}
+        	
             color: @text-main-color !important;
             border-radius: 0px !important;
         }
@@ -244,6 +254,7 @@ body.compact {
     		color: @text-main-color !important;
     	}
     }
+    
     .languages {
     	div > select.form-select {
     		color: @text-main-color;
@@ -1831,6 +1842,12 @@ ul.root-ul {
 }
 
 // More Overiding styles
+.logged-user {
+	.user-logout, .languages {
+		background: transparent !important;
+	}
+}
+
 tr.highlight td {
 	background: @mondrian-darker-blue-04 !important;
 }

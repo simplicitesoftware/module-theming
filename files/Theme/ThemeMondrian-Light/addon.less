@@ -225,14 +225,24 @@ body.compact {
     border-radius: 0px !important;
     
     li {
-        // background: @background-dropdown-color !important;
         padding: 0 .25rem;
-    }
-    li > a {
-        color: @text-main-color;
-        padding: 0.5rem !important;
+        
         &:hover {
-        	// background: @layer1-color !important;
+        	background-color: @layer1-color;
+        }
+    }
+    
+    li > a {
+    	background-color: transparent;
+        color: @text-main-color !important;
+        padding: 0.5rem !important;
+        
+        &:hover {
+        	
+        	&.nav-link {
+        		background-color: transparent !important;
+        	}
+        	
             color: @text-main-color !important;
             border-radius: 0px !important;
         }
