@@ -219,6 +219,36 @@ body.compact {
 	}
 }
 
+/* Module */
+input#field_row_module_id__mdl_name {
+	background: fade(@mondrian-light-purple-06, 12.5%);
+}
+
+/* Code fields */
+input#field_adp_class,
+input#file_field_adp_script_id,
+input#doc_field_adp_script_id,
+input#field_dis_class,
+input#file_field_dis_script_id,
+input#doc_field_dis_script_id,
+input#field_mtp_class,
+input#file_field_mtp_script_id,
+input#doc_field_mtp_script_id,
+input#field_obe_class,
+input#file_field_obe_script_id,
+input#doc_field_obe_script_id,
+input#field_obj_class,
+input#file_field_obj_script_id,
+input#doc_field_obo_script_id,
+input#field_obo_class,
+input#file_field_obo_script_id,
+input#doc_field_obo_script_id,
+input#field_pcs_class,
+input#file_field_pcs_script_id,
+input#doc_field_pcs_script_id {
+	background: fade(@mondrian-light-green-06, 12.5%) !important;
+}
+
 .dropdown-menu {
     box-shadow: none;
     border: solid 0.125rem @border-color;
@@ -1371,6 +1401,20 @@ ul.root-ul {
 	.field > .tmpl-bar {
 		border-radius: 0 !important;
 		background-color: @mondrian-light-black-07 !important;
+	}
+	
+	.drag {
+		background: rgba(0,0,0, 0.5) !important;
+		opacity: 0.5 !important;
+		box-shadow: none !important;
+		
+		&::after {
+			background: black !important;
+		}
+	}
+	
+	.dock-zone.drop-target {
+		background: @mondrian-light-yellow-10 !important;
 	}
 }
 

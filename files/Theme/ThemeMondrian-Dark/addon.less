@@ -237,6 +237,40 @@ body.compact {
 	}
 }
 
+/*input {
+    background-color: fade(@mondrian-dark-blue-06, 50%);
+}*/
+
+/* Module */
+input#field_row_module_id__mdl_name {
+	background: fade(@mondrian-dark-purple-06, 12.5%);
+}
+
+/* Code fields */
+input#field_adp_class,
+input#file_field_adp_script_id,
+input#doc_field_adp_script_id,
+input#field_dis_class,
+input#file_field_dis_script_id,
+input#doc_field_dis_script_id,
+input#field_mtp_class,
+input#file_field_mtp_script_id,
+input#doc_field_mtp_script_id,
+input#field_obe_class,
+input#file_field_obe_script_id,
+input#doc_field_obe_script_id,
+input#field_obj_class,
+input#file_field_obj_script_id,
+input#doc_field_obo_script_id,
+input#field_obo_class,
+input#file_field_obo_script_id,
+input#doc_field_obo_script_id,
+input#field_pcs_class,
+input#file_field_pcs_script_id,
+input#doc_field_pcs_script_id {
+	background: fade(@mondrian-dark-green-06, 12.5%) !important;
+}
+
 .dropdown-menu {
     box-shadow: none;
     border: solid 0.125rem @border-color;
@@ -1016,6 +1050,7 @@ button > .badge {
 	background-color: @mondrian-dark-black-04 !important;
 	padding: .33rem !important;
 	border-radius: 0rem;
+	transition: all 0.25s ease-in-out;
 	
 	&:hover {
 		border-radius: 1rem;
@@ -1667,6 +1702,11 @@ ul.root-ul {
 		height: 1rem !important;
 		border: none !important;
 		border-radius: 5px;
+		
+		&.drop-target {
+			border-color: transparent !important;
+			background-color: @mondrian-dark-yellow-06 !important;
+		}
 	}
 	div > .dock-zone.on { // increase specificity to override ...
 		border-color: transparent !important;
@@ -1693,11 +1733,20 @@ ul.root-ul {
 		.dock-zone {
 			background: transparent !important;
 		}
-		.field.draggable.hold {
-			background-color: @mondrian-dark-yellow-06 !important;
-			opacity: .5 !important;
-			box-shadow: none !important;
+	}
+	
+	.drag {
+		background: rgba(0,0,0, 0.5) !important;
+		opacity: 0.5 !important;
+		box-shadow: none !important;
+		
+		&::after {
+			background: black !important;
 		}
+	}
+	
+	.dock-zone.drop-target {
+		background: @mondrian-dark-yellow-10 !important;
 	}
 }
 
@@ -1972,18 +2021,18 @@ div.hljs {
 
 // PREFERENCES STYLES
 .preferences {
-	select#listvis, select#listhid {
+	select {
 		background-color: @background-color;
 		
 		option {
 			color: @text-main-color;
 			
 			&.area {
-				color: @mondriant-dark-blue-09;
+				color: @mondrian-dark-blue-09;
 			}
 			
 			&.userkey {
-				color: @mondriant-dark-purple-09;
+				color: @mondrian-dark-purple-09;
 			}
 		}
 	}
