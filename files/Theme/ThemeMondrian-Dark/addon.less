@@ -1013,11 +1013,13 @@ button > .badge {
 
 .modal-content > .modal-header > button.btn-close {
 	color: white !important;
-	background-color: @border-color !important;
+	background-color: @mondrian-dark-black-04 !important;
 	padding: .33rem !important;
+	border-radius: 0rem;
 	
 	&:hover {
-		background-color: lighten(@border-color, 25%) !important;
+		border-radius: 1rem;
+		background-color: @mondrian-dark-black-05 !important;
 	}
 }
 
@@ -1968,7 +1970,26 @@ div.hljs {
 	}
 }
 
-// NOTEPAD SHIT
+// PREFERENCES STYLES
+.preferences {
+	select#listvis, select#listhid {
+		background-color: @background-color;
+		
+		option {
+			color: @text-main-color;
+			
+			&.area {
+				color: @mondriant-dark-blue-09;
+			}
+			
+			&.userkey {
+				color: @mondriant-dark-purple-09;
+			}
+		}
+	}
+}
+
+// NOTEPAD STYLES
 .notepad {
 	background: transparent !important;
 	border: none !important;
