@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>SimThemes</mdl_name>
-		<mdl_version>0.5</mdl_version>
+		<mdl_version>0.6</mdl_version>
 		<mdl_prefix>sth</mdl_prefix>
 		<mdl_url><![CDATA[{
     "origin": {"uri": "https://github.com/simplicitesoftware/module-theming.git"},
