@@ -1,4 +1,8 @@
 /* Light Color Palette (cf documentation) */
+
+@mondrian-light-white: #FFFFFF;
+@mondrian-light-black: #000000;
+
 @mondrian-light-black-01:  #F1F1F1;
 @mondrian-light-black-02:  #E2E2E2;
 @mondrian-light-black-03:  #C6C6C6;
@@ -64,6 +68,9 @@
 @mondrian-light-purple-08: #8E5E8E;
 @mondrian-light-purple-09: #5E3F5F;
 @mondrian-light-purple-10: #2F1F2F;
+
+@mondrian-light-white: #FFFFFF;
+@mondrian-light-black: #000000;
 
 /* UI variables */
 @bg-website-color:          #F3F1EE;
@@ -426,7 +433,7 @@ form {
     	}
     	
     	button span {
-    		color: white;
+    		color: @mondrian-light-white;
     	}
     	
         tr.search {
@@ -1409,7 +1416,7 @@ ul.root-ul {
 		box-shadow: none !important;
 		
 		&::after {
-			background: black !important;
+			background: @mondrian-light-black !important;
 		}
 	}
 	

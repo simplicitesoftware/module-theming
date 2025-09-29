@@ -1,4 +1,8 @@
 /* Dark Color Palette (cf documentation) */
+
+@mondrian-dark-white: #FFFFFF;
+@mondrian-dark-black: #000000;
+
 @mondrian-dark-black-00:  #171717;
 @mondrian-dark-black-01:  #2A2A2A; // #171717 lightened (~7.5%) - 10% was #2E2E2E
 @mondrian-dark-black-02:  #424242; // #2E2E2E lightened (~12%) - 10% was #383838
@@ -191,6 +195,11 @@ ul.sub-menu a.menu-sel::before {
             }
     	}
     }
+}
+
+#userfilters .filter {
+	background: @mondrian-dark-black-02;
+	color: @text-color;
 }
 
 .breadcrumb {
@@ -1046,7 +1055,7 @@ button > .badge {
 }
 
 .modal-content > .modal-header > button.btn-close {
-	color: white !important;
+	color: @mondrian-dark-white !important;
 	background-color: @mondrian-dark-black-04 !important;
 	padding: .33rem !important;
 	border-radius: 0rem;
@@ -1602,7 +1611,7 @@ ul.root-ul {
 }
 
 .ace_gutter-cell {
-	color: white !important;
+	color: @mondrian-dark-white !important;
 }
 
 .ace_active-lin {
@@ -1627,9 +1636,9 @@ ul.root-ul {
 		
 		button.btn {
 			&:not(.active) {
-				color: white !important;
+				color: @mondrian-dark-white !important;
 			}
-			border-color: white !important;
+			border-color: @mondrian-dark-white !important;
 		}
 	}
 	
@@ -1741,7 +1750,7 @@ ul.root-ul {
 		box-shadow: none !important;
 		
 		&::after {
-			background: black !important;
+			background: @mondrian-dark-black !important;
 		}
 	}
 	
@@ -2000,7 +2009,7 @@ tr.highlight td {
 }
 
 div.hljs {
-	background-color: white !important;
+	background-color: @mondrian-dark-white !important;
 }
 
 // TINY MCE OVERRIDE

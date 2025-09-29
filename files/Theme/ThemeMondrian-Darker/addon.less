@@ -1,4 +1,8 @@
 /* Dark(er) Color Palette (cf documentation) */
+
+@mondrian-darker-white: #FFFFFF;
+@mondrian-darker-black: #000000;
+
 @mondrian-darker-black-01:  #171717;
 @mondrian-darker-black-02:  #2E2E2E;
 @mondrian-darker-black-03:  #5C5C5C;
@@ -64,7 +68,6 @@
 @mondrian-darker-purple-08: #FFD4FB;
 @mondrian-darker-purple-09: #FFE3FC;
 @mondrian-darker-purple-10: #FFF1FE;
-
 
 /* UI variables */
 @bg-website-color:          @mondrian-darker-black-01;
@@ -175,6 +178,11 @@ ul.sub-menu a.menu-sel::before {
             }
     	}
     }
+}
+
+#userfilters .filter {
+	background: @mondrian-darker-black-02;
+	color: @text-color;
 }
 
 .breadcrumb {
@@ -1021,7 +1029,7 @@ button > .badge {
 }
 
 .modal-content > .modal-header > button.btn-close {
-	color: white !important;
+	color: @mondrian-darker-white !important;
 	background-color: @mondrian-darker-black-04 !important;
 	padding: .33rem !important;
 	border-radius: 0rem;
@@ -1577,7 +1585,7 @@ ul.root-ul {
 }
 
 .ace_gutter-cell {
-	color: white;
+	color: @mondrian-darker-white;
 }
 
 .ace_active-lin {
@@ -1602,9 +1610,9 @@ ul.root-ul {
 		
 		button.btn {
 			&:not(.active) {
-				color: white !important;
+				color: @mondrian-darker-white !important;
 			}
-			border-color: white !important;
+			border-color: @mondrian-darker-white !important;
 		}
 	}
 	
@@ -1716,7 +1724,7 @@ ul.root-ul {
 		box-shadow: none !important;
 		
 		&::after {
-			background: black !important;
+			background: @mondrian-darker-black !important;
 		}
 	}
 	
@@ -1976,7 +1984,7 @@ th.ctcol {
 }
 
 div.hljs {
-	background-color: white !important;
+	background-color: @mondrian-darker-white !important;
 }
 
 // PREFERENCES STYLES

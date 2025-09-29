@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>Module</name>
+	<action>upsert</action>
+	<data>
+		<mdl_name>SimThemes</mdl_name>
+		<mdl_version>0.5</mdl_version>
+		<mdl_prefix>sth</mdl_prefix>
+		<mdl_url><![CDATA[{
+    "origin": {"uri": "https://github.com/simplicitesoftware/module-theming.git"},
+    "type": "git"
+}]]></mdl_url>
+		<mdl_type>S</mdl_type>
+		<mdl_comment><![CDATA[# Introduction
+
+This module contains additional themes that can be used for any Simplicité's instance.
+
+## Purpose
+
+The goal of such themes is either to give a more personal aspect to Simplicité's interfaces (matching a specific style or color palette) or to enhance some aspects of it to tailor the interfaces to any user.
+Such themes can also serve more advanced requirements like web-accessibility (as much as possible), or graphic identities, thus ensuring consistency among all instances and external personal solutions.
+
+## Datasets
+
+Using the datasets in this module you can quickly set the theme to few predefined Home views:
+1. Designer views, for all designers/makers using Simplicité, 2 datasets are available for Light/Dark.
+2. Demo views, each dataset setting Light/Dark to both the User & Admin Home views in the Demo Scope.
+
+## Details
+- __ThemeMondrian :__ Based on Simplicité's new graphic chart from the rebranding and website rework.
+	- 2 themes are available, Light & Dark, both have the same accent colors and keep similar color hierarchies in order to easily go from one to another if wanted.
+	- Those themes are inspired by the strong technologic aspect of 80/90's with an emphasize on code-editor colors for accents. With inspirations from Mondrian's work for the structuration, using colored lines to emphasize on specific elements, bringing a touch of "simplicité".
+- __ThemeAccessibility :__ Based on RG3A & WCAG norms for web-accessibility, this theme provides all the required contrasts & sizes.
+	- 2 themes are available, Light & Dark, using same B&W colors (texts and backgrounds) and having similar bases for accent colors.
+	- Both themes are also 'echoing' Simplicité's identity at least for the colors. Otherwise their primary focus is to be RGAA-friendly and passing web-accessibility norms.]]></mdl_comment>
+	</data>
+</object>
+<object>
+	<name>Theme</name>
+	<action>upsert</action>
+	<data>
+		<thm_name>ThemeMondrian-Dark</thm_name>
+		<thm_logo_id>files/Theme/ThemeMondrian-Dark/logo.svg</thm_logo_id>
+		<thm_logo_invert>0</thm_logo_invert>
+		<thm_logo2_id>files/Theme/ThemeMondrian-Dark/logo2.png</thm_logo2_id>
+		<thm_favicon_id>files/Theme/ThemeMondrian-Dark/favicon.png</thm_favicon_id>
+		<thm_color1>#2A2A2A</thm_color1>
+		<thm_color2>#2A2A2A</thm_color2>
+		<thm_text2>#F1F1F1</thm_text2>
+		<thm_color3>#2A2A2A</thm_color3>
+		<thm_text3>#F1F1F1</thm_text3>
+		<thm_base>dark</thm_base>
+		<thm_css_doc>files/Theme/ThemeMondrian-Dark/ThemeMondrian-Dark_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/ThemeMondrian-Dark/addon.less</thm_addon>
+		<thm_searchbox>#424242</thm_searchbox>
+		<thm_active/>
+		<thm_font/>
+		<thm_font_mono/>
+		<thm_iconset/>
+		<thm_code_editor_theme>ambiance</thm_code_editor_theme>
+		<thm_html_editor_theme>DARK</thm_html_editor_theme>
+		<thm_menu_dom_c>#2A2A2A</thm_menu_dom_c>
+		<thm_menu_dom_t>#F1F1F1</thm_menu_dom_t>
+		<thm_menu_dact_c>#424242</thm_menu_dact_c>
+		<thm_menu_dact_t>#F1F1F1</thm_menu_dact_t>
+		<thm_menu_sub_c>#2A2A2A</thm_menu_sub_c>
+		<thm_menu_sub_t>#F1F1F1</thm_menu_sub_t>
+		<thm_menu_sact_c>#424242</thm_menu_sact_c>
+		<thm_menu_sact_t>#F1F1F1</thm_menu_sact_t>
+		<thm_menu_sta_c>#424242</thm_menu_sta_c>
+		<thm_menu_sta_t>#F1F1F1</thm_menu_sta_t>
+		<thm_compact>0</thm_compact>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+		<thm_const>files/Theme/ThemeMondrian-Dark/const.less</thm_const>
+	</data>
+	<data>
+		<thm_name>ThemeMondrian-Darker</thm_name>
+		<thm_logo_id>files/Theme/ThemeMondrian-Darker/logo.svg</thm_logo_id>
+		<thm_logo_invert>0</thm_logo_invert>
+		<thm_logo2_id>files/Theme/ThemeMondrian-Darker/logo2.png</thm_logo2_id>
+		<thm_favicon_id>files/Theme/ThemeMondrian-Darker/favicon.png</thm_favicon_id>
+		<thm_color1>#171717</thm_color1>
+		<thm_color2>#171717</thm_color2>
+		<thm_text2>#F1F1F1</thm_text2>
+		<thm_color3>#171717</thm_color3>
+		<thm_text3>#F1F1F1</thm_text3>
+		<thm_base>dark</thm_base>
+		<thm_css_doc>files/Theme/ThemeMondrian-Darker/ThemeMondrian-Darker_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/ThemeMondrian-Darker/addon.less</thm_addon>
+		<thm_searchbox>#2E2E2E</thm_searchbox>
+		<thm_active/>
+		<thm_font/>
+		<thm_font_mono/>
+		<thm_iconset/>
+		<thm_code_editor_theme>ambiance</thm_code_editor_theme>
+		<thm_html_editor_theme>DARK</thm_html_editor_theme>
+		<thm_menu_dom_c>#171717</thm_menu_dom_c>
+		<thm_menu_dom_t>#F1F1F1</thm_menu_dom_t>
+		<thm_menu_dact_c>#2E2E2E</thm_menu_dact_c>
+		<thm_menu_dact_t>#F1F1F1</thm_menu_dact_t>
+		<thm_menu_sub_c>#171717</thm_menu_sub_c>
+		<thm_menu_sub_t>#F1F1F1</thm_menu_sub_t>
+		<thm_menu_sact_c>#2E2E2E</thm_menu_sact_c>
+		<thm_menu_sact_t>#F1F1F1</thm_menu_sact_t>
+		<thm_menu_sta_c>#2E2E2E</thm_menu_sta_c>
+		<thm_menu_sta_t>#F1F1F1</thm_menu_sta_t>
+		<thm_compact>0</thm_compact>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+		<thm_const>files/Theme/ThemeMondrian-Darker/const.less</thm_const>
+	</data>
+	<data>
+		<thm_name>ThemeMondrian-Light</thm_name>
+		<thm_logo_id>files/Theme/ThemeMondrian-Light/logo.svg</thm_logo_id>
+		<thm_logo_invert>0</thm_logo_invert>
+		<thm_logo2_id>files/Theme/ThemeMondrian-Light/logo2.png</thm_logo2_id>
+		<thm_favicon_id>files/Theme/ThemeMondrian-Light/favicon.png</thm_favicon_id>
+		<thm_color1>#F3F1EE</thm_color1>
+		<thm_color2>#F3F1EE</thm_color2>
+		<thm_text2>#474747</thm_text2>
+		<thm_color3>#F3F1EE</thm_color3>
+		<thm_text3>#474747</thm_text3>
+		<thm_base>light</thm_base>
+		<thm_css_doc>files/Theme/ThemeMondrian-Light/ThemeMondrian-Light_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/ThemeMondrian-Light/addon.less</thm_addon>
+		<thm_searchbox/>
+		<thm_active/>
+		<thm_font/>
+		<thm_font_mono/>
+		<thm_iconset/>
+		<thm_code_editor_theme>kuroir</thm_code_editor_theme>
+		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
+		<thm_menu_dom_c/>
+		<thm_menu_dom_t>#474747</thm_menu_dom_t>
+		<thm_menu_dact_c>#F3F1EE</thm_menu_dact_c>
+		<thm_menu_dact_t>#303030</thm_menu_dact_t>
+		<thm_menu_sub_c>#F3F1EE</thm_menu_sub_c>
+		<thm_menu_sub_t>#474747</thm_menu_sub_t>
+		<thm_menu_sact_c>#FFFAF0</thm_menu_sact_c>
+		<thm_menu_sact_t>#303030</thm_menu_sact_t>
+		<thm_menu_sta_c>#F3F1EE</thm_menu_sta_c>
+		<thm_menu_sta_t>#474747</thm_menu_sta_t>
+		<thm_compact>1</thm_compact>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+		<thm_const>files/Theme/ThemeMondrian-Light/const.less</thm_const>
+	</data>
+	<data>
+		<thm_name>ThemeMondrian-Template-Dark</thm_name>
+		<thm_logo_id>files/Theme/ThemeMondrian-Template-Dark/logo.svg</thm_logo_id>
+		<thm_logo_invert/>
+		<thm_logo2_id>files/Theme/ThemeMondrian-Template-Dark/logo2.png</thm_logo2_id>
+		<thm_favicon_id>files/Theme/ThemeMondrian-Template-Dark/favicon.png</thm_favicon_id>
+		<thm_color1>#2A2A2A</thm_color1>
+		<thm_color2>#2A2A2A</thm_color2>
+		<thm_text2>#F1F1F1</thm_text2>
+		<thm_color3>#2A2A2A</thm_color3>
+		<thm_text3>#F1F1F1</thm_text3>
+		<thm_base>dark</thm_base>
+		<thm_css_doc>files/Theme/ThemeMondrian-Template-Dark/ThemeMondrian-Template-Dark_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/ThemeMondrian-Template-Dark/addon.less</thm_addon>
+		<thm_searchbox>#424242</thm_searchbox>
+		<thm_active/>
+		<thm_font>Roboto</thm_font>
+		<thm_font_mono/>
+		<thm_iconset/>
+		<thm_code_editor_theme>ambiance</thm_code_editor_theme>
+		<thm_html_editor_theme>DARK</thm_html_editor_theme>
+		<thm_menu_dom_c>#2A2A2A</thm_menu_dom_c>
+		<thm_menu_dom_t>#F1F1F1</thm_menu_dom_t>
+		<thm_menu_dact_c>#424242</thm_menu_dact_c>
+		<thm_menu_dact_t>#F1F1F1</thm_menu_dact_t>
+		<thm_menu_sub_c>#2A2A2A</thm_menu_sub_c>
+		<thm_menu_sub_t>#F1F1F1</thm_menu_sub_t>
+		<thm_menu_sact_c>#424242</thm_menu_sact_c>
+		<thm_menu_sact_t>#F1F1F1</thm_menu_sact_t>
+		<thm_menu_sta_c>#424242</thm_menu_sta_c>
+		<thm_menu_sta_t>#F1F1F1</thm_menu_sta_t>
+		<thm_compact>0</thm_compact>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+		<thm_const>files/Theme/ThemeMondrian-Template-Dark/const.less</thm_const>
+	</data>
+</object>
+<object>
+	<name>Resource</name>
+	<action>upsert</action>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>IMG</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>logo_simplicite_dark</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_image>resources/Disposition/default/logo_simplicite_dark.svg</res_image>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>IMG</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>simplicite_logo</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_image>resources/Disposition/default/simplicite_logo.svg</res_image>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Dataset</name>
+	<action>upsert</action>
+	<data>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+		<dt_name>update-demo-home-to-mondrian-dark</dt_name>
+		<dt_file>data/update-demo-home-to-mondrian-dark.xml</dt_file>
+		<dt_desc><![CDATA[Updates the <b>Demo</b>'s User & Admin <b>Home</b> views' theme to <b>ThemeMondrian-Dark</b>.]]></dt_desc>
+	</data>
+	<data>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+		<dt_name>update-demo-home-to-mondrian-light</dt_name>
+		<dt_file>data/update-demo-home-to-mondrian-light.xml</dt_file>
+		<dt_desc><![CDATA[Updates the <b>Demo</b>'s User & Admin <b>Home</b> views' theme to <b>ThemeMondrian-Light</b>.]]></dt_desc>
+	</data>
+	<data>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+		<dt_name>update-designer-home-to-mondrian-dark</dt_name>
+		<dt_file>data/update-designer-home-to-mondrian-dark.xml</dt_file>
+		<dt_desc><![CDATA[Updates the <b>Designer</b>'s <b>Home</b> view's theme to <b>ThemeMondrian-Dark</b>.]]></dt_desc>
+	</data>
+	<data>
+		<row_module_id.mdl_name>SimThemes</row_module_id.mdl_name>
+		<dt_name>update-designer-home-to-mondrian-light</dt_name>
+		<dt_file>data/update-designer-home-to-mondrian-light.xml</dt_file>
+		<dt_desc><![CDATA[Updates the <b>Designer</b>'s <b>Home</b> view's theme to <b>ThemeMondrian-Light</b>.]]></dt_desc>
+	</data>
+</object>
+</simplicite>

@@ -4,6 +4,9 @@
 
 :root {
   /* Color Palette */
+  --mondrian-dark-white: #FFFFFF;
+  --mondrian-dark-black: #000000;
+
   --mondrian-dark-black-00: #171717;
   --mondrian-dark-black-01: #2A2A2A;
   --mondrian-dark-black-02: #424242;
@@ -180,6 +183,11 @@ ul.sub-menu a.menu-sel::before {
 
 .header .index .searchbox button:hover {
   color: var(--mondrian-dark-black-06) !important;
+}
+
+#userfilters .filter {
+	background: var(--mondrian-dark-black-02);
+	color: var(--text-color);
 }
 
 /* ===========================
@@ -1084,7 +1092,7 @@ button > .badge {
 }
 
 .modal-content > .modal-header > button.btn-close {
-  color: white !important;
+  color: var(--mondrian-dark-white) !important;
   background-color: var(--border-color) !important;
   padding: .33rem !important;
 }
@@ -1645,7 +1653,7 @@ ul.root-ul button.btn-default:hover {
 }
 
 .ace_gutter-cell {
-  color: white !important;
+  color: var(--mondrian-dark-white) !important;
 }
 
 .ace_active-lin {
@@ -1669,11 +1677,11 @@ ul.root-ul button.btn-default:hover {
 }
 
 .git-diff > .tree-diff .cell button.btn:not(.active) {
-  color: white !important;
+  color: var(--mondrian-dark-white) !important;
 }
 
 .git-diff > .tree-diff .cell button.btn {
-  border-color: white !important;
+  border-color: var(--mondrian-dark-white) !important;
 }
 
 .ace-tm {
@@ -2045,5 +2053,5 @@ tr.highlight td {
 }
 
 div.hljs {
-  background-color: white !important;
+  background-color: var(--mondrian-dark-white) !important;
 }
