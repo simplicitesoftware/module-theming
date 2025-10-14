@@ -369,7 +369,7 @@ form {
 
 .list-shortcuts {
     .item {
-        background: @mondrian-light-white;
+        // background: @mondrian-light-white;
         color: @text-main-color;
         border: solid 0.065rem @layer1-color;
         border-radius: 0 !important;
@@ -990,8 +990,13 @@ button > .badge {
 	}
 }
 
-.search .index-search {
-	background: @background-color !important;
+.search {
+	.toggle-title {
+		background: transparent;
+	}
+	.index-search {
+		background: @background-color !important;
+	}
 }
 
 .form-group.field-search {
@@ -1066,7 +1071,7 @@ div.field-container > input.form-control {
 	border-left: solid 0.2rem @mondrian-light-green-06 !important;
 }
 
-// MASONRY "CARDS"
+// "CARDS"
 div.obj-summary {
 	background: transparent !important;
 	border-radius: 0px !important;
@@ -1126,9 +1131,6 @@ div.obj-summary {
 	&:hover {
 		.obj-summary {
 			.obj-body {
-				.title {
-					// background-color: darken(@background-fade-color, 8%) !important;
-				}
 				.infos {
 					.obj-addons {
 						.actors {
