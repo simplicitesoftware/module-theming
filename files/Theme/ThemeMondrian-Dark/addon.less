@@ -178,20 +178,6 @@ ul.sub-menu a.menu-sel::before {
 }
 
 .header .index { /* The one in the header only */
-    // div.input-group.searchbox {
-    //     background-color: transparent !important;
-
-    //     input.form-control {
-    //         background-color: lighten(@background-color, 16%) !important;
-    //         color: @text-main-color !important;
-    //     }
-    //     button.btn {
-    //         background-color: lighten(@background-color, 32%) !important;
-    //         &:hover {
-    //             color: @mondrian-dark-black-06 !important;
-    //         }
-    //     }
-    // }
     border: solid 0.065rem @border-color;
     
     .searchbox {
@@ -1039,10 +1025,6 @@ button > .badge {
 		&:hover {
 			background-color: darken(@background-color, 4%) !important;
 		}
-	}
-	
-	.btn {
-		color: lighten(@border-color, 10%) !important;
 	}
 }
 
@@ -2026,6 +2008,21 @@ tr.highlight td {
 
 div.hljs {
 	background-color: @mondrian-dark-white !important;
+}
+
+// ZIP EDITOR
+.zip-editor {
+	.folder {
+		.file:hover {
+			background-color: @layer2-color;
+		}
+	}
+	.zip-preview {
+		.content {
+			background-color: @mondrian-dark-black-00;
+			padding: 0.5rem;
+		}
+	}
 }
 
 // TINY MCE OVERRIDE
