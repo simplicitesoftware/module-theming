@@ -1294,23 +1294,23 @@ div.code-editor {
 
 // code editor specific (can't use variables inside editor.less ...)
 .snippet-menu {
-	border-color: @border-color;
-	background-color: @layer1-color;
+	border-color: @border-color !important;
+	background-color: @layer1-color !important;
 
 	ul li {
 		&.selected, &:hover {
-			background-color: @layer2-color;
+			background-color: @layer2-color !important;
 		}
 	}
 }
 
 .snippet-preview {
-	background-color: @layer1-color;
-	border-color: @border-color;
-	color: @text-color;
+	background-color: @layer1-color !important;
+	border-color: @border-color !important;
+	color: @text-color !important;
 
 	.snippet-preview-content {
-		background: @layer2-color;
+		background: @layer2-color !important;
 	}
 }
 
