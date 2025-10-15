@@ -104,6 +104,19 @@ a:active {
     color: @mondrian-dark-blue-05;
 }
 
+.btn-info {
+	border-radius: 0;
+	background-color: @mondrian-dark-purple-04;
+	color: @text-color;
+	border-color: @mondrian-dark-purple-04;
+	
+	&:hover, &:active {
+		color: @text-color !important;
+		background-color: @mondrian-dark-purple-05 !important;
+		border-color: @mondrian-dark-purple-05 !important;
+	}
+}
+
 .main-menu {
 	li > a {
 		&:hover {

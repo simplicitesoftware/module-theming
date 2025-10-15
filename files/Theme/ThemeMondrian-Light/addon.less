@@ -101,6 +101,18 @@ a:active {
     color: @mondrian-light-blue-05;
 }
 
+.btn-info {
+	border-radius: 0;
+	background-color: @mondrian-light-purple-04;
+	color: @text-color;
+	border-color: @mondrian-light-purple-04;
+	
+	&:hover, &:active {
+		background-color: @mondrian-light-purple-06 !important;
+		border-color: @mondrian-light-purple-06 !important;
+	}
+}
+
 .main-menu {
 	li > a {
 		&:hover {
@@ -124,13 +136,6 @@ a:active {
     		}
     	}
     }
-    
-    /*li.active > a {
-		border-left: solid 0.25rem @mondrian-light-red-03;
-    }
-    li.active > ul.sub-menu > li.active > a {
-    	border-left: solid 0.25rem @mondrian-light-red-04;
-    }*/
 }
 ul.sub-menu a.menu-sel::before {
 	background: @mondrian-light-red-05 !important;
