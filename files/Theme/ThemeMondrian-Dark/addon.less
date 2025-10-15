@@ -1300,6 +1300,28 @@ div.code-editor {
 	}
 }
 
+// code editor specific (can't use variables inside editor.less ...)
+.snippet-menu {
+	border-color: @border-color;
+	background-color: @layer1-color;
+
+	ul li {
+		&.selected, &:hover {
+			background-color: @layer2-color;
+		}
+	}
+}
+
+.snippet-preview {
+	background-color: @layer1-color;
+	border-color: @border-color;
+	color: @text-color;
+
+	.snippet-preview-content {
+		background: @layer2-color;
+	}
+}
+
 // TREEVIEW QUICK FIXES
 ul.root-ul {
 	button.btn-default {
