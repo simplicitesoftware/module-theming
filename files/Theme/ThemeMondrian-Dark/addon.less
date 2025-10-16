@@ -160,6 +160,14 @@ ul.sub-menu a.menu-sel::before {
             background: @layer1-color;
         }
     }
+    .main-nav-toggle:hover {
+        border-radius: 0px !important;
+        color: @text-color !important;
+    }
+    .btn-shortcut { /* embedded shortcuts, shortcuts dropdown */
+        margin: 0px 6px !important;
+    }
+    
     .scope-icon {
     	background-color: @layer1-color !important;
     	border-radius: 0rem !important;
@@ -239,10 +247,16 @@ ul.sub-menu a.menu-sel::before {
     	padding: 8px;
     }
 }
+
 body.compact {
     .search-bar > .input-group > input.form-control {
         padding: 7px 7px !important;
     }
+}
+
+.main-nav > .search-bar > .input-group > .btn-icon.clear.visible {
+    margin: 0 !important;
+    padding: 7.75px; // !!!
 }
 
 /*input {
@@ -1257,6 +1271,15 @@ div.code-editor {
             border: solid 0.065rem @border-color; //proper color ?
             
             ul.explorer {
+                .search-bar {
+                    margin: 0.25rem !important;
+                    margin-right: 0.3rem !important;
+                    
+                    & > .input-group > .btn-icon.clear.visible {
+                        margin: 0 !important;
+                    }
+                }
+                
                 li.module {
                     a {
                         color: @text-color !important;
