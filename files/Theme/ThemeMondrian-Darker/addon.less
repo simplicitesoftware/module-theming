@@ -102,28 +102,28 @@ a:active {
 }
 
 .btn-info {
-	border-radius: 0;
-	background-color: @mondrian-darker-purple-04;
-	color: @text-color;
-	border-color: @mondrian-darker-purple-04;
-	
-	&:hover, &:active {
-		color: @text-color !important;
-		background-color: @mondrian-darker-purple-06 !important;
-		border-color: @mondrian-darker-purple-06 !important;
-	}
+    border-radius: 0;
+    background-color: @mondrian-darker-purple-04;
+    color: @text-color;
+    border-color: @mondrian-darker-purple-04;
+    
+    &:hover, &:active {
+        color: @text-color !important;
+        background-color: @mondrian-darker-purple-06 !important;
+        border-color: @mondrian-darker-purple-06 !important;
+    }
 }
 
 .main-menu {
-	li > a {
-		&:hover {
-			background-color: lighten(@border-color, 4%) !important;
-		}
-	}
+    li > a {
+        &:hover {
+            background-color: lighten(@border-color, 4%) !important;
+        }
+    }
     > li > ul > li { /* Targetting only SubMenus */
-	    &:hover {
-	    	background-color: @layer1-color;
-	    }
+        &:hover {
+        	background-color: @layer1-color;
+        }
     }
     
     > li > ul > li {
@@ -133,20 +133,20 @@ a:active {
     	
     	a {
     		.ico > i.icon {
-	    		color: lighten(@border-color, 16%) !important;
+        		color: lighten(@border-color, 16%) !important;
     		}
     	}
     }
     
     /*li.active > a {
-		border-left: solid 0.25rem @mondrian-darker-red-05;
+        border-left: solid 0.25rem @mondrian-darker-red-05;
     }
     li.active > ul.sub-menu > li.active > a {
     	border-left: solid 0.25rem @mondrian-darker-red-06;
     }*/
 }
 ul.sub-menu a.menu-sel::before {
-	background: @mondrian-darker-red-07 !important;
+    background: @mondrian-darker-red-07 !important;
 }
 
 .header {
@@ -194,27 +194,27 @@ ul.sub-menu a.menu-sel::before {
 }
 
 #userfilters .filter {
-	background: @mondrian-darker-black-02;
-	color: @text-color;
+    background: @mondrian-darker-black-02;
+    color: @text-color;
 }
 
 .breadcrumb {
-	// font-style: italic !important;
-	font-weight: 400 !important;
-	
-	li.breadcrumb-item {
-		overflow: visible !important;
-		a {
-			overflow: visible !important;
-		}
-	}
-	
-	a:hover, a:focus {
-		color: @mondrian-darker-yellow-07 !important;
-	}
-	a:active {
-		color: @mondrian-darker-yellow-04 !important;
-	}
+    // font-style: italic !important;
+    font-weight: 400 !important;
+    
+    li.breadcrumb-item {
+        overflow: visible !important;
+        a {
+            overflow: visible !important;
+        }
+    }
+    
+    a:hover, a:focus {
+        color: @mondrian-darker-yellow-07 !important;
+    }
+    a:active {
+        color: @mondrian-darker-yellow-04 !important;
+    }
 }
 
 .search-bar {
@@ -237,14 +237,14 @@ ul.sub-menu a.menu-sel::before {
     }
 }
 body.compact {
-	.search-bar > .input-group > input.form-control {
-		padding: 7px 7px !important;
-	}
+    .search-bar > .input-group > input.form-control {
+        padding: 7px 7px !important;
+    }
 }
 
 /* Module */
 input#field_row_module_id__mdl_name {
-	background: fade(@mondrian-darker-yellow-06, 12.5%);
+    background: fade(@mondrian-darker-yellow-06, 12.5%);
 }
 
 /* Code fields */
@@ -269,7 +269,7 @@ input#doc_field_obo_script_id,
 input#field_pcs_class,
 input#file_field_pcs_script_id,
 input#doc_field_pcs_script_id {
-	background: fade(@mondrian-darker-green-06, 12.5%) !important;
+    background: fade(@mondrian-darker-green-06, 12.5%) !important;
 }
 
 .dropdown-menu {
@@ -323,66 +323,66 @@ input#doc_field_pcs_script_id {
 }
 
 .dropdown-item:hover {
-	background: transparent !important;
+    background: transparent !important;
 }
 
 ul.dropdown-menu.shortcuts {
-	li > a > span > a {
-		i.bi-pin-angle {
-			color: @text-main-color !important;
-		}
-		i.bi-pin-angle-filled {
-			color: @text-main-color !important;
-		}
-	}
+    li > a > span > a {
+        i.bi-pin-angle {
+            color: @text-main-color !important;
+        }
+        i.bi-pin-angle-filled {
+            color: @text-main-color !important;
+        }
+    }
 }
 
 .alert-help {
     color: @mondrian-darker-purple-07 !important;
-	background: @mondrian-darker-purple-03 !important;
+    background: @mondrian-darker-purple-03 !important;
     border: solid 0.125rem @mondrian-darker-purple-07 !important;
     font-size: 1.125rem;
 }
 .alert-info {
-	color: @mondrian-darker-blue-07 !important;
-	background: @mondrian-darker-blue-03 !important;
+    color: @mondrian-darker-blue-07 !important;
+    background: @mondrian-darker-blue-03 !important;
     border: solid 0.125rem @mondrian-darker-blue-07 !important;
     font-size: 1.125rem;
 }
 .alert-danger {
-	color: @mondrian-darker-red-07 !important;
-	background: @mondrian-darker-red-03 !important;
+    color: @mondrian-darker-red-07 !important;
+    background: @mondrian-darker-red-03 !important;
     border: solid 0.125rem @mondrian-darker-red-07 !important;
     font-size: 1.125rem;
 }
 .alert-warning {
-	color: @mondrian-darker-yellow-08 !important;
-	background: @mondrian-darker-yellow-03 !important;
+    color: @mondrian-darker-yellow-08 !important;
+    background: @mondrian-darker-yellow-03 !important;
     border: solid 0.125rem @mondrian-darker-yellow-08 !important;
     font-size: 1.125rem;
 }
 .alert-success {
-	color: @mondrian-darker-green-08 !important;
-	background: @mondrian-darker-green-03 !important;
+    color: @mondrian-darker-green-08 !important;
+    background: @mondrian-darker-green-03 !important;
     border: solid 0.125rem @mondrian-darker-green-08 !important;
     font-size: 18px;
 }
 
 form {
-	.alert {
-		font-size: 1rem;
-		padding: 0.3rem 0.5rem !important;
-		border-radius: 0;
-	}
+    .alert {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem !important;
+        border-radius: 0;
+    }
 }
 .tab-pane {
-	.panel-list {
-		form {
-			.alert {
-				margin: .75rem .75rem !important;
-			}
-		}
-	}
+    .panel-list {
+        form {
+            .alert {
+                margin: .75rem .75rem !important;
+            }
+        }
+    }
 }
 
 .list-shortcuts {
@@ -413,9 +413,9 @@ form {
 
 .cache img {
     border: solid 0.065rem transparent;
-	transition: all 0.33s ease !important;
-	border-radius: 0px !important;
-	
+    transition: all 0.33s ease !important;
+    border-radius: 0px !important;
+    
     &:hover {
         box-shadow: none !important;
         border-color: rgba(0,0,0, 0.08);
@@ -425,12 +425,12 @@ form {
 }
 
 .sysinfos .alert {
-	font-size: 1rem !important;
-	
-	&.alert-info {
-	    background: @background-color !important;
-	    border: none !important;
-	}
+    font-size: 1rem !important;
+    
+    &.alert-info {
+        background: @background-color !important;
+        border: none !important;
+    }
 }
 
 .container-table {
@@ -439,22 +439,22 @@ form {
 }
 
 .table thead th {
-	background: @layer1-color;
-	color: darken(@text-color, 5%);
-	border-left: solid 0.065rem @border-color;
+    background: @layer1-color;
+    color: darken(@text-color, 5%);
+    border-left: solid 0.065rem @border-color;
 }
 
 tr {
-	background: @background-color;
+    background: @background-color;
 }
 
 .pillbox-completion > ul > li {
-	background: @layer1-color !important;
-	color: @text-color !important;
-	
-	&:hover {
-		background: lighten(@layer1-color, 8%) !important;
-	}
+    background: @layer1-color !important;
+    color: @text-color !important;
+    
+    &:hover {
+        background: lighten(@layer1-color, 8%) !important;
+    }
 }
 
 .container-table table {
@@ -488,8 +488,8 @@ tr {
         th {
             border-left: solid 0.065rem @border-color;
             border-right: solid 0.065rem @border-color;
-			padding: 0.5rem !important;
-			
+            padding: 0.5rem !important;
+            
             div.input-group {
                 margin: 0.25rem;
                 .input-group-text {
@@ -515,47 +515,47 @@ tr {
         
     }
     tbody {
-	    tr {
-	        border-top: @background-color !important;
-	        border-bottom: @background-color !important;
-	        border-left: solid 0.065rem @border-color;
-	        
-	        td {
-	            border-right: solid 0.065rem lighten(@border-color, 8%) !important;
-	            padding-left: 0.5rem !important;
-	            border-top: solid 0.065rem darken(@border-color, 12%) !important;
-	            border-bottom: solid 0.065rem darken(@border-color, 12%) !important;
-	        }
-	
-	        .btn {
-	        	background-color: transparent !important;
-	            margin-top: 8px !important;
-	            margin-bottom: 8px !important;
-	            
-	            &:hover {
-	            	background-color: darken(@mondrian-darker-black-03, 8%) !important;
-	            }
-	        }
-	        &:hover {
-	        	td {
-	        		color: @text-color !important; // yellow wasn't nice
-	        		background-color: @layer1-color !important;
-	        		border-right: solid 0.065rem @border-color !important;
-	        	}
-	        }
-	        &.selected {
-	            td {
-	                background-color: @layer1-color !important;
-	            }
-	            td.col-action {
-	            	border-left: solid 0.25rem @mondrian-darker-yellow-05;
-	            }
-	        }
-	    }
-	    
-	    tr.group-by-title > td {
-	    	background: @layer1-color !important;
-	    }
+        tr {
+            border-top: @background-color !important;
+            border-bottom: @background-color !important;
+            border-left: solid 0.065rem @border-color;
+            
+            td {
+                border-right: solid 0.065rem lighten(@border-color, 8%) !important;
+                padding-left: 0.5rem !important;
+                border-top: solid 0.065rem darken(@border-color, 12%) !important;
+                border-bottom: solid 0.065rem darken(@border-color, 12%) !important;
+            }
+    
+            .btn {
+            	background-color: transparent !important;
+                margin-top: 8px !important;
+                margin-bottom: 8px !important;
+                
+                &:hover {
+                	background-color: darken(@mondrian-darker-black-03, 8%) !important;
+                }
+            }
+            &:hover {
+            	td {
+            		color: @text-color !important; // yellow wasn't nice
+            		background-color: @layer1-color !important;
+            		border-right: solid 0.065rem @border-color !important;
+            	}
+            }
+            &.selected {
+                td {
+                    background-color: @layer1-color !important;
+                }
+                td.col-action {
+                	border-left: solid 0.25rem @mondrian-darker-yellow-05;
+                }
+            }
+        }
+        
+        tr.group-by-title > td {
+        	background: @layer1-color !important;
+        }
     }
 }
 
@@ -565,27 +565,27 @@ tr {
 
 .module-sys .module, 
 .module-app .module {
-	background-color: darken(@background-color, 8%) !important;
-	border: solid 0.065rem transparent !important;
-	border-radius: 0 !important;
-	
-	span {
-		color: @text-light-color !important;
-	}
-	
-	&:hover {
-		box-shadow: none !important;
-		border: solid 0.065rem @border-color !important;
-	}
+    background-color: darken(@background-color, 8%) !important;
+    border: solid 0.065rem transparent !important;
+    border-radius: 0 !important;
+    
+    span {
+        color: @text-light-color !important;
+    }
+    
+    &:hover {
+        box-shadow: none !important;
+        border: solid 0.065rem @border-color !important;
+    }
 }
 
 .module-delete {
-	background: @layer1-color !important;
+    background: @layer1-color !important;
 }
 
 #panel_Home_3 {
-	.view-item, .item-extern {
-		
+    .view-item, .item-extern {
+        
     	.levels {
         	background-color: @background-color !important;
         	div.center {
@@ -617,69 +617,69 @@ tr {
         		}
         	}
     	}
-	}
+    }
 }
 
 .split-separator {
-	margin: 0 .5rem;
-	border: solid 1px @border-color;
-	border-radius: 0rem;
-	background-color: @layer1-color;
-	transition: background-color 0.25s ease-in-out, border-radius 0.25s ease-in-out;
-	
-	&:hover {
-		background-color: @layer2-color;
-		border-radius: 1rem;
-	}
+    margin: 0 .5rem;
+    border: solid 1px @border-color;
+    border-radius: 0rem;
+    background-color: @layer1-color;
+    transition: background-color 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+    
+    &:hover {
+        background-color: @layer2-color;
+        border-radius: 1rem;
+    }
 }
 
 .monitor.docked {
-	.btn.active {
-		background-color: @mondrian-darker-blue-06 !important;
-	}
-	
-	.tabs.tabs-underline {
-		ul.nav.nav-tabs {
-			padding: 8px 4px !important;
-			background: @background-color;
-			.nav-link.active {
-				color: @text-color;
-				background: @layer1-color;
-			}
-			.nav-item .nav-link {
-				color: @text-color;
-				background: @layer1-color;
-				&:hover {
-					background: lighten(@layer1-color, 5%);
-				}
-			}
-			
-		}
-		.tab-content .tab-pane.active {
-			background: @background-color;
-		}
-	}
-	
-	.table > tbody > tr.selected > td, .table > tbody > tr.selected:nth-of-type(odd) > td, .table > tbody > tr.active:nth-of-type(odd) > td, .table > tbody > tr.active > td {
-		background-color: @mondrian-darker-yellow-04 !important;
-	}
-	
-	* {
-		box-shadow: none !important;
-	}
+    .btn.active {
+        background-color: @mondrian-darker-blue-06 !important;
+    }
+    
+    .tabs.tabs-underline {
+        ul.nav.nav-tabs {
+            padding: 8px 4px !important;
+            background: @background-color;
+            .nav-link.active {
+                color: @text-color;
+                background: @layer1-color;
+            }
+            .nav-item .nav-link {
+                color: @text-color;
+                background: @layer1-color;
+                &:hover {
+                    background: lighten(@layer1-color, 5%);
+                }
+            }
+            
+        }
+        .tab-content .tab-pane.active {
+            background: @background-color;
+        }
+    }
+    
+    .table > tbody > tr.selected > td, .table > tbody > tr.selected:nth-of-type(odd) > td, .table > tbody > tr.active:nth-of-type(odd) > td, .table > tbody > tr.active > td {
+        background-color: @mondrian-darker-yellow-04 !important;
+    }
+    
+    * {
+        box-shadow: none !important;
+    }
 }
 
 div.social.audit {
-	background-color: @background-color !important;
-	border-radius: 0rem !important;
-	
-	.post.info {
-		border-left: solid 0.25rem @mondrian-darker-blue-06 !important;
-		border-radius: 0rem !important;
-		color: @mondrian-darker-black-03 !important;
-		background: @mondrian-darker-blue-09 !important;
-	    
-	    .desc {
+    background-color: @background-color !important;
+    border-radius: 0rem !important;
+    
+    .post.info {
+        border-left: solid 0.25rem @mondrian-darker-blue-06 !important;
+        border-radius: 0rem !important;
+        color: @mondrian-darker-black-03 !important;
+        background: @mondrian-darker-blue-09 !important;
+        
+        .desc {
             .head {
             	border-radius: 0rem !important;
                 color: @mondrian-darker-blue-09 !important;
@@ -692,26 +692,26 @@ div.social.audit {
                 background-color: @mondrian-darker-blue-10 !important;
             }
         }
-		.action {
-			.btn-icon {
-				background-color: transparent !important;
-				border-radius: 0rem !important;
-				color: @mondrian-darker-black-03 !important;
-				
-				&:hover:not(.disabled):not([disabled]) {
-					background-color: rgba(0,0,0, 0.08) !important;
-					border-radius: 0rem !important;
-				}
-			}
-		}
-	}
-	.post.warning {
-		border-radius: 0rem !important;
-		border-left: solid 0.25rem @mondrian-darker-yellow-06 !important;
-		color: @mondrian-darker-black-03 !important;
-		background: @mondrian-darker-yellow-09 !important; // 03
-	    
-	    .desc {
+        .action {
+            .btn-icon {
+                background-color: transparent !important;
+                border-radius: 0rem !important;
+                color: @mondrian-darker-black-03 !important;
+                
+                &:hover:not(.disabled):not([disabled]) {
+                    background-color: rgba(0,0,0, 0.08) !important;
+                    border-radius: 0rem !important;
+                }
+            }
+        }
+    }
+    .post.warning {
+        border-radius: 0rem !important;
+        border-left: solid 0.25rem @mondrian-darker-yellow-06 !important;
+        color: @mondrian-darker-black-03 !important;
+        background: @mondrian-darker-yellow-09 !important; // 03
+        
+        .desc {
             .head {
             	border-radius: 0rem !important;
                 color: @mondrian-darker-yellow-09 !important; // 03
@@ -725,26 +725,26 @@ div.social.audit {
             }
         }
         .action {
-			.btn-icon {
-				background-color: transparent !important;
-				border-radius: 0rem !important;
-				color: @mondrian-darker-black-03 !important;
-				
-				&:hover:not(.disabled):not([disabled]) {
-					background-color: rgba(0,0,0, 0.08) !important;
-					border-radius: 0rem !important;
-				}
-			}
-		}
-	}
-	.post.error {
-		border-radius: 0rem !important;
-		border-left: solid 0.25rem @mondrian-darker-red-06 !important;
-		color: @mondrian-darker-black-03 !important;
-		background: @mondrian-darker-red-09 !important;
-	    
-	    .desc {
-	    	margin-bottom: 0.5rem !important;
+            .btn-icon {
+                background-color: transparent !important;
+                border-radius: 0rem !important;
+                color: @mondrian-darker-black-03 !important;
+                
+                &:hover:not(.disabled):not([disabled]) {
+                    background-color: rgba(0,0,0, 0.08) !important;
+                    border-radius: 0rem !important;
+                }
+            }
+        }
+    }
+    .post.error {
+        border-radius: 0rem !important;
+        border-left: solid 0.25rem @mondrian-darker-red-06 !important;
+        color: @mondrian-darker-black-03 !important;
+        background: @mondrian-darker-red-09 !important;
+        
+        .desc {
+        	margin-bottom: 0.5rem !important;
             .head {
             	border-radius: 0rem !important;
                 color: @mondrian-darker-red-09 !important;
@@ -758,1319 +758,1328 @@ div.social.audit {
             }
         }
         .action {
-			.btn-icon {
-				background-color: transparent !important;
-				border-radius: 0rem !important;
-				color: @mondrian-darker-black-03 !important;
-				
-				&:hover:not(.disabled):not([disabled]) {
-					background-color: rgba(0,0,0, 0.08) !important;
-					border-radius: 0rem !important;
-				}
-			}
-		}
-	}
-	
-	.post {
-		border-left-width: 0.25rem;
-		transition: border-left-width 0.25s ease;
-		&:hover {
-			border-left-width: 0.5rem !important;
-			box-shadow: none;
-		}
-	}
-	
-	.post.create {
-		background-color: @layer1-color !important;
-		.msg {
-			background-color: @layer1-color !important;
-		}
-		.action {
-			background-color: @layer1-color !important;
-		}
-		
-		&:hover {
-			transform: scale(1) !important;
-		}
-	}
+            .btn-icon {
+                background-color: transparent !important;
+                border-radius: 0rem !important;
+                color: @mondrian-darker-black-03 !important;
+                
+                &:hover:not(.disabled):not([disabled]) {
+                    background-color: rgba(0,0,0, 0.08) !important;
+                    border-radius: 0rem !important;
+                }
+            }
+        }
+    }
+    
+    .post {
+        border-left-width: 0.25rem;
+        transition: border-left-width 0.25s ease;
+        &:hover {
+            border-left-width: 0.5rem !important;
+            box-shadow: none;
+        }
+    }
+    
+    .post.create {
+        background-color: @layer1-color !important;
+        .msg {
+            background-color: @layer1-color !important;
+        }
+        .action {
+            background-color: @layer1-color !important;
+        }
+        
+        &:hover {
+            transform: scale(1) !important;
+        }
+    }
 }
 
 .post.create, .post.owner {
-	padding: 0.75rem !important;
-	background-color: @background-color !important;
-	border-radius: 0 !important;
-	border: solid 0.065rem @border-color !important;
-	
-	.msg {
-		border-radius: 0 !important;
-		border-left: solid 0.125rem @border-color;
-		background-color: lighten(@background-color, 2%) !important;
-	}
+    padding: 0.75rem !important;
+    background-color: @background-color !important;
+    border-radius: 0 !important;
+    border: solid 0.065rem @border-color !important;
+    
+    .msg {
+        border-radius: 0 !important;
+        border-left: solid 0.125rem @border-color;
+        background-color: lighten(@background-color, 2%) !important;
+    }
 }
 
 .follow {
-	background-color: @background-color;
-	padding-top: 0.5rem !important;
-	padding-bottom: 0.5rem !important;
+    background-color: @background-color;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
 .field-container {
-	.form-control { // input ?
-		color: @text-main-color !important;
-	}
-	span.select2 > span.selection > span > span > div.enum-item {
-		color: @text-main-color;
-	}
+    .form-control { // input ?
+        color: @text-main-color !important;
+    }
+    span.select2 > span.selection > span > span > div.enum-item {
+        color: @text-main-color;
+    }
 }
 
 .apps {
-	button.thumbnail {
-		background-color: @background-color !important;
-		border-radius: 0rem !important;
-		border: solid 0.065rem @border-color !important;
-		transition: all 0.25s ease;
-		
-		.caption {
-			color: @text-main-color !important;
-		}
-		
-		&:hover {
-			border-color: darken(@border-color, 8%) !important;
-			background-color: darken(@background-color, 8%) !important;
-		}
-	}
+    button.thumbnail {
+        background-color: @background-color !important;
+        border-radius: 0rem !important;
+        border: solid 0.065rem @border-color !important;
+        transition: all 0.25s ease;
+        
+        .caption {
+            color: @text-main-color !important;
+        }
+        
+        &:hover {
+            border-color: darken(@border-color, 8%) !important;
+            background-color: darken(@background-color, 8%) !important;
+        }
+    }
 }
 
 .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
-	background-color: @mondrian-darker-black-02 !important;
+    background-color: @mondrian-darker-black-02 !important;
 }
 
 .select2-dropdown {
-	background: @background-color;
+    background: @background-color;
 }
 
 .select2-selection__clear {
-	margin-left: .5rem;
+    margin-left: .5rem;
 }
 
 .zoom-compact::before {
-	color: @text-main-color !important;
+    color: @text-main-color !important;
 }
 
 .form-actionbar.floating-bar, .list-actionbar.floating-bar {
-	box-shadow: none !important;
-	border: solid 0.125rem @border-color;
-	border-radius: 0rem !important;
+    box-shadow: none !important;
+    border: solid 0.125rem @border-color;
+    border-radius: 0rem !important;
 }
 
 .activity {
-	.act-row > ol.act-road > li > .act-road-item {
-		color: @text-main-color !important;
-		
-		&::before {
-			background-color: @mondrian-darker-blue-06 !important;
-		}
-	}
+    .act-row > ol.act-road > li > .act-road-item {
+        color: @text-main-color !important;
+        
+        &::before {
+            background-color: @mondrian-darker-blue-06 !important;
+        }
+    }
 }
 .activity .act-row > .act-road > li:not(:last-child) {
     border-left: dashed .1rem rgba(255, 255, 255, 0.3) !important;
 }
 
 .widget-cards .card {
-	box-shadow: none !important;
-	border: solid 0.065rem @border-color !important;
+    box-shadow: none !important;
+    border: solid 0.065rem @border-color !important;
 }
 .card.text-center {
-	height: 100% !important;
+    height: 100% !important;
 }
 
 .container-table.upsert .col-action {
-	background-color: @background-color !important;
+    background-color: @background-color !important;
 }
 .table.table-striped {
-	background-color: @background-color !important;
+    background-color: @background-color !important;
 }
 .btn-color-picker {
-	position: relative;
-	width: 3rem;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	> img {
-		border-left: solid .065rem @border-color;
-		padding-left: .15rem;
-	}
-	> .preview {
-		position: relative !important;
-		width: 1rem;
-		height: 1rem;
-		aspect-ratio: 1/1;
-		border: solid .065rem @border-color;
-		border-radius: 1rem;
-		margin-right: .25rem;
-	}
+    position: relative;
+    width: 3rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+        border-left: solid .065rem @border-color;
+        padding-left: .15rem;
+    }
+    > .preview {
+        position: relative !important;
+        width: 1rem;
+        height: 1rem;
+        aspect-ratio: 1/1;
+        border: solid .065rem @border-color;
+        border-radius: 1rem;
+        margin-right: .25rem;
+    }
 }
 
 .store-container {
-	background-color: @background-color !important;
-	
-	.storegrid > .storegrid__item {
-		border-radius: 0px !important;
-		
-		.storecard {
-			border: solid 0.125rem @border-color;
-			border-radius: 0rem !important;
-			transition: all 0.33s ease;
-			
-			&:hover {
-				border: solid 0.125rem rgba(255,255,255, 0.16) !important;
-				box-shadow: none !important;
-				transform: none !important;
-				
-				.storecard__content {
-					background-color: lighten(@background-color, 12%) !important;
-				}
-				.storecard__img {
-					border-bottom-color: rgba(255,255,255, 0.16) !important;
-				}
-			}
-			
-			.storecard__img {
-				padding: 0.5rem 0rem;
-				background-color: #3E3E3E !important; // specific ...
-				border-bottom: solid 0.125rem @border-color;
-			}
-			
-			.storecard__content {
-				background-color: lighten(@background-color, 8%) !important;
-				.storecard__header {
-					color: @mondrian-darker-black-05 !important;
-					font-weight: bold;
-				}
-				.storecard__text {
-					color: @text-main-color !important;
-				}
-			}
-		}
-	}
+    background-color: @background-color !important;
+    
+    .storegrid > .storegrid__item {
+        border-radius: 0px !important;
+        
+        .storecard {
+            border: solid 0.125rem @border-color;
+            border-radius: 0rem !important;
+            transition: all 0.33s ease;
+            
+            &:hover {
+                border: solid 0.125rem rgba(255,255,255, 0.16) !important;
+                box-shadow: none !important;
+                transform: none !important;
+                
+                .storecard__content {
+                    background-color: lighten(@background-color, 12%) !important;
+                }
+                .storecard__img {
+                    border-bottom-color: rgba(255,255,255, 0.16) !important;
+                }
+            }
+            
+            .storecard__img {
+                padding: 0.5rem 0rem;
+                background-color: #3E3E3E !important; // specific ...
+                border-bottom: solid 0.125rem @border-color;
+            }
+            
+            .storecard__content {
+                background-color: lighten(@background-color, 8%) !important;
+                .storecard__header {
+                    color: @mondrian-darker-black-05 !important;
+                    font-weight: bold;
+                }
+                .storecard__text {
+                    color: @text-main-color !important;
+                }
+            }
+        }
+    }
 }
 
 td.workkey {
-	background-color: @mondrian-darker-purple-03 !important;
+    background-color: @mondrian-darker-purple-03 !important;
 }
 
 .badge.status { //specific to status in main-menu ...
-	background: @layer1-color !important;
-	border: solid 1px @mondrian-darker-black-06 !important;
-	color: @mondrian-darker-black-06 !important;
+    background: @layer1-color !important;
+    border: solid 1px @mondrian-darker-black-06 !important;
+    color: @mondrian-darker-black-06 !important;
 }
 
 .badge, .badge.count { //all other badges
-	background: @mondrian-darker-blue-03 !important;
-	border: solid 1px @mondrian-darker-blue-09 !important;
-	color: @mondrian-darker-blue-09 !important;
+    background: @mondrian-darker-blue-03 !important;
+    border: solid 1px @mondrian-darker-blue-09 !important;
+    color: @mondrian-darker-blue-09 !important;
 }
 
 button > .badge {
-	top: -.75rem !important;
-	right: -.33rem !important;
-	z-index: 1;
+    top: -.75rem !important;
+    right: -.33rem !important;
+    z-index: 1;
 }
 
 .select2-results__option > .enum-item {
-	background: @background-color !important;
-	color: @text-main-color !important;
+    background: @background-color !important;
+    color: @text-main-color !important;
 }
 
 .card {
-	.card-header {
-		padding: 0.5rem 1rem !important;
-		// border: solid 0.065rem @border-color !important;
-		
-		.head .list-filters .filter {
-			background: @layer1-color;
-			color: @text-light-color;
-		}
-	}
-	
-	.card-body {
-		.card > .card-header {
-			border-color: transparent !important;
-			border-bottom-color: @border-color !important;
-		}
-	}
+    .card-header {
+        padding: 0.5rem 1rem !important;
+        // border: solid 0.065rem @border-color !important;
+        
+        .head .list-filters .filter {
+            background: @layer1-color;
+            color: @text-light-color;
+        }
+    }
+    
+    .card-body {
+        .card > .card-header {
+            border-color: transparent !important;
+            border-bottom-color: @border-color !important;
+        }
+    }
 }
 
 .card.panel-list .card-footer {
-	.list-footer .list-rows select.form-control {
-		color: @text-color !important;
-	}
+    .list-footer .list-rows select.form-control {
+        color: @text-color !important;
+    }
 }
 
 .input-group {
-	button:hover {
-		background-color: darken(@background-color, 4%) !important;
-	}
-	.input-group-text {
-		border-left: solid 0.125rem @border-color;
-		&:hover {
-			background-color: darken(@background-color, 4%) !important;
-		}
-	}
+    button:hover {
+        background-color: darken(@background-color, 4%) !important;
+    }
+    .input-group-text {
+        border-left: solid 0.125rem @border-color;
+        &:hover {
+            background-color: darken(@background-color, 4%) !important;
+        }
+    }
 }
 
 .footer-bar > footer.footer > ul.list-inline > li.list-inline-item > a {
-	&:hover {
-		color: @mondrian-darker-yellow-07 !important;
-	}
-	&:active {
-		color: @mondrian-darker-yellow-05 !important;
-	}
+    &:hover {
+        color: @mondrian-darker-yellow-07 !important;
+    }
+    &:active {
+        color: @mondrian-darker-yellow-05 !important;
+    }
 }
 
 .panel-list .actions .btn.active {
-	background: @background-color !important;
-	&:hover {
-		background: @border-color !important;
-	}
+    background: @background-color !important;
+    &:hover {
+        background: @border-color !important;
+    }
 }
 
 .modal-content .modal-body .search .search-form div.nav {
-	background: @background-color !important;
+    background: @background-color !important;
 }
 .modal-body {
-	h3 {
-		background: @background-color !important;
-	}
+    h3 {
+        background: @background-color !important;
+    }
 }
 
 .modal-content > .modal-header > button.btn-close {
-	color: @mondrian-darker-white !important;
-	background-color: @mondrian-darker-black-04 !important;
-	padding: .33rem !important;
-	border-radius: 0rem;
-	transition: all 0.25s ease-in-out;
-	
-	&:hover {
-		border-radius: 1rem;
-		background-color: @mondrian-darker-black-05 !important;
-	}
+    color: @mondrian-darker-white !important;
+    background-color: @mondrian-darker-black-04 !important;
+    padding: .33rem !important;
+    border-radius: 0rem;
+    transition: all 0.25s ease-in-out;
+    
+    &:hover {
+        border-radius: 1rem;
+        background-color: @mondrian-darker-black-05 !important;
+    }
 }
 
 .search .index-search {
-	background: @layer1-color;
-	border-radius: 0px !important;
-	border: solid 0.065rem @border-color;
-	
-	div > input.form-control {
-		color: @text-dark-color;
-	}
+    background: @layer1-color;
+    border-radius: 0px !important;
+    border: solid 0.065rem @border-color;
+    
+    div > input.form-control {
+        color: @text-dark-color;
+    }
 }
 .search .nav {
-	background: @background-color;
+    background: @background-color;
 }
 
 .form-group.field-search {
-	div > div.input-group {
-		.form-control {
-			border-right: solid 0.065rem @border-color;
-		}
-	}
+    div > div.input-group {
+        .form-control {
+            border-right: solid 0.065rem @border-color;
+        }
+    }
 }
 
 div.field-container > input.form-control {
-	border-right: solid 0.065rem @border-color;
+    border-right: solid 0.065rem @border-color;
 }
 
 .tab-pane.active, .nav-tabs .nav-link.active {
-	background: #232323 !important;
+    background: #232323 !important;
 }
 /*
-	LEFT-BORDERS FOR IDENTITY !
+    LEFT-BORDERS FOR IDENTITY !
 */
 
 .card {
-	.card-header {
-		border-left: solid 0.25rem @mondrian-darker-purple-06 !important;
-	}
-	.panel-card {
-		.card {
-			&:focus {
-				.card-body {
-					border-left: solid 0.2rem @mondrian-darker-blue-06 !important;
-				}
-			}
-			.card-header {
-				border-left: solid 0.2rem @mondrian-darker-blue-06 !important;
-			}
-		}
-	}
+    .card-header {
+        border-left: solid 0.25rem @mondrian-darker-purple-06 !important;
+    }
+    .panel-card {
+        .card {
+            &:focus {
+                .card-body {
+                    border-left: solid 0.2rem @mondrian-darker-blue-06 !important;
+                }
+            }
+            .card-header {
+                border-left: solid 0.2rem @mondrian-darker-blue-06 !important;
+            }
+        }
+    }
 }
 
 //handling all TABS possibilities
 .tabs-top {
-	.nav-link {
-		border-bottom: solid 0.065rem @border-color !important;
-		background: #232323 !important;
-		&:not(.active) {
-			background: @mondrian-darker-black-01 !important;
-		}
-		
-		&:hover {
-			background: #232323 !important;
-		}
-	}
-	.tab-content {
-		background: #232323 !important; // ...
-	}
+    .nav-link {
+        border-bottom: solid 0.065rem @border-color !important;
+        background: #232323 !important;
+        &:not(.active) {
+            background: @mondrian-darker-black-01 !important;
+        }
+        
+        &:hover {
+            background: #232323 !important;
+        }
+    }
+    .tab-content {
+        background: #232323 !important; // ...
+    }
 }
 .tabs-left {
-	.nav-tabs {
-		border-bottom: solid 0.065rem @border-color !important;
-		border-right: none !important;
-	}
-	.nav-link {
-		background: #232323 !important;
-		&:not(.active) {
-			background: @mondrian-darker-black-01 !important;
-		}
-		
-		&:hover {
-			background: #232323 !important;
-			border-color: @border-color !important;
-			border-bottom-color: transparent !important;
-			border-left-color: lighten(@border-color, 16%) !important;
-		}
-	}
-	.tab-content {
-		background: #232323 !important; // ...
-	}
+    .nav-tabs {
+        border-bottom: solid 0.065rem @border-color !important;
+        border-right: none !important;
+    }
+    .nav-link {
+        background: #232323 !important;
+        &:not(.active) {
+            background: @mondrian-darker-black-01 !important;
+        }
+        
+        &:hover {
+            background: #232323 !important;
+            border-color: @border-color !important;
+            border-bottom-color: transparent !important;
+            border-left-color: lighten(@border-color, 16%) !important;
+        }
+    }
+    .tab-content {
+        background: #232323 !important; // ...
+    }
 }
 .nav-tabs .nav-link.active {
-	border-bottom-color: transparent !important;
-	border-left: solid 0.2rem @mondrian-darker-green-06 !important;
+    border-bottom-color: transparent !important;
+    border-left: solid 0.2rem @mondrian-darker-green-06 !important;
 }
 
 // MASONRY "CARDS"
 div.obj-summary {
-	background: @background-color !important;
-	border-radius: 0px !important;
-	border: solid 0.065rem @border-color;
-	color: @mondrian-darker-black-07 !important; //@text-color
-	
-	.obj-body {
-		.title {
-			background: @background-fade-color;
-			border-radius: 0px !important;
-		}
-		.infos {
-			.obj-addons {
-				background: @background-fade-color !important;
-			}
-		}
-	}
-	
-	.obj-actions {
-		background: @background-fade-color !important;
-	}
-	
-	&:hover {
-		background: @layer1-color !important;
-		border-color: lighten(@border-color, 25%) !important;
-		box-shadow: none !important;
-		.obj-body {
-			.title {
-				background: darken(@background-fade-color, 25%) !important;
-				border-radius: 0px !important;
-				border-bottom-color: lighten(@border-color, 25%) !important;
-			}
-			.infos {
-				.obj-addons {
-					background: darken(@background-fade-color, 25%) !important;
-				}
-			}
-		}
-		
-		.obj-actions {
-			background: darken(@background-fade-color, 8%) !important;
-		}
-	}
+    background: @background-color !important;
+    border-radius: 0px !important;
+    border: solid 0.065rem @border-color;
+    color: @mondrian-darker-black-07 !important; //@text-color
+    
+    .obj-body {
+        .title {
+            background: @background-fade-color;
+            border-radius: 0px !important;
+            
+            .title-group {
+                width: ~"calc(100% - 2.25rem)";
+            }
+        }
+        .infos {
+            .obj-addons {
+                background: @background-fade-color !important;
+            }
+        }
+    }
+    
+    .obj-actions {
+        background: @background-fade-color !important;
+    }
+    
+    &:hover {
+        background: @layer1-color !important;
+        border-color: lighten(@border-color, 25%) !important;
+        box-shadow: none !important;
+        .obj-body {
+            .title {
+                background: darken(@background-fade-color, 25%) !important;
+                border-radius: 0px !important;
+                border-bottom-color: lighten(@border-color, 25%) !important;
+            }
+            .infos {
+                .obj-addons {
+                    background: darken(@background-fade-color, 25%) !important;
+                }
+            }
+        }
+        
+        .obj-actions {
+            background: darken(@background-fade-color, 8%) !important;
+        }
+    }
 }
 
 .tray-item {
-	div.obj-summary {
-		background-color: fade(@background-color, 25%) !important;
-		border-color: transparent !important;
-		border-left-color: @border-color !important;
-		
-		&:hover {
-			border-color: transparent !important;
-			border-left-color: darken(@border-color, 25%) !important;
-		}
-	}
-	
-	&:hover {
-		.obj-summary {
-			.obj-body {
-				.title {
-					// background-color: darken(@background-fade-color, 8%) !important;
-				}
-				.infos {
-					.obj-addons {
-						.actors {
-							background-color: transparent !important;
-						}
-					}
-				}
-			}
-		}
-	}
+    div.obj-summary {
+        background-color: fade(@background-color, 25%) !important;
+        border-color: transparent !important;
+        border-left-color: @border-color !important;
+        
+        &:hover {
+            border-color: transparent !important;
+            border-left-color: darken(@border-color, 25%) !important;
+        }
+    }
+    
+    &:hover {
+        .obj-summary {
+            .obj-body {
+                .title {
+                    // background-color: darken(@background-fade-color, 8%) !important;
+                }
+                .infos {
+                    .obj-addons {
+                        .actors {
+                            background-color: transparent !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // CODE EDITOR (main, not embedded)
 div.code-editor {
-	div.split.horizontal {
-		.editor-area {
-			.editor-head {
-				// BG + BORDER + RADIUS
-				background: @background-color !important;
-				border-radius: 0 !important;
-				border: solid 0.065rem @border-color; //proper color ?
-			}
-		}
-		.split-part > .editor-explore {
-			// BG + BORDER + RADIUS
-			background: @background-color !important;
-			border-radius: 0 !important;
-			border: solid 0.065rem @border-color; //proper color ?
-			
-			ul.explorer {
-				li.module {
-					a {
-						color: @text-color !important;
-					}
-					a.toggle {
-						// BG + HOVER
-						background: @background-color !important;
-						border-radius: 0 !important;
-						&:hover {
-							background: darken(@background-color, 4%) !important;
-						}
-					}
-					ul > li.object {
-						a.toggle {
-							// COLOR (redish) + HOVER (bg)
-							color: @mondrian-darker-yellow-05 !important;
-							opacity: 0.9;
-							background: none; //? transparent
-						}
-						ul > li.file {
-							a { 
-								// COLOR (yellow/grey) + HOVER (bg)
-								color: @mondrian-darker-black-08 !important; //? 07
-								background: none; //? transparent
-							}
-							ul > li.resource > a {
-								// COLOR (blue) + HOVER (bg)
-								color: @mondrian-darker-blue-06 !important;
-								opacity: 0.9;
-								background: none; //? transparent
-							}
-						}
-					}
-				}
-				
-				a.noopen {
-					opacity: 0.5 !important;
-				}
-				a:hover {
-					background: darken(@background-color, 4%) !important;
-				}
-			}
-		}
-	}
+    div.split.horizontal {
+        .editor-area {
+            .editor-head {
+                // BG + BORDER + RADIUS
+                background: @background-color !important;
+                border-radius: 0 !important;
+                border: solid 0.065rem @border-color; //proper color ?
+            }
+        }
+        .split-part > .editor-explore {
+            // BG + BORDER + RADIUS
+            background: @background-color !important;
+            border-radius: 0 !important;
+            border: solid 0.065rem @border-color; //proper color ?
+            
+            ul.explorer {
+                li.module {
+                    a {
+                        color: @text-color !important;
+                    }
+                    a.toggle {
+                        // BG + HOVER
+                        background: @background-color !important;
+                        border-radius: 0 !important;
+                        &:hover {
+                            background: darken(@background-color, 4%) !important;
+                        }
+                    }
+                    ul > li.object {
+                        a.toggle {
+                            // COLOR (redish) + HOVER (bg)
+                            color: @mondrian-darker-yellow-05 !important;
+                            opacity: 0.9;
+                            background: none; //? transparent
+                        }
+                        ul > li.file {
+                            a { 
+                                // COLOR (yellow/grey) + HOVER (bg)
+                                color: @mondrian-darker-black-08 !important; //? 07
+                                background: none; //? transparent
+                            }
+                            ul > li.resource > a {
+                                // COLOR (blue) + HOVER (bg)
+                                color: @mondrian-darker-blue-06 !important;
+                                opacity: 0.9;
+                                background: none; //? transparent
+                            }
+                        }
+                    }
+                }
+                
+                a.noopen {
+                    opacity: 0.5 !important;
+                }
+                a:hover {
+                    background: darken(@background-color, 4%) !important;
+                }
+            }
+        }
+    }
 }
 
 // code editor specific (can't use variables inside editor.less ...)
 .snippet-menu {
-	border-color: @border-color !important;
-	background-color: @layer1-color !important;
+    border-color: @border-color !important;
+    background-color: @layer1-color !important;
 
-	ul li {
-		&.selected, &:hover {
-			background-color: @layer2-color !important;
-		}
-	}
+    ul li {
+        &.selected, &:hover {
+            background-color: @layer2-color !important;
+        }
+    }
 }
 
 .snippet-preview {
-	background-color: @layer1-color !important;
-	border-color: @border-color !important;
-	color: @text-color !important;
+    background-color: @layer1-color !important;
+    border-color: @border-color !important;
+    color: @text-color !important;
 
-	.snippet-preview-content {
-		background: @layer2-color !important;
-	}
+    .snippet-preview-content {
+        background: @layer2-color !important;
+    }
 }
 
 // TREEVIEW QUICK FIXES
 ul.root-ul {
-	button.btn-default {
-		color: @text-color !important;
-		&:hover {
-			background: @layer1-color !important;
-		}
-	}
+    button.btn-default {
+        color: @text-color !important;
+        &:hover {
+            background: @layer1-color !important;
+        }
+    }
 }
 
 // OPERATION TOOL FIXES
 .backend-monitor {
-	background: transparent;
-	.head {
-		background: @layer1-color !important;
-		color: @text-color !important;
-		.views {
-			.tab {
-				background: lighten(@layer1-color, 3.33%) !important;
-				color: @text-color !important;
-			}
-			.tab.active {
-				background: lighten(@layer1-color, 7.5%) !important;
-			}
-		}
-	}
-	.tabs > .tab {
-		background: lighten(@layer1-color, 7.5%) !important;
-	}
-	
-	.chart.jqplot-target {
-		color: @text-color !important;
-	}
+    background: transparent;
+    .head {
+        background: @layer1-color !important;
+        color: @text-color !important;
+        .views {
+            .tab {
+                background: lighten(@layer1-color, 3.33%) !important;
+                color: @text-color !important;
+            }
+            .tab.active {
+                background: lighten(@layer1-color, 7.5%) !important;
+            }
+        }
+    }
+    .tabs > .tab {
+        background: lighten(@layer1-color, 7.5%) !important;
+    }
+    
+    .chart.jqplot-target {
+        color: @text-color !important;
+    }
 }
 
 // HOME SPECIFIC STYLES 
 #view_Home {
-	.card-header {
-		background: @bg-website-color !important;
-	}
+    .card-header {
+        background: @bg-website-color !important;
+    }
 }
 
 // Latest fixes
 .objform > .card > .card-body {
-	padding: 1.5rem !important;
+    padding: 1.5rem !important;
 }
 
 .card {
-	margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
 .objlinks .tab-content .card { // fix...
-	border: solid 0.065rem @border-color !important; 
+    border: solid 0.065rem @border-color !important; 
 }
 
 // DARK THEMES SPECIFICITIES
 .form-control {
-	color: @text-color;
-	
-	&:focus {
-		background-color: darken(@border-color, 8%);
-		color: @text-color;
-	}
+    color: @text-color;
+    
+    &:focus {
+        background-color: darken(@border-color, 8%);
+        color: @text-color;
+    }
 }
 
 .git-history {
-	tr {
-		border: solid 0.065rem @border-color;
-	}
-	td {
-		border: solid 0.065rem @border-color;
-		div {
-			background: @background-color !important;
-			&:not(.mono) {
-				color: @text-color !important;
-			}
-		}
-		a {
-			color: @mondrian-darker-blue-07 !important;
-			&:hover {
-				color: @mondrian-darker-blue-06 !important;
-				font-style: italic;
-			}
-		}
-		&:hover {
-			background-color: @mondrian-darker-black-02 !important;
-			div {
-				background-color: @mondrian-darker-black-02 !important;
-			}
-		}
-	}
+    tr {
+        border: solid 0.065rem @border-color;
+    }
+    td {
+        border: solid 0.065rem @border-color;
+        div {
+            background: @background-color !important;
+            &:not(.mono) {
+                color: @text-color !important;
+            }
+        }
+        a {
+            color: @mondrian-darker-blue-07 !important;
+            &:hover {
+                color: @mondrian-darker-blue-06 !important;
+                font-style: italic;
+            }
+        }
+        &:hover {
+            background-color: @mondrian-darker-black-02 !important;
+            div {
+                background-color: @mondrian-darker-black-02 !important;
+            }
+        }
+    }
 }
 
 // OTHERS + Latest fix
 .objlinks .tab-content .card-body {
-	background: #232323 !important;
+    background: #232323 !important;
 }
 .search-form {
-	form {
-		background: @background-color;
-		border-radius: 0 !important;
-	}
-	i.icon-close {
-		background: transparent !important;
-	}
+    form {
+        background: @background-color;
+        border-radius: 0 !important;
+    }
+    i.icon-close {
+        background: transparent !important;
+    }
 }
 .form-check {
-	color: @text-color;
+    color: @text-color;
 }
 .docked {
-	.actions {
-		button.btn:not(.btn-primary):not(.btn-secondary) {
-			color: @text-dark-color !important;
-			
-			&:hover {
-				color: lighten(@text-dark-color, 32%) !important;
-			}
-		}
-	}
+    .actions {
+        button.btn:not(.btn-primary):not(.btn-secondary) {
+            color: @text-dark-color !important;
+            
+            &:hover {
+                color: lighten(@text-dark-color, 32%) !important;
+            }
+        }
+    }
 }
 .popover.show {
-	background: @background-color !important;
-	border-color: @border-color !important;
-	border-radius: 0px !important;
-	.popover-arrow {
-		// Shall find the element structure ...
-	}
-	.popover-header {
-		background-color: lighten(@background-color, 8%) !important;
-	}
-	.popover-body {
-		color: darken(@text-color, 2.5%) !important;
-	}
+    background: @background-color !important;
+    border-color: @border-color !important;
+    border-radius: 0px !important;
+    .popover-arrow {
+        // Shall find the element structure ...
+    }
+    .popover-header {
+        background-color: lighten(@background-color, 8%) !important;
+    }
+    .popover-body {
+        color: darken(@text-color, 2.5%) !important;
+    }
 }
 
 .flow-xml > .table > tbody > tr > td {
-	background: darken(@layer1-color, 8%) !important;
+    background: darken(@layer1-color, 8%) !important;
 }
 
 .objform .field > .field-html .field-container {
-	background: @mondrian-darker-black-02 !important;
+    background: @mondrian-darker-black-02 !important;
 }
 
 // imported widgets & tools with extern styles ...
 .calendar {
-	background: @mondrian-darker-black-02 !important;
-	
+    background: @mondrian-darker-black-02 !important;
+    
 }
 
 .fc-button-group > button.fc-button-primary:not(:disabled).fc-button-active {
-	background-color: @layer2-color !important;
+    background-color: @layer2-color !important;
 }
 
 .fc-button-group > button.fc-button-primary:hover {
-	background-color: lighten(@layer2-color, 5%) !important;
+    background-color: lighten(@layer2-color, 5%) !important;
 }
 
 .datetimepicker table {
-	border: none !important;
-	color: @text-dark-color !important;
-	span:hover {
-		background: @mondrian-darker-black-02 !important;
-	}
-	
-	thead {
-		border-color: transparent !important;
-		border-bottom-color: transparent !important;
-		border-bottom-width: 0px !important;
-		
-		color: @text-dark-color !important;
-		
-		tr {
-			th, td {
-				border: none !important;
-			}
-		}
-	}
-	
-	tbody > tr {
-		border: none !important;
-		color: @text-color !important;
-		
-		&:hover {
-			td {
-				// here
-				&:not(.new) {
-					color: @text-light-color !important; // not changing
-				}
-	        	background-color: transparent !important;
-	        	border-right: none !important;
-			}
-		}
-		
-		td {
-			border: none !important;
-			
-			&:hover {
-				background: @layer1-color !important;
-			}
-			
-			&:is(.active) {
-				background: @mondrian-darker-blue-06 !important;
-			}
-			&:is(.today) {
-				background: @mondrian-darker-yellow-06 !important;
-			}
-		}
-	}
-	
-	tfoot > tr > th {
-		color: @text-dark-color !important;
-		border: none !important;
-	}
+    border: none !important;
+    color: @text-dark-color !important;
+    span:hover {
+        background: @mondrian-darker-black-02 !important;
+    }
+    
+    thead {
+        border-color: transparent !important;
+        border-bottom-color: transparent !important;
+        border-bottom-width: 0px !important;
+        
+        color: @text-dark-color !important;
+        
+        tr {
+            th, td {
+                border: none !important;
+            }
+        }
+    }
+    
+    tbody > tr {
+        border: none !important;
+        color: @text-color !important;
+        
+        &:hover {
+            td {
+                // here
+                &:not(.new) {
+                    color: @text-light-color !important; // not changing
+                }
+            	background-color: transparent !important;
+            	border-right: none !important;
+            }
+        }
+        
+        td {
+            border: none !important;
+            
+            &:hover {
+                background: @layer1-color !important;
+            }
+            
+            &:is(.active) {
+                background: @mondrian-darker-blue-06 !important;
+            }
+            &:is(.today) {
+                background: @mondrian-darker-yellow-06 !important;
+            }
+        }
+    }
+    
+    tfoot > tr > th {
+        color: @text-dark-color !important;
+        border: none !important;
+    }
 }
 
 .modal-dialog > .modal-content {
-	.modal-header > div > .follow {
-		background: @mondrian-darker-black-02;
-		
-		div.item {
-			&:hover {
-				border-radius: 0 !important;
-				background: darken(@mondrian-darker-black-02, 4%);
-			}
-			
-			.follow-title {
-				color: @mondrian-darker-black-07;
-				font-size: 0.75rem;
-				font-weight: bold;
-			}
-		}
-	}
-	
-	.modal-body > .social {
-		.post:hover {
-			box-shadow: none !important;
-			border-color: lighten(@border-color, 16%;) !important;
-			background: lighten(@background-color, 16%) !important;
-		}
-		
-		.post .btn-like {
-			margin-top: 0 !important;
-			margin-bottom: 0.25rem !important;
-		}
-	}
-	
-	.modal-body {
-		.mono {
-			padding: 4px !important;
-			background: @layer1-color !important;
-			color: @text-color !important;
-		}
-		.mono.error {
-			background: @mondrian-darker-red-08 !important;
-			color: @mondrian-darker-red-03 !important;
-		}
-		
-		.lang-picker > div:hover {
-			background: @layer2-color;
-		}
-	} 
+    .modal-header > div > .follow {
+        background: @mondrian-darker-black-02;
+        
+        div.item {
+            &:hover {
+                border-radius: 0 !important;
+                background: darken(@mondrian-darker-black-02, 4%);
+            }
+            
+            .follow-title {
+                color: @mondrian-darker-black-07;
+                font-size: 0.75rem;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .modal-body > .social {
+        .post:hover {
+            box-shadow: none !important;
+            border-color: lighten(@border-color, 16%;) !important;
+            background: lighten(@background-color, 16%) !important;
+        }
+        
+        .post .btn-like {
+            margin-top: 0 !important;
+            margin-bottom: 0.25rem !important;
+        }
+    }
+    
+    .modal-body {
+        .mono {
+            padding: 4px !important;
+            background: @layer1-color; // !important
+            color: @text-color; // !important
+        }
+        .mono.error {
+            background: @mondrian-darker-red-08 !important;
+            color: @mondrian-darker-red-03 !important;
+        }
+        
+        .lang-picker > div:hover {
+            background: @layer2-color;
+        }
+    } 
+}
+
+.alert pre.mono {
+    background: transparent !important;
+    color: inherit !important;
 }
 
 .content > .metrics {
-	form.form-inline {
-		background: @layer1-color;
-		
-		.row .form-group > .control-group > label {
-			color: @text-color;
-		}
-	}
-	
-	.charts > .chart-item > .chart {
-		background: @layer1-color;
-		// from here only html canvas are used ...
-	}
+    form.form-inline {
+        background: @layer1-color;
+        
+        .row .form-group > .control-group > label {
+            color: @text-color;
+        }
+    }
+    
+    .charts > .chart-item > .chart {
+        background: @layer1-color;
+        // from here only html canvas are used ...
+    }
 }
 
 .predef-search {
-	background: @background-color !important;
-	
-	.toggle-title {
-		background: @background-color;
-	}
-	
-	.item {
-		background: @layer1-color;
-		border-radius: 0 !important;
-	}
+    background: @background-color !important;
+    
+    .toggle-title {
+        background: @background-color;
+    }
+    
+    .item {
+        background: @layer1-color;
+        border-radius: 0 !important;
+    }
 }
 
 .frame-wrapper {
-	box-shadow: none !important;
-	iframe {
-		background-color: #f3f3f3 !important;
-	}
+    box-shadow: none !important;
+    iframe {
+        background-color: #f3f3f3 !important;
+    }
 }
 
 .ace_tooltip {
-	background: @bg-website-color !important;
-	max-height: 425px !important;
-	color: @text-color !important;
+    background: @bg-website-color !important;
+    max-height: 425px !important;
+    color: @text-color !important;
 }
 
 .ace_layer.ace_print-margin-layer > .ace_print-margin {
-	visibility: hidden !important;
+    visibility: hidden !important;
 }
 
 .ace_gutter-cell {
-	color: @mondrian-darker-white;
+    color: @mondrian-darker-white;
 }
 
 .ace_active-lin {
-	background-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 // git diff whole UI (nat + ace)
 .git-diff > .tree-diff {
-	background-color: @layer2-color;
-	
-	.diff-body {
-		.link .diff-upd > .item {
-			background-color: @mondrian-darker-black-05;
-			.data {
-				background: @mondrian-darker-yellow-05;
-			}
-		}
-	}
-	
-	.cell {
-		background-color: @mondrian-darker-black-03;
-		
-		button.btn {
-			&:not(.active) {
-				color: @mondrian-darker-white !important;
-			}
-			border-color: @mondrian-darker-white !important;
-		}
-	}
-	
+    background-color: @layer2-color;
+    
+    .diff-body {
+        .link .diff-upd > .item {
+            background-color: @mondrian-darker-black-05;
+            .data {
+                background: @mondrian-darker-yellow-05;
+            }
+        }
+    }
+    
+    .cell {
+        background-color: @mondrian-darker-black-03;
+        
+        button.btn {
+            &:not(.active) {
+                color: @mondrian-darker-white !important;
+            }
+            border-color: @mondrian-darker-white !important;
+        }
+    }
+    
 }
 .ace-tm {
-	background: @mondrian-darker-black-02;
-	color: @mondrian-darker-black-07;
-	.ace_gutter {
-		background: @mondrian-darker-black-03;
-	}
-	.ace_gutter-active-line {
-		background: @mondrian-darker-black-04;
-	}
+    background: @mondrian-darker-black-02;
+    color: @mondrian-darker-black-07;
+    .ace_gutter {
+        background: @mondrian-darker-black-03;
+    }
+    .ace_gutter-active-line {
+        background: @mondrian-darker-black-04;
+    }
 }
 .ace-diff__gutter, .ace-diff__gutter > svg {
-	background: @mondrian-darker-black-03;
+    background: @mondrian-darker-black-03;
 }
 .ace-diff__connecter {
-	fill: @mondrian-darker-blue-05;
-	stroke: @mondrian-darker-blue-09;
+    fill: @mondrian-darker-blue-05;
+    stroke: @mondrian-darker-blue-09;
 }
 .ace-diff__diffLine {
-	background: @mondrian-darker-blue-05;
-	border-top-color: @mondrian-darker-blue-09;
-	border-bottom-color: @mondrian-darker-blue-09;
+    background: @mondrian-darker-blue-05;
+    border-top-color: @mondrian-darker-blue-09;
+    border-bottom-color: @mondrian-darker-blue-09;
 }
 
 // Filter specificities
 .badge.count.filter {
-	padding: .25rem .5rem !important;
-	margin-top: .25rem;
+    padding: .25rem .5rem !important;
+    margin-top: .25rem;
 }
 
 .list-filters .filter {
-	padding: .5rem .75rem !important;
-	margin-top: .25rem;
+    padding: .5rem .75rem !important;
+    margin-top: .25rem;
 }
 
 // Dashboard.s fixes
 .user-dashboard > .tabs > .tab-content > .tab-pane.active > .panel-card > .card {
-	background: #232323 !important;
-	& > .card-footer {
-		background: #232323 !important;
-	}
+    background: #232323 !important;
+    & > .card-footer {
+        background: #232323 !important;
+    }
 }
 
 .grid-edit {
-	* {
-		border-color: @border-color !important;
-	}
-	.grid-actions {
-		background: darken(@layer1-color, 10%) !important;
-		border: solid .065rem @border-color !important;
-		padding: .25rem;
-		.grid-new-widget {
-			background: @layer1-color !important;
-			color: @text-color !important;
-		}
-	}
-	.grid-area-bar {
-		background: lighten(@layer1-color, 5%) !important;
-		padding: .25rem !important;
-	}
+    * {
+        border-color: @border-color !important;
+    }
+    .grid-actions {
+        background: darken(@layer1-color, 10%) !important;
+        border: solid .065rem @border-color !important;
+        padding: .25rem;
+        .grid-new-widget {
+            background: @layer1-color !important;
+            color: @text-color !important;
+        }
+    }
+    .grid-area-bar {
+        background: lighten(@layer1-color, 5%) !important;
+        padding: .25rem !important;
+    }
 }
 
 /* TEMPLATE EDITOR QUICK REWORK */
 .tmpl-edit {
-	.dock-zone {
-		margin-top: 0.625rem;
-		height: 1rem !important;
-		border: none !important;
-		border-radius: 5px;
-	}
-	div > .dock-zone.on { // increase specificity to override ...
-		border-color: transparent !important;
-		background-color: @mondrian-darker-yellow-06 !important;
-	}
-	
-	.row > .tmpl-bar {
-		border-radius: 0 !important;
-		background-color: @mondrian-darker-green-07 !important;
-	}
-	.area > .tmpl-bar, .states-navbar > .tmpl-bar {
-		border-radius: 0 !important;
-		background-color: @mondrian-darker-blue-07 !important;
-	}	
-	.field > .tmpl-bar {
-		border-radius: 0 !important;
-		color: @mondrian-darker-black-01 !important;
-		background-color: @mondrian-darker-black-07 !important;
-		* {
-			color: @mondrian-darker-black-01;
-		}
-	}
-	&.dragging {
-		.dock-zone {
-			background: transparent !important;
-		}
-		.field.draggable.hold {
-			background-color: @mondrian-darker-yellow-06 !important;
-			opacity: .5 !important;
-			box-shadow: none !important;
-		}
-	}
-	
-	.drag {
-		background: rgba(0,0,0, 0.5) !important;
-		opacity: 0.5 !important;
-		box-shadow: none !important;
-		
-		&::after {
-			background: @mondrian-darker-black !important;
-		}
-	}
-	
-	.dock-zone.drop-target {
-		background: @mondrian-darker-yellow-10 !important;
-	}
+    .dock-zone {
+        margin-top: 0.625rem;
+        height: 1rem !important;
+        border: none !important;
+        border-radius: 5px;
+    }
+    div > .dock-zone.on { // increase specificity to override ...
+        border-color: transparent !important;
+        background-color: @mondrian-darker-yellow-06 !important;
+    }
+    
+    .row > .tmpl-bar {
+        border-radius: 0 !important;
+        background-color: @mondrian-darker-green-07 !important;
+    }
+    .area > .tmpl-bar, .states-navbar > .tmpl-bar {
+        border-radius: 0 !important;
+        background-color: @mondrian-darker-blue-07 !important;
+    }	
+    .field > .tmpl-bar {
+        border-radius: 0 !important;
+        color: @mondrian-darker-black-01 !important;
+        background-color: @mondrian-darker-black-07 !important;
+        * {
+            color: @mondrian-darker-black-01;
+        }
+    }
+    &.dragging {
+        .dock-zone {
+            background: transparent !important;
+        }
+        .field.draggable.hold {
+            background-color: @mondrian-darker-yellow-06 !important;
+            opacity: .5 !important;
+            box-shadow: none !important;
+        }
+    }
+    
+    .drag {
+        background: rgba(0,0,0, 0.5) !important;
+        opacity: 0.5 !important;
+        box-shadow: none !important;
+        
+        &::after {
+            background: @mondrian-darker-black !important;
+        }
+    }
+    
+    .dock-zone.drop-target {
+        background: @mondrian-darker-yellow-10 !important;
+    }
 }
 
 .tmpl-desk.on {
-	.row {
-		padding: 4px !important;
-		border-color: @mondrian-darker-green-03 !important;
-		
-		& > [class*="col-"]:not(:last-child) {
-			border-right-color: @mondrian-darker-green-03 !important;
-		}
-		
-		&:hover {
-			border-color: @mondrian-darker-green-07 !important;
-			box-shadow: none !important;
-			
-			& > [class*="col-"]:not(:last-child) {
-				border-right-color: @mondrian-darker-green-07 !important;
-			}
-			
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: fade(@mondrian-darker-green-07, 3.33%);
-				z-index: 10;
-				pointer-events: none;
-			}
-		}
-	}
-	
-	.area, .states-navbar {
-		padding: 4px !important;
-		border-color: @mondrian-darker-blue-03 !important;
-		
-		&:hover {
-			border-color: @mondrian-darker-blue-06 !important;
-			box-shadow: none !important;
-			
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: fade(@mondrian-darker-blue-06, 3.33%);
-				z-index: 10;
-				pointer-events: none;
-			}
-		}
-	}
-	
-	.field {
-		padding: 8px !important;
-		border-color: @mondrian-darker-black-04 !important;
-		
-		&:hover {
-			border-color: @mondrian-darker-black-07 !important;
-			box-shadow: none !important;
-			background-color: @mondrian-darker-black-01 !important;
-			position: relative;
-			z-index: 11;
-		}
-	}
+    .row {
+        padding: 4px !important;
+        border-color: @mondrian-darker-green-03 !important;
+        
+        & > [class*="col-"]:not(:last-child) {
+            border-right-color: @mondrian-darker-green-03 !important;
+        }
+        
+        &:hover {
+            border-color: @mondrian-darker-green-07 !important;
+            box-shadow: none !important;
+            
+            & > [class*="col-"]:not(:last-child) {
+                border-right-color: @mondrian-darker-green-07 !important;
+            }
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: fade(@mondrian-darker-green-07, 3.33%);
+                z-index: 10;
+                pointer-events: none;
+            }
+        }
+    }
+    
+    .area, .states-navbar {
+        padding: 4px !important;
+        border-color: @mondrian-darker-blue-03 !important;
+        
+        &:hover {
+            border-color: @mondrian-darker-blue-06 !important;
+            box-shadow: none !important;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: fade(@mondrian-darker-blue-06, 3.33%);
+                z-index: 10;
+                pointer-events: none;
+            }
+        }
+    }
+    
+    .field {
+        padding: 8px !important;
+        border-color: @mondrian-darker-black-04 !important;
+        
+        &:hover {
+            border-color: @mondrian-darker-black-07 !important;
+            box-shadow: none !important;
+            background-color: @mondrian-darker-black-01 !important;
+            position: relative;
+            z-index: 11;
+        }
+    }
 }
 
 // Template editor works
 .tmpl-new > .new-menu.on {
-	background: @background-color !important;
-	border-radius: 0 !important;
-	box-shadow: none !important;
-	border: solid 0.065rem @border-color !important;
-	
-	div:hover {
-		background: @layer1-color !important;
-	}
+    background: @background-color !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: solid 0.065rem @border-color !important;
+    
+    div:hover {
+        background: @layer1-color !important;
+    }
 }
 
 
 .tmpl-selector {
-	& > ul > li {
-		background: @background-color !important;
-		border-bottom-color: @border-color !important;
-		&:hover {
-			background: @layer1-color !important;
-		}
-	}
-	.tmpl-form {
-		background: none !important;
-	}
-	.newfield > div[data-field] {
-		background: @layer1-color !important;
-	}
-	.newfield > div:hover {
-		background: lighten(@layer1-color, 5%) !important;
-	}
+    & > ul > li {
+        background: @background-color !important;
+        border-bottom-color: @border-color !important;
+        &:hover {
+            background: @layer1-color !important;
+        }
+    }
+    .tmpl-form {
+        background: none !important;
+    }
+    .newfield > div[data-field] {
+        background: @layer1-color !important;
+    }
+    .newfield > div:hover {
+        background: lighten(@layer1-color, 5%) !important;
+    }
 }
 
 .tmpl-form .colmodels > .row > div {
-	border-color: @border-color !important;
+    border-color: @border-color !important;
 }
 
 // Modeler quick fixes
 .model-desktop > .palette {
-	color: @mondrian-darker-black-01 !important;
+    color: @mondrian-darker-black-01 !important;
 }
 
 .model-desktop > .palette.pal-add.pal-container input,
 .model-desktop > .palette.pal-add.pal-container select {
-	color: @mondrian-darker-black-01 !important;
+    color: @mondrian-darker-black-01 !important;
 }
 
 .model-desktop > .palette.edit-note {
-	.btn-default, .btn-secondary {
-		color: @mondrian-darker-black-01 !important;
-		&:hover {
-			background: transparent;
-		}
-	}
+    .btn-default, .btn-secondary {
+        color: @mondrian-darker-black-01 !important;
+        &:hover {
+            background: transparent;
+        }
+    }
 }
 
 // Demo Crosstab raw fixing
 .crosstab {
-	table.table {
-		box-shadow: none !important;
-		tbody > tr {
-			th, td.ctcell {
-				color: @text-dark-color !important;
-			}
-		}
-	}
-	.table-caption .caption {
-		background: @layer1-color !important;
-	}
-	.charts > .active {
-		background: @mondrian-darker-yellow-06 !important;
-	}
-	
-	.tabs-underline {
-		ul.nav-tabs > li.nav-item > a {
-			background: @layer1-color !important;
-			color: @text-dark-color !important;
-			
-			&.active {
-				color: @text-color !important;
-			}
-			
-			&:hover {
-				background: darken(@layer1-color, 5%) !important;
-			}
-		}
-	}
-	
-	.axis {
-		.ctdock {
-			background: transparent !important;
-			border: none !important;
-		}
-		.ctaxis {
-			background: @layer1-color !important;
-			border: solid 0.065rem @border-color !important;
-			border-radius: 0px !important;
-		}
-	}
+    table.table {
+        box-shadow: none !important;
+        tbody > tr {
+            th, td.ctcell {
+                color: @text-dark-color !important;
+            }
+        }
+    }
+    .table-caption .caption {
+        background: @layer1-color !important;
+    }
+    .charts > .active {
+        background: @mondrian-darker-yellow-06 !important;
+    }
+    
+    .tabs-underline {
+        ul.nav-tabs > li.nav-item > a {
+            background: @layer1-color !important;
+            color: @text-dark-color !important;
+            
+            &.active {
+                color: @text-color !important;
+            }
+            
+            &:hover {
+                background: darken(@layer1-color, 5%) !important;
+            }
+        }
+    }
+    
+    .axis {
+        .ctdock {
+            background: transparent !important;
+            border: none !important;
+        }
+        .ctaxis {
+            background: @layer1-color !important;
+            border: solid 0.065rem @border-color !important;
+            border-radius: 0px !important;
+        }
+    }
 }
 
 // More Overiding styles
 .logged-user {
-	.user-logout, .languages {
-		background: transparent !important;
-	}
+    .user-logout, .languages {
+        background: transparent !important;
+    }
 }
 
 tr.highlight td {
-	background: @mondrian-darker-blue-04 !important;
+    background: @mondrian-darker-blue-04 !important;
 }
 
 th.ctcol {
-	background: transparent !important;
+    background: transparent !important;
 }
 
 .header .btn-shortcut.active, .header .btn-shortcut.active:focus {
-	background: @mondrian-darker-blue-06 !important;
+    background: @mondrian-darker-blue-06 !important;
 }
 
 .table {
-	box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .worklist .select {
-	background: @layer1-color !important;
-	color: @text-color;
+    background: @layer1-color !important;
+    color: @text-color;
 }
 
 .icon-picker {
-	ul.nav.nav-tabs li.nav-item {
-		h3 {
-			background: none !important;
-			color: @text-color !important;
-		}
-		a {
-			background: @layer1-color!important;
-			border-bottom: none !important;
-			&:hover {
-				background: @layer2-color !important;
-			}
-		}
-	}
+    ul.nav.nav-tabs li.nav-item {
+        h3 {
+            background: none !important;
+            color: @text-color !important;
+        }
+        a {
+            background: @layer1-color!important;
+            border-bottom: none !important;
+            &:hover {
+                background: @layer2-color !important;
+            }
+        }
+    }
 }
 
 .tmpl-selector .newfield > div:hover {
-	background: @layer1-color !important;
+    background: @layer1-color !important;
 }
 
 .modeler_picker {
-	.items > .item > .mdl {
-		.title {
-			background: transparent !important;
-		}
-		.icons {
-			color: @text-color !important;
-			i:hover {
-				color: lighten(@text-color, 10%) !important;
-			}
-		}
-		img {
-			opacity: .8;
-		}
-		border-radius: 0px !important;
-		background: @layer1-color !important;
-		
-		&:hover {
-			background: lighten(@layer1-color, 5%) !important;
-			box-shadow: none !important;
-			img {
-				opacity: 1;
-			}
-		}
-	}
+    .items > .item > .mdl {
+        .title {
+            background: transparent !important;
+        }
+        .icons {
+            color: @text-color !important;
+            i:hover {
+                color: lighten(@text-color, 10%) !important;
+            }
+        }
+        img {
+            opacity: .8;
+        }
+        border-radius: 0px !important;
+        background: @layer1-color !important;
+        
+        &:hover {
+            background: lighten(@layer1-color, 5%) !important;
+            box-shadow: none !important;
+            img {
+                opacity: 1;
+            }
+        }
+    }
 }
 
 .db-access {
-	background: transparent !important;
+    background: transparent !important;
 }
 
 .tox .tox-tbtn svg {
-	background: transparent !important;
+    background: transparent !important;
 }
 
 div.hljs {
-	background-color: @mondrian-darker-white !important;
+    background-color: @mondrian-darker-white !important;
 }
 
 // PREFERENCES STYLES
 .preferences {
-	select#listvis, select#listhid {
-		background-color: @background-color;
-		
-		option {
-			color: @text-main-color;
-			
-			&.area {
-				color: @mondrian-darker-blue-09;
-			}
-			
-			&.userkey {
-				color: @mondrian-darker-purple-09;
-			}
-		}
-	}
+    select#listvis, select#listhid {
+        background-color: @background-color;
+        
+        option {
+            color: @text-main-color;
+            
+            &.area {
+                color: @mondrian-darker-blue-09;
+            }
+            
+            &.userkey {
+                color: @mondrian-darker-purple-09;
+            }
+        }
+    }
 }
 
 // ZIP EDITOR
 .zip-editor {
-	.folder {
-		.file:hover {
-			background-color: @layer2-color;
-		}
-	}
-	.zip-preview {
-		.content {
-			background-color: @background-color;
-			padding: 0.5rem;
-		}
-	}
+    .folder {
+        .file:hover {
+            background-color: @layer2-color;
+        }
+    }
+    .zip-preview {
+        .content {
+            background-color: @background-color;
+            padding: 0.5rem;
+        }
+    }
 }
 
 // TINY MCE OVERRIDE
 .tox-tinymce {
-	border: 1px solid @border-color !important;
-	border-radius: 0px !important;
-	
-	.tox-editor-container .tox-editor-header {
-		background: @layer1-color !important;
-		border-bottom: 1px solid @border-color !important;
-		
-		.tox-menubar, .tox-toolbar-overlord, .tox-toolbar__primary {
-			background-color: @layer1-color !important;
-			background: none !important;
-		}
-	}
+    border: 1px solid @border-color !important;
+    border-radius: 0px !important;
+    
+    .tox-editor-container .tox-editor-header {
+        background: @layer1-color !important;
+        border-bottom: 1px solid @border-color !important;
+        
+        .tox-menubar, .tox-toolbar-overlord, .tox-toolbar__primary {
+            background-color: @layer1-color !important;
+            background: none !important;
+        }
+    }
 }
