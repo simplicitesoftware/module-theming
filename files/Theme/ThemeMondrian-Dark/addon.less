@@ -1034,10 +1034,12 @@ button > .badge {
         background-color: darken(@background-color, 4%) !important;
     }
     .input-group-text {
-        // z-index: 1; // necessary ???
         border-left: solid 0.125rem @border-color;
         &:hover {
             background-color: darken(@background-color, 4%) !important;
+        }
+        .btn {
+            color: @mondrian-dark-black-04;
         }
     }
 }
@@ -1665,11 +1667,24 @@ ul.root-ul {
     color: @mondrian-dark-white !important;
 }
 
-.ace_active-lin {
+.ace_active-line, .ace_selection {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-// Ace git diff whole UI
+.acediff__diffLine {
+    background-color: @mondrian-dark-blue-06 !important;
+    border-bottom-color: @mondrian-dark-blue-08 !important;
+}
+.acediff__gutter svg {
+    background-color: @background-color !important; // @layer1-color ?
+    
+    .acediff__connector {
+        fill: fade(@mondrian-dark-blue-06, 50%);
+        stroke: @mondrian-dark-blue-08;
+    }
+}
+
+// git diff whole UI
 .git-diff > .tree-diff {
     background-color: @layer2-color;
     
