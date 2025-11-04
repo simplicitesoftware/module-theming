@@ -1653,6 +1653,10 @@ ul.root-ul {
     }
 }
 
+.ace_editor_readonly {
+    background: @mondrian-dark-black-00 !important;
+}
+
 .ace_tooltip {
     background: @bg-website-color !important;
     max-height: 425px !important;
@@ -2111,7 +2115,7 @@ div.hljs {
 
 // PREFERENCES STYLES
 .preferences {
-    select {
+    select#listvis, select#listhid, select#searchvis, select#searchhid, select#actionvis, select#actionhid {
         background-color: @background-color;
         
         option {
