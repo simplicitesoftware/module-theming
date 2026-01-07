@@ -205,69 +205,6 @@
        "name": "const.less"
       }
      }
-    },
-    {
-     "object": "Theme",
-     "userkey": "ThemeMondrian-Template-Dark",
-     "item": {
-      "thm_name": "ThemeMondrian-Template-Dark",
-      "thm_logo_id": {
-       "path": "files/Theme/ThemeMondrian-Template-Dark/logo.svg",
-       "mime": "image/svg+xml",
-       "name": "logo.svg"
-      },
-      "thm_logo_invert": null,
-      "thm_logo2_id": {
-       "path": "files/Theme/ThemeMondrian-Template-Dark/logo2.png",
-       "mime": "image/png",
-       "name": "logo2.png"
-      },
-      "thm_favicon_id": {
-       "path": "files/Theme/ThemeMondrian-Template-Dark/favicon.png",
-       "mime": "image/png",
-       "name": "favicon.png"
-      },
-      "thm_color1": "#2A2A2A",
-      "thm_color2": "#2A2A2A",
-      "thm_text2": "#F1F1F1",
-      "thm_color3": "#2A2A2A",
-      "thm_text3": "#F1F1F1",
-      "thm_base": "dark",
-      "thm_css_doc": {
-       "path": "files/Theme/ThemeMondrian-Template-Dark/ThemeMondrian-Template-Dark_gen.css",
-       "mime": "text/css",
-       "name": "ThemeMondrian-Template-Dark_gen.css"
-      },
-      "thm_addon": {
-       "path": "files/Theme/ThemeMondrian-Template-Dark/addon.less",
-       "mime": "text/x-less",
-       "name": "addon.less"
-      },
-      "thm_searchbox": "#424242",
-      "thm_active": null,
-      "thm_font": "Roboto",
-      "thm_font_mono": null,
-      "thm_iconset": null,
-      "thm_code_editor_theme": "ambiance",
-      "thm_html_editor_theme": "DARK",
-      "thm_menu_dom_c": "#2A2A2A",
-      "thm_menu_dom_t": "#F1F1F1",
-      "thm_menu_dact_c": "#424242",
-      "thm_menu_dact_t": "#F1F1F1",
-      "thm_menu_sub_c": "#2A2A2A",
-      "thm_menu_sub_t": "#F1F1F1",
-      "thm_menu_sact_c": "#424242",
-      "thm_menu_sact_t": "#F1F1F1",
-      "thm_menu_sta_c": "#424242",
-      "thm_menu_sta_t": "#F1F1F1",
-      "thm_compact": false,
-      "row_module_id__mdl_name": "SimThemes",
-      "thm_const": {
-       "path": "files/Theme/ThemeMondrian-Template-Dark/const.less",
-       "mime": "text/x-less",
-       "name": "const.less"
-      }
-     }
     }
    ]
   },
