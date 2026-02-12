@@ -4,8 +4,8 @@
 @mondrian-dark-black: #000000;
 
 @mondrian-dark-black-00:  #171717;
-@mondrian-dark-black-01:  #2A2A2A; // #171717 lightened (~7.5%) - 10% was #2E2E2E
-@mondrian-dark-black-02:  #424242; // #2E2E2E lightened (~12%) - 10% was #383838
+@mondrian-dark-black-01:  #2A2A2A;
+@mondrian-dark-black-02:  #424242;
 @mondrian-dark-black-03:  #5C5C5C;
 @mondrian-dark-black-04:  #8B8B8B;
 @mondrian-dark-black-05:  #B9B9B9;
@@ -303,7 +303,7 @@ input#doc_field_pcs_script_id {
         padding: 0 .25rem;
         
         &:hover {
-        	background-color: @layer1-color;
+        	background-color: @layer1-color !important;
         }
     }
     
@@ -577,6 +577,10 @@ tr {
         	background: @layer1-color !important;
         }
     }
+}
+
+.btn-selrows:hover {
+    background-color: @layer1-color;
 }
 
 .tab-content {
