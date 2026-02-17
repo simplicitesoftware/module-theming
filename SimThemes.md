@@ -11,5 +11,3 @@
 `SimThemes` module definition
 =============================
 
-
-
