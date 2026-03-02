@@ -1055,6 +1055,16 @@ button > .badge {
             background: @layer1-color;
             color: @text-light-color;
         }
+        
+        .btn-help, .btn-playguide {
+        	border: solid 1px @mondrian-dark-green-06;
+		    color: @mondrian-dark-green-06;
+		    
+		    &:hover {
+		        border: solid 1px @mondrian-dark-green-06;
+		        color: @mondrian-dark-green-06 !important;
+		    }
+        }
     }
     
     .card-body {
@@ -1109,6 +1119,10 @@ button > .badge {
     h3 {
         background: @background-color !important;
     }
+}
+#dlgmodal_help .modal-body {
+    font-size: 1rem;
+    padding: 1.5rem !important;
 }
 
 .modal-content > .modal-header > button.btn-close {
