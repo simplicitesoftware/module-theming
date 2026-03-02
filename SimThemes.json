@@ -38,10 +38,10 @@
        "mime": "image/png",
        "name": "favicon.png"
       },
-      "thm_color1": "#2A2A2A",
-      "thm_color2": "#2A2A2A",
+      "thm_color1": "#2a2a2a",
+      "thm_color2": "#212121",
       "thm_text2": "#F1F1F1",
-      "thm_color3": "#2A2A2A",
+      "thm_color3": "#212121",
       "thm_text3": "#F1F1F1",
       "thm_base": "dark",
       "thm_css_doc": {
@@ -61,22 +61,22 @@
       "thm_iconset": null,
       "thm_code_editor_theme": "ambiance",
       "thm_html_editor_theme": "DARK",
-      "thm_menu_dom_c": "#2A2A2A",
+      "thm_menu_dom_c": "#212121",
       "thm_menu_dom_t": "#F1F1F1",
       "thm_menu_dact_c": "#424242",
       "thm_menu_dact_t": "#F1F1F1",
-      "thm_menu_sub_c": "#2A2A2A",
+      "thm_menu_sub_c": "#212121",
       "thm_menu_sub_t": "#F1F1F1",
-      "thm_menu_sact_c": "#424242",
+      "thm_menu_sact_c": "#2A2A2A",
       "thm_menu_sact_t": "#F1F1F1",
-      "thm_menu_sta_c": "#424242",
+      "thm_menu_sta_c": "#2A2A2A",
       "thm_menu_sta_t": "#F1F1F1",
       "thm_compact": false,
       "row_module_id__mdl_name": "SimThemes",
       "thm_const": {
        "path": "files/Theme/ThemeMondrian-Dark/const.less",
        "mime": "text/x-less",
-       "name": "const.less"
+       "name": "constants.less"
       }
      }
     },
