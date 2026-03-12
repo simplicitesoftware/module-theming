@@ -1064,7 +1064,7 @@ button > .badge {
             color: @text-light-color;
         }
         
-        .btn-help, .btn-playguide {
+        .btn-help {
         	border: solid 1px @mondrian-dark-green-06;
 		    color: @mondrian-dark-green-06;
 		    
@@ -1083,6 +1083,26 @@ button > .badge {
     }
 }
 
+.btn-playguide {
+    border: solid 1px @mondrian-dark-green-06;
+	color: @mondrian-dark-green-06;
+		    
+	&:hover {
+		border: solid 1px @mondrian-dark-green-06;
+		color: @mondrian-dark-green-06 !important;
+	}
+}
+
+.view > .btn-playguide {
+	top: 1.5rem;
+	margin: 0;
+	border: none;
+	
+	&:hover { border: none; }
+	
+	& > .icon { font-size: 1.33rem; }
+}
+        
 .card.panel-list .card-footer {
     .list-footer .list-rows select.form-control {
         color: @text-color !important;
