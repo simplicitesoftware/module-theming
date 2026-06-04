@@ -2288,3 +2288,47 @@ div.hljs {
     }
 }
 
+/* Modeler */
+/* has to be LIGHT because modeler components aren't styled at all by Simplicité's themes */
+.modal-body > .sp-container {
+	background-color: @layer1-color;
+	
+	.sp-input-container > .sp-input {
+		color: #FFFFFF;
+	}
+}
+
+/* inspired from ThemeAdmin -> relevant ? */
+.modeler_picker > .items .item .mdl {
+	background: #2B2A33;
+	border: solid .0625rem #42414D;
+}
+
+.modeler_picker > .items .item .mdl .title {
+	background: // #2B2A33;
+	border: solid .0625rem #42414D;
+}
+
+.model-desktop > .palette {
+	color: #000000;
+}
+
+.model-desktop > .palette.pal-add.pal-container input,
+.model-desktop > .palette.pal-add.pal-container select {
+	border: none;
+	background-color: #ECECEC;
+	color: #000000;
+}
+
+.model-desktop > .palette.edit-note {
+	.btn-default, .btn-secondary {
+		color: #000000 !important;
+		&:hover {
+			background: transparent;
+		}
+	}
+}
+
+.diagram {
+	background-color: #ECECEC !important;
+}
